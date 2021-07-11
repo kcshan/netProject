@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MyCal/1.0.0": {
+        "dependencies": {
+          "MyCalModel": "1.0.0"
+        },
+        "runtime": {
+          "MyCal.dll": {}
+        }
+      },
+      "MyCalModel/1.0.0": {
+        "runtime": {
+          "MyCalModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyCal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyCalModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
