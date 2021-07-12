@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="VBCaluator\VBCaluator.vbproj">
+      <Project>{8f91a549-5c36-4316-a8ee-b873497daa3c}</Project>
+      <Name>VBCaluator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
