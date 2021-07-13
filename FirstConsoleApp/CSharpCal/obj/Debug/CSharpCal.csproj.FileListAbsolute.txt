@@ -1,0 +1,6 @@
+D:\workspace\netProject\FirstConsoleApp\CSharpCal\bin\Debug\CSharpCal.dll
+D:\workspace\netProject\FirstConsoleApp\CSharpCal\bin\Debug\CSharpCal.pdb
+D:\workspace\netProject\FirstConsoleApp\CSharpCal\obj\Debug\CSharpCal.csprojAssemblyReference.cache
+D:\workspace\netProject\FirstConsoleApp\CSharpCal\obj\Debug\CSharpCal.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\FirstConsoleApp\CSharpCal\obj\Debug\CSharpCal.dll
+D:\workspace\netProject\FirstConsoleApp\CSharpCal\obj\Debug\CSharpCal.pdb

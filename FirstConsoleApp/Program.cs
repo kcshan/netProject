@@ -18,8 +18,11 @@ namespace FirstConsoleApp
 
             MyCal cal = new MyCal();
             int result = cal.Add(10, 20);
-
             Console.WriteLine("10 + 20 = " + result);
+
+            CSharpCal.MyCal myCal = new CSharpCal.MyCal();
+            result = myCal.Add(20, 20);
+            Console.WriteLine("20 + 20 = " + result);
 
             Console.Read();
         }

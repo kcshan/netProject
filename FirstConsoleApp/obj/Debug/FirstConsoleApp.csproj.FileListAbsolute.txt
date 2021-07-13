@@ -9,3 +9,5 @@ D:\workspace\netProject\FirstConsoleApp\bin\Debug\VBCaluator.dll
 D:\workspace\netProject\FirstConsoleApp\bin\Debug\VBCaluator.pdb
 D:\workspace\netProject\FirstConsoleApp\bin\Debug\VBCaluator.xml
 D:\workspace\netProject\FirstConsoleApp\obj\Debug\FirstConsoleApp.csproj.CopyComplete
+D:\workspace\netProject\FirstConsoleApp\bin\Debug\CSharpCal.dll
+D:\workspace\netProject\FirstConsoleApp\bin\Debug\CSharpCal.pdb
