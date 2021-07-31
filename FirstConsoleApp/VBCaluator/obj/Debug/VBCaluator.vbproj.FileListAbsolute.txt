@@ -7,3 +7,4 @@ D:\workspace\netProject\FirstConsoleApp\VBCaluator\obj\Debug\VBCaluator.vbproj.C
 D:\workspace\netProject\FirstConsoleApp\VBCaluator\obj\Debug\VBCaluator.dll
 D:\workspace\netProject\FirstConsoleApp\VBCaluator\obj\Debug\VBCaluator.xml
 D:\workspace\netProject\FirstConsoleApp\VBCaluator\obj\Debug\VBCaluator.pdb
+D:\workspace\netProject\FirstConsoleApp\VBCaluator\obj\Debug\VBCaluator.vbprojAssemblyReference.cache
