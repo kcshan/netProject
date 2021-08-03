@@ -17,11 +17,11 @@ namespace xiketang.com.Charpter2
             // Method4();
             // Method5();
             // Method6();
-            //  Method7();
-            //  Method8();
+            // Method7();
+            // Method8();
             // Method9();
             // Method10();
-            // Method11();
+            Method11();
             Console.Read();
         }
 
