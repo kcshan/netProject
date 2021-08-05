@@ -1,0 +1,7 @@
+D:\workspace\netProject\SecondConsoleApp\SecondConsoleApp\obj\Debug\SecondConsoleApp.csprojAssemblyReference.cache
+D:\workspace\netProject\SecondConsoleApp\SecondConsoleApp\obj\Debug\SecondConsoleApp.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\SecondConsoleApp\SecondConsoleApp\bin\Debug\SecondConsoleApp.exe.config
+D:\workspace\netProject\SecondConsoleApp\SecondConsoleApp\bin\Debug\SecondConsoleApp.exe
+D:\workspace\netProject\SecondConsoleApp\SecondConsoleApp\bin\Debug\SecondConsoleApp.pdb
+D:\workspace\netProject\SecondConsoleApp\SecondConsoleApp\obj\Debug\SecondConsoleApp.exe
+D:\workspace\netProject\SecondConsoleApp\SecondConsoleApp\obj\Debug\SecondConsoleApp.pdb
