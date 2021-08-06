@@ -14,7 +14,8 @@ namespace Teach03
             // Test2();
             // Test3();
             // Test4();
-            Test5();
+            // Test5();
+            Test6();
             Console.ReadLine();
         }
         static void Test1()
@@ -94,6 +95,32 @@ namespace Teach03
                 Console.WriteLine("需付款：" + totalMoney * 0.5);
             }
             if (totalMoney < 1000)
+            {
+                Console.WriteLine("需付款：" + totalMoney);
+            }
+            Console.ReadLine();
+        }
+        static void Test6()
+        {
+            Console.WriteLine("请输入客户消费金额");
+            int totalMoney = int.Parse(Console.ReadLine());
+            if (totalMoney >= 1000 && totalMoney < 2000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.8);
+            }
+            else if (totalMoney >= 2000 && totalMoney < 3000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.7);
+            }
+            else if (totalMoney >= 3000 && totalMoney < 4000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.6);
+            }
+            else if (totalMoney >= 4000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.5);
+            }
+            else
             {
                 Console.WriteLine("需付款：" + totalMoney);
             }
