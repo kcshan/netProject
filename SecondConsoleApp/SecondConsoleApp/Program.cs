@@ -10,13 +10,15 @@ namespace Teach03
     {
         static void Main(string[] args)
         {
-            // Test1();
-            // Test2();
-            // Test3();
-            // Test4();
-            // Test5();
-            Test6();
-            Console.ReadLine();
+			// Test1();
+			// Test2();
+			// Test3();
+			// Test4();
+			// Test5();
+			// Test6();
+			// Test7();
+			Test8();
+			Console.ReadLine();
         }
         static void Test1()
         {
@@ -126,5 +128,49 @@ namespace Teach03
             }
             Console.ReadLine();
         }
-    }
+		static void Test7()
+		{
+			Console.WriteLine("请输入客户消费金额：");
+			int totalMoney = int.Parse(Console.ReadLine());
+			if (totalMoney >= 1000)
+			{
+				Console.WriteLine("需付款：" + totalMoney * 0.8);
+				Console.WriteLine("您的会员类型：");
+				string customerType = Console.ReadLine();
+				if (customerType == "普通")
+				{
+					Console.WriteLine("同时送您100元代金券");
+				}
+				else if (customerType == "vip")
+				{
+					Console.WriteLine("同时送您200元代金券");
+				}
+			}
+			else
+			{
+				Console.WriteLine("需付款：" + totalMoney);
+			}
+			Console.ReadLine();
+		}
+		static void Test8()
+		{
+			Console.WriteLine("请输入您购买的课程类型");
+			string band = Console.ReadLine();
+			switch (band)
+			{
+				case "A":
+					Console.WriteLine("可以抽奖Ipad");
+					break;
+				case "B":
+					Console.WriteLine("可以抽奖键盘鼠标");
+					break;
+				case "C":
+					Console.WriteLine("可以抽奖智能手机");
+					break;
+				default:
+					Console.WriteLine("无抽奖参与");
+					break;
+			}
+		}
+	}
 }
