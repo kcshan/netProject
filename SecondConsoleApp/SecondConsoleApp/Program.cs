@@ -17,7 +17,10 @@ namespace Teach03
 			// Test5();
 			// Test6();
 			// Test7();
-			Test8();
+			// Test8();
+			// Test9();
+			// Test10();
+			Test11();
 			Console.ReadLine();
         }
         static void Test1()
@@ -170,6 +173,40 @@ namespace Teach03
 				default:
 					Console.WriteLine("无抽奖参与");
 					break;
+			}
+		}
+		static void Test9()
+		{
+			for (int i = 0; i < 3; i++)
+			{
+				Console.WriteLine($"这是第{i + 1}遍练习", i + 1);
+			}
+			Console.ReadLine();
+		}
+		static void Test10()
+		{
+			for (int a = 1; a <= 9; a++) // 外循环，控制行数
+			{
+				for (int b = 1; b <= a; b++) // 内循环，控制每行的内容
+				{
+					Console.Write($"{a}*{b}={a * b}\t");
+				}
+				Console.WriteLine();
+			}
+		}
+		static void Test11()
+		{
+			for (int a = 1; a <= 5; a++)  // 外循环，控制行数
+			{
+				for (int b = 1; b <= 5 - a; b++) // 内循环，打印空白
+				{
+					Console.Write(" ");
+				}
+				for (int c = 1; c < 2 * a; c++) // 内循环，打印星号
+				{
+					Console.Write("*");
+				}
+				Console.Write("\n");
 			}
 		}
 	}
