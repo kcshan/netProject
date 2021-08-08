@@ -20,7 +20,9 @@ namespace Teach03
 			// Test8();
 			// Test9();
 			// Test10();
-			Test11();
+			// Test11();
+			// Test12();
+			Test13();
 			Console.ReadLine();
         }
         static void Test1()
@@ -208,6 +210,30 @@ namespace Teach03
 				}
 				Console.Write("\n");
 			}
+		}
+		static void Test12()
+		{
+			Console.WriteLine("请输入你现在每分钟打字个数：");
+			int count = int.Parse(Console.ReadLine());
+			while (count < 120)
+			{
+				Console.WriteLine("请继续练习！你没有达标！");
+				Console.WriteLine("-------------------------");
+				Console.WriteLine("练习后，继续测试打字个数为：");
+				count = int.Parse(Console.ReadLine());
+			}
+			Console.WriteLine("您已经达标，可以参加比赛！");
+		}
+		static void Test13()
+		{
+			int count = 0;
+			do
+			{
+				Console.WriteLine("请输入你现在每分钟打字个数：");
+				count = int.Parse(Console.ReadLine());
+			} while (count < 120);
+
+	Console.WriteLine("您已经达标，可以参加比赛！");
 		}
 	}
 }
