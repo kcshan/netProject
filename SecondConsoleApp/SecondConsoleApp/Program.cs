@@ -10,20 +10,21 @@ namespace Teach03
     {
         static void Main(string[] args)
         {
-			// Test1();
-			// Test2();
-			// Test3();
-			// Test4();
-			// Test5();
-			// Test6();
-			// Test7();
-			// Test8();
-			// Test9();
-			// Test10();
-			// Test11();
-			// Test12();
-			Test13();
-			Console.ReadLine();
+            // Test1();
+            // Test2();
+            // Test3();
+            // Test4();
+            // Test5();
+            // Test6();
+            // Test7();
+            // Test8();
+            // Test9();
+            // Test10();
+            // Test11();
+            // Test12();
+            // Test13();
+            Test14();
+            Console.ReadLine();
         }
         static void Test1()
         {
@@ -233,7 +234,25 @@ namespace Teach03
 				count = int.Parse(Console.ReadLine());
 			} while (count < 120);
 
-	Console.WriteLine("您已经达标，可以参加比赛！");
+	        Console.WriteLine("您已经达标，可以参加比赛！");
 		}
-	}
+        static void Test14()
+        {
+            int count = 0;
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine($"第{i + 1}个产品开始检验");
+                Console.WriteLine("合格吗？y/n");
+                if (Console.ReadLine() == "n")
+                {
+                    count++;
+                }
+                if (count == 5)
+                {
+                    Console.WriteLine("====这批产品不合格====");
+                    break;
+                }
+            }
+        }
+    }
 }
