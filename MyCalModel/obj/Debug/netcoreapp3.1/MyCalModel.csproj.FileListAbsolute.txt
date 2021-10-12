@@ -1,8 +1,0 @@
-D:\workspace\netProject\MyCalModel\bin\Debug\netcoreapp3.1\MyCalModel.deps.json
-D:\workspace\netProject\MyCalModel\bin\Debug\netcoreapp3.1\MyCalModel.dll
-D:\workspace\netProject\MyCalModel\bin\Debug\netcoreapp3.1\MyCalModel.pdb
-D:\workspace\netProject\MyCalModel\obj\Debug\netcoreapp3.1\MyCalModel.AssemblyInfoInputs.cache
-D:\workspace\netProject\MyCalModel\obj\Debug\netcoreapp3.1\MyCalModel.AssemblyInfo.cs
-D:\workspace\netProject\MyCalModel\obj\Debug\netcoreapp3.1\MyCalModel.csproj.CoreCompileInputs.cache
-D:\workspace\netProject\MyCalModel\obj\Debug\netcoreapp3.1\MyCalModel.dll
-D:\workspace\netProject\MyCalModel\obj\Debug\netcoreapp3.1\MyCalModel.pdb

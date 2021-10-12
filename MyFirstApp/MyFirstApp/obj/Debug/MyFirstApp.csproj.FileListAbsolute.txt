@@ -1,0 +1,7 @@
+D:\workspace\netProject\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.exe.config
+D:\workspace\netProject\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.exe
+D:\workspace\netProject\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.pdb
+D:\workspace\netProject\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.csprojAssemblyReference.cache
+D:\workspace\netProject\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.exe
+D:\workspace\netProject\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.pdb
