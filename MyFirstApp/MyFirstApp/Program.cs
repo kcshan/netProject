@@ -26,6 +26,8 @@ namespace MyFirstApp
             Console.Read();
         }
 
+        #region 这是自定义的方法
+
         /// <summary>
         /// 俩个整数相加
         /// </summary>
@@ -36,5 +38,7 @@ namespace MyFirstApp
         {
             return a + b;
         }
+
+        #endregion 
     }
 }
