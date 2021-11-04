@@ -10,19 +10,39 @@ namespace Demo
     {
         static void Main(string[] args)
         {
-            // 【声明变量】，即“根据数据类型在内存申请空间”
-            int age;
+            #region 变量
+            //// 【声明变量】，即“根据数据类型在内存申请空间”
+            //int age;
 
-            // 【给变量赋值】，即“将数据存储至对应的内存空间”
-            age = 20;
+            //// 【给变量赋值】，即“将数据存储至对应的内存空间”
+            //age = 20;
 
-            // 【也可以同时声明和赋值】
-            string name = "小王";
+            //// 【也可以同时声明和赋值】
+            //string name = "小王";
 
-            // 【使用变量】，即取出数据使用
-            Console.WriteLine("我叫" + name + " 今年" + age + "岁");
+            //// 【使用变量】，即取出数据使用
+            //Console.WriteLine("我叫" + name + " 今年" + age + "岁");
+            #endregion
+
+            #region 常量
+            //const double PAI = 3.14; // 常量要求定义的时候必须初始化
+            ////PAI = PAI + 1;
+            //double result = PAI * (5 * 5);
+            //Console.WriteLine("圆的面积：" + result);
+            #endregion
+
+            #region 枚举
+            Genders gender = Genders.Male;
+            Console.WriteLine((int)gender);
+
+            #endregion
+
             Console.ReadLine();
+        }
 
+        public enum Genders
+        {
+            Male=0, Female=1
         }
     }
 }
