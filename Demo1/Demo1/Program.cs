@@ -252,6 +252,16 @@ namespace Demo1
 
             #endregion
 
+            #region  解决程序错误的步骤1
+            //Console.WriteLine("请看下面5行文字：");
+            //int i = 1;
+            //while (i < 5)
+            //{
+            //    Console.WriteLine("第{0}行：C#语言非常强大！", i);
+            //    i++;
+            //}
+            #endregion
+
             #region MyRegion
 
             #endregion
