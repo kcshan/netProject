@@ -142,23 +142,62 @@ namespace Demo1
             #endregion
 
             #region switch选择结构
-            Console.WriteLine("请输入您购买的电器品牌：");
-            string band = Console.ReadLine();
-            switch (band)
-            {
-                case "A":
-                    Console.WriteLine("赠送您热水器一台");
-                    break;
-                case "B":
-                    Console.WriteLine("赠送您手机一部");
-                    break;
-                case "C":
-                    Console.WriteLine("赠送您音响一套");
-                    break;
-                default:
-                    Console.WriteLine("赠送您热水器一台");
-                    break;
-            }
+            //Console.WriteLine("请输入您购买的电器品牌：");
+            //string band = Console.ReadLine();
+            //switch (band)
+            //{
+            //    case "A":
+            //        Console.WriteLine("赠送您热水器一台");
+            //        break;
+            //    case "B":
+            //        Console.WriteLine("赠送您手机一部");
+            //        break;
+            //    case "C":
+            //        Console.WriteLine("赠送您音响一套");
+            //        break;
+            //    default:
+            //        Console.WriteLine("赠送您热水器一台");
+            //        break;
+            //}
+            #endregion
+
+            #region for循环
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    Console.WriteLine("这是第{0}圈", i + 1);
+            //}
+            #endregion
+
+            #region for循环与程序逻辑1
+            //for (int a = 1; a <= 9; a++)
+            //{
+            //    for (int b = 1; b <= a; b++)
+            //    {
+            //        Console.Write("{0}*{1}={2}\t", a, b, a * b);
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.ReadKey();
+            #endregion
+
+            #region for循环与程序逻辑2
+            //for (int i = 1; i <= 5; i++) // 外循环控制行数
+            //{
+            //    for (int a = 1; a <= 5 - i; a++) // 内循环，打印的空白
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int b = 1; b < 2 * i; b++) // 内循环，打印星号
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.Write("\n");
+            //}
+            //Console.ReadKey();
+            #endregion
+
+            #region MyRegion
+
             #endregion
 
             Console.ReadLine();
