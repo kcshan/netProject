@@ -196,6 +196,62 @@ namespace Demo1
             //Console.ReadKey();
             #endregion
 
+            #region while循环1
+            //Console.WriteLine("您以前长跑最短时间：");
+            //int times = int.Parse(Console.ReadLine());
+            //while (times > 10)
+            //{
+            //    Console.WriteLine("请坚持锻炼，您没有达标！");
+            //    Console.WriteLine("-------------------");
+            //    Console.WriteLine("锻炼后的测试时间：");
+            //    times = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("恭喜您达标了");
+            #endregion
+
+            #region do while循序1
+            //int times = 0;
+            //do
+            //{
+            //    Console.Write("您本次长跑所用时间：");
+            //    times = int.Parse(Console.ReadLine());
+            //} while (times > 10);
+            //Console.WriteLine("您达标了");
+
+            #endregion
+
+            #region 用break跳出整个循环
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    Console.WriteLine("这是第{0}圈", i + 1);
+            //    Console.Write("您还能坚持住吗? y/n: ");
+            //    if (Console.ReadLine() == "n")
+            //    {
+            //        Console.WriteLine("您退出了");
+            //        break;
+            //    }
+            //}
+            #endregion
+
+            #region 用continue跳出本次循环
+            //int count = 0;
+            //while (count < 6)
+            //{
+            //    Console.Write("当前队员的成绩：");
+            //    int score = int.Parse(Console.ReadLine());
+            //    if (score < 60)
+            //    {
+            //        continue;
+            //    }
+            //    // 登记学员工作
+            //    count++;
+            //    Console.Write("该队员姓名：");
+            //    Console.ReadLine();
+            //}
+            //Console.Write("队员已招满！");
+
+            #endregion
+
             #region MyRegion
 
             #endregion
