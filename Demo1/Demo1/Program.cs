@@ -363,6 +363,25 @@ namespace Demo1
 
             #endregion
 
+            #region 关于字符串的拼接
+            //string strText = "我正在学习";
+            //strText += ".NET平台";
+            //strText += "与C#开发语言";
+            //Console.WriteLine(strText);
+            #endregion
+
+            #region StringBuilder类的使用
+            //StringBuilder myBuilder = new StringBuilder();
+            //myBuilder.Append("我正在学习");
+            //myBuilder.Append(".NET平台");
+            //myBuilder.Append("与C#开发语言");
+            //Console.WriteLine(myBuilder.ToString());
+            #endregion
+
+            #region 
+
+            #endregion
+
             Console.ReadLine();
         }
     }
