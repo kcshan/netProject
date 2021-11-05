@@ -67,8 +67,98 @@ namespace Demo1
             //Console.WriteLine("a>b比较结果是："+result);
             #endregion
 
-            #region
+            #region 多重if 选择结构1
+            //Console.WriteLine("请输入客户消费金额：");
+            //int totalMoney = int.Parse(Console.ReadLine());
+            //if (totalMoney >= 1000 && totalMoney < 2000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.8);
+            //}
+            //if (totalMoney >= 2000 && totalMoney < 3000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.7);
+            //}
+            //if (totalMoney >= 3000 && totalMoney < 4000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.6);
+            //}
+            //if (totalMoney >= 4000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.5);
+            //}
+            //if (totalMoney < 1000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney);
+            //}
+            #endregion
 
+            #region 多重if 选择结构2
+            //Console.WriteLine("请输入客户消费金额：");
+            //int totalMoney = int.Parse(Console.ReadLine());
+            //if (totalMoney >= 1000 && totalMoney < 2000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.8);
+            //}
+            //else if (totalMoney >= 2000 && totalMoney < 3000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.7);
+            //}
+            //else if (totalMoney >= 3000 && totalMoney < 4000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.6);
+            //}
+            //else if (totalMoney >= 4000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.5);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney);
+            //}
+            #endregion
+
+            #region 选择结构的嵌套1
+            //Console.WriteLine("请输入客户消费金额：");
+            //int totalMoney = int.Parse(Console.ReadLine());
+            //if (totalMoney >= 1000)
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney * 0.8);
+            //    Console.Write("您的会员类型是： ");
+            //    string customerType = Console.ReadLine();
+            //    if (customerType == "普通")
+            //    {
+            //        Console.WriteLine("同时送您100代金券");
+            //    }
+            //    else if (customerType == "vip")
+            //    {
+            //        Console.WriteLine("同时送您200代金券");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("需付款：" + totalMoney);
+            //}
+
+            #endregion
+
+            #region switch选择结构
+            Console.WriteLine("请输入您购买的电器品牌：");
+            string band = Console.ReadLine();
+            switch (band)
+            {
+                case "A":
+                    Console.WriteLine("赠送您热水器一台");
+                    break;
+                case "B":
+                    Console.WriteLine("赠送您手机一部");
+                    break;
+                case "C":
+                    Console.WriteLine("赠送您音响一套");
+                    break;
+                default:
+                    Console.WriteLine("赠送您热水器一台");
+                    break;
+            }
             #endregion
 
             Console.ReadLine();
