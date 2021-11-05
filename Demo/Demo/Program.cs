@@ -158,10 +158,6 @@ namespace Demo
             Console.WriteLine("a={0} b={1}", a, b);
             #endregion
 
-            #region
-
-            #endregion
-
             Console.ReadLine();
         }
 
