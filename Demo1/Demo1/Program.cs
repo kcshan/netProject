@@ -262,7 +262,104 @@ namespace Demo1
             //}
             #endregion
 
-            #region MyRegion
+            #region 字符串处理1
+            //string email = "xiaoqiang@qq.com";
+            //int position = email.IndexOf("@");
+            //Console.WriteLine("@所在位置索引:" + position);
+            #endregion
+
+            #region 字符串处理2
+            //string userPwd = "12345678";
+            //int pwdLength = userPwd.Length;
+            //Console.WriteLine("密码长度：{0}", pwdLength);
+            #endregion
+
+            #region 字符串处理3
+            //string name1 = "xiaowang";
+            //string name2 = "xiaowang";
+            //string name3 = "wang";
+            //Console.WriteLine(name1 == name2);
+            //Console.WriteLine(name1.Equals(name2));
+            //Console.WriteLine(name2 == name3);
+            //Console.WriteLine(name2.Equals(name3));
+            #endregion
+
+            #region 字符串处理4
+            //string email = "xiaoqiang@qq.com";
+            //int position = email.IndexOf("@");
+            //string userName = email.Substring(0, position);
+            //Console.WriteLine("邮箱用户名：" + userName);
+            //string emailType = email.Substring(position);
+            //Console.WriteLine("邮箱类型：" + emailType);
+
+            #endregion
+
+            #region 字符串处理5
+            //string name = "小刘";
+            //Console.WriteLine("我的名字是：" + name + ",我的年龄是：" + 20);
+
+            //string name1 = "小刘";
+            //Console.WriteLine("我的名字是：{0},我的年龄是：{1}", name1, 20);
+
+            //string name2 = "小刘";
+            //string info = "我的名字是：{0},我的年龄是：{1}";
+            //info = string.Format(info, name1, 20);
+            //Console.WriteLine(info);
+
+            #endregion
+
+            #region 字符串处理6
+            //string moneyTotal = string.Format("总金额：{0:C3}", 255555);
+            //Console.WriteLine(moneyTotal);
+
+            //string str1 = string.Format("{0:D3}", 5000);
+            //Console.WriteLine(str1);
+
+            //string str2 = string.Format("{0:F3}", 5000);
+            //Console.WriteLine(str2);
+
+            //string str3 = string.Format("{0:N3}", 250000);
+            //Console.WriteLine(str3);
+
+            //string str4 = string.Format("{0:P3}", 0.25755);
+            //Console.WriteLine(str4);
+
+            //string str5 = string.Format("{0:X000}", 12);
+            //Console.WriteLine(str5);
+            #endregion
+
+            #region 字符串处理7
+            //string name = "";
+            //if (name == "")
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //if (name.Equals(string.Empty))
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //if (name.Length == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            #endregion
+
+            #region 字符串处理8
+            //string name1 = " xiaowang ";
+            //name1 = name1.Trim();
+            //Console.WriteLine("--name1:{0}--",name1);
+
+            //string name2 = "xiaowang";
+            //name2 = name2.ToUpper();
+            //Console.WriteLine("--name2:{0}--", name2);
+
+            //string name3 = "XIAOWANG";
+            //name3 = name3.ToLower();
+            //Console.WriteLine("--name3:{0}--", name3);
+
+            //string name4 = "http://www.baidu.com/detail?user=abc";
+            //int position = name4.LastIndexOf(".");
+            //Console.WriteLine("--name4:{0}--", position);
 
             #endregion
 
