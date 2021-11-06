@@ -378,10 +378,69 @@ namespace Demo1
             //Console.WriteLine(myBuilder.ToString());
             #endregion
 
-            #region 
+            #region 数组使用概述
+            //// 【1】声明数组
+            //int[] scores;
+
+            //// 【2】分配空间
+            //scores = new int[5];
+
+            //// 【3】赋值
+            //scores[0] = 67;
+
+            //// 【4】处理数据
+            //scores[0] = scores[0] + 5;
+
+            //// 数组声明同时初始化的三种情况
+            //int[] netScore1 = new int[3] { 67, 89, 78 };
+            //int[] netScore2 = new int[] { 67, 89, 78 };
+            //int[] netScore3 = { 67, 89, 78 };
+            #endregion
+
+            #region 数组应用
+            //// 声明数组，并赋值
+            //int[] netScore = new int[] { 67, 89, 78, 69, 95 };
+            //int sumScore = 0;
+            //// 使用for循环读取数组元素
+            //for (int i = 0; i < netScore.Length; i++)
+            //{
+            //    // sumScore = sumScore + netScore[i];
+            //    sumScore += netScore[i];
+            //}
+            //int avgScore = sumScore / netScore.Length;
+            //Console.WriteLine("学员平均成绩：{0}", avgScore);
 
             #endregion
 
+            #region 数组遍历的新方法foreach
+            //// 声明数组，并赋值
+            //int[] netScore = new int[] { 67, 89, 78, 69, 95 };
+            //int sumScore = 0;
+            //// 使用for循环读取数组元素
+            //foreach ( int score in netScore)
+            //{
+            //    sumScore += score;
+            //}
+            //int avgScore = sumScore / netScore.Length;
+            //Console.WriteLine("学员平均成绩：{0}", avgScore);
+            #endregion
+
+            #region 字符串的处理（补充）
+            //// 使用空字符分割字符串
+            //string name1 = "x i a o w a n g";
+            //string[] letterArray = name1.Split();
+            //// 使用逗号分割字符串
+            //string name2 = "小王,小刘,小江";
+            //string[] nameList = name2.Split(',');
+            //// 将分割后的字符串使用下划线连接在一起
+            //string name3 = string.Join("_", nameList);
+            //Console.WriteLine(letterArray.Length);
+            //Console.WriteLine(name3);
+            #endregion
+
+            #region 
+
+            #endregion
             Console.ReadLine();
         }
     }
