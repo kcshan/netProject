@@ -438,9 +438,36 @@ namespace Demo1
             //Console.WriteLine(name3);
             #endregion
 
+            #region 值类型变量1
+            //int wangScore = 90;
+            //int zhangScore = wangScore;
+            //Console.WriteLine("小王成绩：{0},小张成绩：{1}", wangScore, zhangScore);
+
+            //// 修改小张的成绩
+            //zhangScore += 5;
+            //Console.WriteLine("修改后俩人的成绩如下：");
+            //Console.WriteLine("小王成绩：{0}, 小张成绩: {1}", wangScore, zhangScore);
+
+            #endregion
+
+            #region 引用类型变量1
+            //int[] score = { 90, 90 };
+            //Console.WriteLine("审阅前二人成绩：小王:{0}, 小张:{1}", score[0], score[1]);
+
+            //// 修改小张的成绩
+            //int[] editedScore = score;
+            //editedScore[1] += 5;
+
+            //Console.WriteLine("修改后二人成绩：小王: {0}, 小张: {1}", editedScore[0], editedScore[1]);
+            //Console.WriteLine("-------------------");
+            //Console.WriteLine("审阅前二人成绩：小王:{0}, 小张:{1}", score[0], score[1]);
+
+            #endregion
+
             #region 
 
             #endregion
+
             Console.ReadLine();
         }
     }
