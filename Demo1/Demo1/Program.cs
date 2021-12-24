@@ -464,10 +464,6 @@ namespace Demo1
 
             #endregion
 
-            #region 
-
-            #endregion
-
             Console.ReadLine();
         }
     }

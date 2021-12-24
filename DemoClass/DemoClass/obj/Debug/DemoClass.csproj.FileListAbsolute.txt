@@ -1,0 +1,7 @@
+D:\workspace\netProject\DemoClass\DemoClass\bin\Debug\DemoClass.exe.config
+D:\workspace\netProject\DemoClass\DemoClass\bin\Debug\DemoClass.exe
+D:\workspace\netProject\DemoClass\DemoClass\bin\Debug\DemoClass.pdb
+D:\workspace\netProject\DemoClass\DemoClass\obj\Debug\DemoClass.csprojAssemblyReference.cache
+D:\workspace\netProject\DemoClass\DemoClass\obj\Debug\DemoClass.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\DemoClass\DemoClass\obj\Debug\DemoClass.exe
+D:\workspace\netProject\DemoClass\DemoClass\obj\Debug\DemoClass.pdb
