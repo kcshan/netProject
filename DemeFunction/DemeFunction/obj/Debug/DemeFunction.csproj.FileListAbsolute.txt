@@ -1,0 +1,7 @@
+D:\workspace\netProject\DemeFunction\DemeFunction\bin\Debug\DemeFunction.exe.config
+D:\workspace\netProject\DemeFunction\DemeFunction\bin\Debug\DemeFunction.exe
+D:\workspace\netProject\DemeFunction\DemeFunction\bin\Debug\DemeFunction.pdb
+D:\workspace\netProject\DemeFunction\DemeFunction\obj\Debug\DemeFunction.csprojAssemblyReference.cache
+D:\workspace\netProject\DemeFunction\DemeFunction\obj\Debug\DemeFunction.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\DemeFunction\DemeFunction\obj\Debug\DemeFunction.exe
+D:\workspace\netProject\DemeFunction\DemeFunction\obj\Debug\DemeFunction.pdb
