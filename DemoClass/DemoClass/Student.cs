@@ -15,6 +15,40 @@ namespace DemoClass
         private int studentId;
         // 字段：学员姓名
         private string studentName = string.Empty;
+        // 字段：年龄
+        private DateTime birthday;
+
+        public DateTime Birthday
+        {
+            get { return birthday; }
+            set { birthday = value; }
+        }
+
+        //private int age;
+
+        //// 属性：年龄
+        //public int age
+        //{
+        //    get { return age; }
+        //    set
+        //    {
+        //        if (value < 18)
+        //        {
+        //            age = 18;
+        //        }
+        //        else
+        //        {
+        //            age = value;
+        //        }
+        //    }
+
+        // 没有私有字段的属性
+        public int Age
+        {
+            get { return DateTime.Now.Year - birthday.Year; }
+        }
+
+        //}
         // 属性：学号
         public int StudentId
         {
