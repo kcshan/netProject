@@ -1,0 +1,7 @@
+D:\workspace\netProject\DemoJSQ\DemoJSQ\bin\Debug\DemoJSQ.exe.config
+D:\workspace\netProject\DemoJSQ\DemoJSQ\bin\Debug\DemoJSQ.exe
+D:\workspace\netProject\DemoJSQ\DemoJSQ\bin\Debug\DemoJSQ.pdb
+D:\workspace\netProject\DemoJSQ\DemoJSQ\obj\Debug\DemoJSQ.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\DemoJSQ\DemoJSQ\obj\Debug\DemoJSQ.exe
+D:\workspace\netProject\DemoJSQ\DemoJSQ\obj\Debug\DemoJSQ.pdb
+D:\workspace\netProject\DemoJSQ\DemoJSQ\obj\Debug\DemoJSQ.csprojAssemblyReference.cache
