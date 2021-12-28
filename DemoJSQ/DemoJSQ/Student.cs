@@ -25,8 +25,16 @@ namespace DemoJSQ
             //this.StudentName = stuName;
             this.Age = age;
         }
+        public Student(int stuId, string stuName, DateTime birthday)
+            : this(stuId, stuName)
+        {
+            //this.StudentId = stuId;
+            //this.StudentName = stuName;
+            this.Birthday = birthday;
+        }
         public int StudentId { get; set; }
         public string StudentName { get; set; }
         public int Age { get; set; }
+        public DateTime Birthday { get; set; }
     }
 }

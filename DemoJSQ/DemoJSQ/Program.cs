@@ -20,20 +20,37 @@ namespace DemoJSQ
         //    Console.ReadLine();
         //}
 
+        //static void Main(string[] args)
+        //{
+        //    Student objStu1 = new Student();
+        //    objStu1.StudentId = 1004;
+        //    objStu1.StudentName = "你好";
+
+        //    Student objStu2 = new Student(1005, "李明");
+
+        //    Student objStu3 = new Student(1006, "王五", 18);
+
+        //    Console.WriteLine("学生姓名：{0} 学号：{1}", objStu1.StudentName, objStu1.StudentId);
+        //    Console.WriteLine("学生姓名：{0} 学号：{1}", objStu2.StudentName, objStu2.StudentId);
+        //    Console.WriteLine("学生姓名：{0} 学号：{1} 年龄：{2}", objStu3.StudentName, objStu3.StudentId, objStu3.Age);
+        //    Console.ReadLine();
+        //}
+
         static void Main(string[] args)
         {
             Student objStu1 = new Student();
             objStu1.StudentId = 1004;
             objStu1.StudentName = "你好";
+            objStu1.Birthday = Convert.ToDateTime("1994-09-19");
 
-            Student objStu2 = new Student(1005, "李明");
+            Student objStu2 = new Student(1004, "你好", Convert.ToDateTime("1994-09-19"));
 
-            Student objStu3 = new Student(1006, "王五", 18);
-
-            Console.WriteLine("学生姓名：{0} 学号：{1}", objStu1.StudentName, objStu1.StudentId);
-            Console.WriteLine("学生姓名：{0} 学号：{1}", objStu2.StudentName, objStu2.StudentId);
-            Console.WriteLine("学生姓名：{0} 学号：{1} 年龄：{2}", objStu3.StudentName, objStu3.StudentId, objStu3.Age);
-            Console.ReadLine();
+            Student objStu3 = new Student()
+            {
+                Birthday = Convert.ToDateTime("1994-09-19"),
+                StudentId = 1005,
+                StudentName = "小红"
+            };
         }
     }
 }
