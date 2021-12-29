@@ -51,6 +51,19 @@ namespace DemoJSQ
                 StudentId = 1005,
                 StudentName = "小红"
             };
+
+            Student objStu4 = objStu3; // 将第三个对象赋值给第四个对象
+            objStu4.StudentName = "小赵";
+            objStu4.StudentId = 1009;
+
+            Console.WriteLine("objStu3.StudentId：{0} objStu4.StudentId：{1}", objStu3.StudentId, objStu4.StudentId);
+
+            int a = 50;
+            int b = a;
+            a += 5;
+            Console.WriteLine("a={0}, b={1}", a, b);
+
+            Console.ReadLine();
         }
     }
 }
