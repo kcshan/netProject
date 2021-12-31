@@ -8,6 +8,7 @@ namespace DemoJSQ
 {
     class Calculator
     {
+        //private int test;
         public Calculator()
         {
         }
@@ -41,5 +42,9 @@ namespace DemoJSQ
         {
             return a + b + c;
         }
+        //public string getStudent()
+        //{
+        //    return "你好";
+        //}
     }
 }
