@@ -1,0 +1,7 @@
+D:\workspace\netProject\DemoGeneric\DemoGeneric\bin\Debug\DemoGeneric.exe.config
+D:\workspace\netProject\DemoGeneric\DemoGeneric\bin\Debug\DemoGeneric.exe
+D:\workspace\netProject\DemoGeneric\DemoGeneric\bin\Debug\DemoGeneric.pdb
+D:\workspace\netProject\DemoGeneric\DemoGeneric\obj\Debug\DemoGeneric.csprojAssemblyReference.cache
+D:\workspace\netProject\DemoGeneric\DemoGeneric\obj\Debug\DemoGeneric.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\DemoGeneric\DemoGeneric\obj\Debug\DemoGeneric.exe
+D:\workspace\netProject\DemoGeneric\DemoGeneric\obj\Debug\DemoGeneric.pdb
