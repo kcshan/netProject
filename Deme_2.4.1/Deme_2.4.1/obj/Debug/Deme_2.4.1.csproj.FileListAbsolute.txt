@@ -1,0 +1,7 @@
+D:\workspace\netProject\Deme_2.4.1\Deme_2.4.1\bin\Debug\Deme_2.4.1.exe.config
+D:\workspace\netProject\Deme_2.4.1\Deme_2.4.1\bin\Debug\Deme_2.4.1.exe
+D:\workspace\netProject\Deme_2.4.1\Deme_2.4.1\bin\Debug\Deme_2.4.1.pdb
+D:\workspace\netProject\Deme_2.4.1\Deme_2.4.1\obj\Debug\Deme_2.4.1.csprojAssemblyReference.cache
+D:\workspace\netProject\Deme_2.4.1\Deme_2.4.1\obj\Debug\Deme_2.4.1.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\Deme_2.4.1\Deme_2.4.1\obj\Debug\Deme_2.4.1.exe
+D:\workspace\netProject\Deme_2.4.1\Deme_2.4.1\obj\Debug\Deme_2.4.1.pdb

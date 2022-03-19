@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deme_2.4.1", "Deme_2.4.1\Deme_2.4.1.csproj", "{14C5B427-9FE2-4AE8-8BC1-0A39B42F27FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14C5B427-9FE2-4AE8-8BC1-0A39B42F27FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C5B427-9FE2-4AE8-8BC1-0A39B42F27FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C5B427-9FE2-4AE8-8BC1-0A39B42F27FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C5B427-9FE2-4AE8-8BC1-0A39B42F27FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4A827B1-E8A1-45BC-B141-283089738094}
+	EndGlobalSection
+EndGlobal
