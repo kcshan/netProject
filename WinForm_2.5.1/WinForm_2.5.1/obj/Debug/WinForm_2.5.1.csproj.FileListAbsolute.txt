@@ -1,0 +1,10 @@
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\bin\Debug\WinForm_2.5.1.exe.config
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\bin\Debug\WinForm_2.5.1.exe
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\bin\Debug\WinForm_2.5.1.pdb
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\obj\Debug\WinForm_2.5.1.csprojAssemblyReference.cache
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\obj\Debug\WinForm_2._5._1.FrmMain.resources
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\obj\Debug\WinForm_2._5._1.Properties.Resources.resources
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\obj\Debug\WinForm_2.5.1.csproj.GenerateResource.cache
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\obj\Debug\WinForm_2.5.1.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\obj\Debug\WinForm_2.5.1.exe
+D:\workspace\netProject\WinForm_2.5.1\WinForm_2.5.1\obj\Debug\WinForm_2.5.1.pdb
