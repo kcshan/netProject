@@ -1,0 +1,16 @@
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\bin\Debug\StudentManagerPro.exe.config
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\bin\Debug\StudentManagerPro.exe
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\bin\Debug\StudentManagerPro.pdb
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\bin\Debug\DAL.dll
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\bin\Debug\Models.dll
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\bin\Debug\DAL.pdb
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\bin\Debug\Models.pdb
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.csprojAssemblyReference.cache
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.Properties.Resources.resources
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.csproj.GenerateResource.cache
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.csproj.CopyComplete
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.exe
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.pdb
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.FrmMain.resources
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.FrmUserLogin.resources
