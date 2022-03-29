@@ -16,7 +16,7 @@ namespace StudentManagerPro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmUserLogin());
+            Application.Run(new FrmMain());
         }
     }
 }
