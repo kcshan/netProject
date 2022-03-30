@@ -14,3 +14,4 @@ D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentMan
 D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.pdb
 D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.FrmMain.resources
 D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.FrmUserLogin.resources
+D:\workspace\netProject\StudentManagerPro\StudentManagerPro\obj\Debug\StudentManagerPro.FrmAddStudent.resources
