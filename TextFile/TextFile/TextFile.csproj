@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45DAFAA5-4CFE-4135-9408-78FBC8A4AC26}</ProjectGuid>
+    <ProjectGuid>{BE8F55BA-EECB-456C-8C62-32AD909CEC0A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>StudentManagerPro</RootNamespace>
-    <AssemblyName>StudentManagerPro</AssemblyName>
+    <RootNamespace>TextFile</RootNamespace>
+    <AssemblyName>TextFile</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,43 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAddStudent.cs">
+    <Compile Include="FrmFile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddStudent.Designer.cs">
-      <DependentUpon>FrmAddStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmStudentManage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmStudentManage.Designer.cs">
-      <DependentUpon>FrmStudentManage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmUserLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmUserLogin.Designer.cs">
-      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    <Compile Include="FrmFile.Designer.cs">
+      <DependentUpon>FrmFile.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAddStudent.resx">
-      <DependentUpon>FrmAddStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmStudentManage.resx">
-      <DependentUpon>FrmStudentManage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmUserLogin.resx">
-      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FrmFile.resx">
+      <DependentUpon>FrmFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,7 +65,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,19 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{7f9f246e-a7af-4ea7-a1f9-813b211d55a5}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{6fb084da-62b6-4bb9-afaa-426f84daab59}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\login.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

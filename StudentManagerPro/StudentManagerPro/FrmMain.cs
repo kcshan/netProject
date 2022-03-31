@@ -56,7 +56,8 @@ namespace StudentManagerPro
 
         private void btnStuManage_Click(object sender, EventArgs e)
         {
-
+            ClosePreForm(); // 关闭已经存在的窗体
+            OpenForm(new FrmStudentManage());
         }
     }
 }

@@ -110,7 +110,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 567);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 680);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1095, 22);
             this.statusStrip1.TabIndex = 1;
@@ -153,7 +153,7 @@
             this.spContainer.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("spContainer.Panel2.BackgroundImage")));
             this.spContainer.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.spContainer.Panel2.Controls.Add(this.label1);
-            this.spContainer.Size = new System.Drawing.Size(1095, 542);
+            this.spContainer.Size = new System.Drawing.Size(1095, 655);
             this.spContainer.SplitterDistance = 300;
             this.spContainer.TabIndex = 2;
             // 
@@ -197,7 +197,7 @@
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.ImageIndex = 10;
             this.button8.ImageList = this.imageList1;
-            this.button8.Location = new System.Drawing.Point(183, 495);
+            this.button8.Location = new System.Drawing.Point(183, 606);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(85, 28);
             this.button8.TabIndex = 1;
@@ -236,7 +236,7 @@
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.ImageIndex = 11;
             this.button7.ImageList = this.imageList1;
-            this.button7.Location = new System.Drawing.Point(27, 495);
+            this.button7.Location = new System.Drawing.Point(27, 606);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(85, 28);
             this.button7.TabIndex = 1;
@@ -338,7 +338,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 589);
+            this.ClientSize = new System.Drawing.Size(1095, 702);
             this.Controls.Add(this.spContainer);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
