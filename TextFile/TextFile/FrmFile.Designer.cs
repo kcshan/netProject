@@ -60,6 +60,7 @@
             this.btnDelAllFiles.TabIndex = 3;
             this.btnDelAllFiles.Text = "删除指定目录下的所有子目录和文件";
             this.btnDelAllFiles.UseVisualStyleBackColor = true;
+            this.btnDelAllFiles.Click += new System.EventHandler(this.btnDelAllFiles_Click);
             // 
             // btnCreate
             // 
@@ -69,6 +70,7 @@
             this.btnCreate.TabIndex = 2;
             this.btnCreate.Text = "在指定目录下创建一个子目录";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnShowAllFiles
             // 
@@ -78,6 +80,7 @@
             this.btnShowAllFiles.TabIndex = 0;
             this.btnShowAllFiles.Text = "显示指定目录下的所有文件";
             this.btnShowAllFiles.UseVisualStyleBackColor = true;
+            this.btnShowAllFiles.Click += new System.EventHandler(this.btnShowAllFiles_Click);
             // 
             // groupBox3
             // 
@@ -100,6 +103,7 @@
             this.btnShowSubDir.TabIndex = 1;
             this.btnShowSubDir.Text = "显示指定目录下的所有子目录";
             this.btnShowSubDir.UseVisualStyleBackColor = true;
+            this.btnShowSubDir.Click += new System.EventHandler(this.btnShowSubDir_Click);
             // 
             // label1
             // 

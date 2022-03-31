@@ -114,5 +114,44 @@ namespace TextFile
                 MessageBox.Show("文件不存在！");
             }
         }
+
+        // 获取当前目录下的文件
+        private void btnShowAllFiles_Click(object sender, EventArgs e)
+        {
+            string[] files = Directory.GetFiles("E:\\test");
+            this.txtContent.Clear();
+            foreach (string item in files)
+            {
+                this.txtContent.Text += item + "\r\n";
+            }
+        }
+
+        // 获取指定目录下的所有子目录
+        private void btnShowSubDir_Click(object sender, EventArgs e)
+        {
+            string[] dirs = Directory.GetDirectories("E:\\test");
+            this.txtContent.Clear();
+            foreach (string item in dirs)
+            {
+                this.txtContent.Text += item + "\r\n";
+            }
+        }
+
+        // 创建目录
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            Directory.CreateDirectory("E:\\test\\newTest");
+        }
+
+        // 删除指定目录下的所有子目录和文件
+        private void btnDelAllFiles_Click(object sender, EventArgs e)
+        {
+            // 要求目录必须为空
+            Directory.Delete("E:\\test\\newTest");
+
+            // 使用DirectoryInfo对象，可以删除不为空的目录
+            //DirectoryInfo dir = new DirectoryInfo("E:\\test\\test");
+            //dir.Delete(true);
+        }
     }
 }
