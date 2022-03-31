@@ -141,7 +141,7 @@
             this.txtTo.Name = "txtTo";
             this.txtTo.Size = new System.Drawing.Size(125, 21);
             this.txtTo.TabIndex = 4;
-            this.txtTo.Text = "D:\\\\myfile.txt";
+            this.txtTo.Text = "E:\\\\test1.txt";
             // 
             // btnDel
             // 
@@ -151,6 +151,7 @@
             this.btnDel.TabIndex = 5;
             this.btnDel.Text = "删除文件";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnRemove
             // 
@@ -160,6 +161,7 @@
             this.btnRemove.TabIndex = 5;
             this.btnRemove.Text = "移动文件";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnCopy
             // 
@@ -169,6 +171,7 @@
             this.btnCopy.TabIndex = 5;
             this.btnCopy.Text = "复制文件";
             this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
             // txtFrom
             // 

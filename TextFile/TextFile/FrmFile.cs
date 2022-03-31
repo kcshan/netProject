@@ -77,5 +77,42 @@ namespace TextFile
             // 【5】关闭文件流
             fs.Close();
         }
+
+        // 删除文件
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            File.Delete(this.txtFrom.Text);
+        }
+
+        // 复制文件
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(this.txtTo.Text.Trim()))
+            {
+                File.Delete(this.txtTo.Text);
+            }
+            File.Copy(this.txtFrom.Text.Trim(), this.txtTo.Text.Trim());
+        }
+
+        // 移动文件
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            // 首先判断目标路径文件是否存在（如果文件存在，直接复制会出现错误）
+            if (File.Exists(this.txtTo.Text.Trim()))
+            {
+                // 删除文件
+                File.Delete(this.txtTo.Text.Trim()); 
+            }
+            // 如果当前文件存在则移动
+            if (File.Exists(this.txtFrom.Text.Trim()))
+            {
+                // 移动文件
+                File.Move(this.txtFrom.Text.Trim(), this.txtTo.Text.Trim());
+            }
+            else
+            {
+                MessageBox.Show("文件不存在！");
+            }
+        }
     }
 }
