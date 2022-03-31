@@ -1,0 +1,10 @@
+D:\workspace\netProject\TextFileObj\TextFileObj\bin\Debug\TextFileObj.exe.config
+D:\workspace\netProject\TextFileObj\TextFileObj\bin\Debug\TextFileObj.exe
+D:\workspace\netProject\TextFileObj\TextFileObj\bin\Debug\TextFileObj.pdb
+D:\workspace\netProject\TextFileObj\TextFileObj\obj\Debug\TextFileObj.csprojAssemblyReference.cache
+D:\workspace\netProject\TextFileObj\TextFileObj\obj\Debug\TextFileObj.FrmFile.resources
+D:\workspace\netProject\TextFileObj\TextFileObj\obj\Debug\TextFileObj.Properties.Resources.resources
+D:\workspace\netProject\TextFileObj\TextFileObj\obj\Debug\TextFileObj.csproj.GenerateResource.cache
+D:\workspace\netProject\TextFileObj\TextFileObj\obj\Debug\TextFileObj.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\TextFileObj\TextFileObj\obj\Debug\TextFileObj.exe
+D:\workspace\netProject\TextFileObj\TextFileObj\obj\Debug\TextFileObj.pdb
