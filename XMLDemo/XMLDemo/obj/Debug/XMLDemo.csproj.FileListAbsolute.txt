@@ -1,0 +1,10 @@
+D:\workspace\netProject\XMLDemo\XMLDemo\bin\Debug\XMLDemo.exe.config
+D:\workspace\netProject\XMLDemo\XMLDemo\bin\Debug\XMLDemo.exe
+D:\workspace\netProject\XMLDemo\XMLDemo\bin\Debug\XMLDemo.pdb
+D:\workspace\netProject\XMLDemo\XMLDemo\obj\Debug\XMLDemo.csprojAssemblyReference.cache
+D:\workspace\netProject\XMLDemo\XMLDemo\obj\Debug\XMLDemo.FrmReadXML.resources
+D:\workspace\netProject\XMLDemo\XMLDemo\obj\Debug\XMLDemo.Properties.Resources.resources
+D:\workspace\netProject\XMLDemo\XMLDemo\obj\Debug\XMLDemo.csproj.GenerateResource.cache
+D:\workspace\netProject\XMLDemo\XMLDemo\obj\Debug\XMLDemo.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\XMLDemo\XMLDemo\obj\Debug\XMLDemo.exe
+D:\workspace\netProject\XMLDemo\XMLDemo\obj\Debug\XMLDemo.pdb
