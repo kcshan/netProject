@@ -40,7 +40,11 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRead = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSerialize = new System.Windows.Forms.Button();
+            this.btnDeserialize = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtBirthday
@@ -138,11 +142,43 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "使用文本保存对象状态";
             // 
+            // btnSerialize
+            // 
+            this.btnSerialize.Location = new System.Drawing.Point(46, 23);
+            this.btnSerialize.Name = "btnSerialize";
+            this.btnSerialize.Size = new System.Drawing.Size(100, 23);
+            this.btnSerialize.TabIndex = 0;
+            this.btnSerialize.Text = "序列化对象";
+            this.btnSerialize.UseVisualStyleBackColor = true;
+            this.btnSerialize.Click += new System.EventHandler(this.btnSerialize_Click);
+            // 
+            // btnDeserialize
+            // 
+            this.btnDeserialize.Location = new System.Drawing.Point(190, 23);
+            this.btnDeserialize.Name = "btnDeserialize";
+            this.btnDeserialize.Size = new System.Drawing.Size(100, 23);
+            this.btnDeserialize.TabIndex = 1;
+            this.btnDeserialize.Text = "反序列化对象";
+            this.btnDeserialize.UseVisualStyleBackColor = true;
+            this.btnDeserialize.Click += new System.EventHandler(this.btnDeserialize_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnSerialize);
+            this.groupBox2.Controls.Add(this.btnDeserialize);
+            this.groupBox2.Location = new System.Drawing.Point(25, 172);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(336, 62);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "使用序列化存取对象";
+            // 
             // FrmFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 194);
+            this.ClientSize = new System.Drawing.Size(406, 260);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtBirthday);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtGender);
@@ -157,6 +193,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "对象状态的保存";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,6 +212,9 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnRead;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnSerialize;
+        private System.Windows.Forms.Button btnDeserialize;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

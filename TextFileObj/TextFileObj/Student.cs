@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace TextFileObj
 {
+    // 对象可序列号标记
+    [Serializable]
     class Student
     {
         public string Name { get; set; }
