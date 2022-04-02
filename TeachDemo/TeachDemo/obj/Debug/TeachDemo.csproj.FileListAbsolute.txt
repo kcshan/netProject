@@ -9,3 +9,4 @@ D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.csproj.CoreCompi
 D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.exe
 D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.pdb
 D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.FrmMain.resources
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.FrmAddProduct.resources
