@@ -8,3 +8,4 @@ D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.csproj.GenerateR
 D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.exe
 D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.pdb
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.FrmMain.resources
