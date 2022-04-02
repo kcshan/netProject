@@ -1,0 +1,10 @@
+D:\workspace\netProject\TeachDemo\TeachDemo\bin\Debug\TeachDemo.exe.config
+D:\workspace\netProject\TeachDemo\TeachDemo\bin\Debug\TeachDemo.exe
+D:\workspace\netProject\TeachDemo\TeachDemo\bin\Debug\TeachDemo.pdb
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.csprojAssemblyReference.cache
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.FrmAdminLogin.resources
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.Properties.Resources.resources
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.csproj.GenerateResource.cache
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.exe
+D:\workspace\netProject\TeachDemo\TeachDemo\obj\Debug\TeachDemo.pdb
