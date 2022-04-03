@@ -221,6 +221,7 @@
             this.btnProductManage.Text = "      商 品 信 息 管 理";
             this.btnProductManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductManage.UseVisualStyleBackColor = false;
+            this.btnProductManage.Click += new System.EventHandler(this.btnProductManage_Click);
             // 
             // FrmMain
             // 
