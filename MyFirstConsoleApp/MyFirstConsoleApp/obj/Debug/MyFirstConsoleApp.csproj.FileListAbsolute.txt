@@ -5,3 +5,7 @@ D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\MyFirstCon
 D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\MyFirstConsoleApp.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\MyFirstConsoleApp.exe
 D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\MyFirstConsoleApp.pdb
+D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\VBCal.dll
+D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\VBCal.pdb
+D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\VBCal.xml
+D:\workspace\netProject\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\MyFirstConsoleApp.csproj.CopyComplete

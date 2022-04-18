@@ -1,0 +1,10 @@
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\bin\Debug\VBCal.dll
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\bin\Debug\VBCal.pdb
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\bin\Debug\VBCal.xml
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\obj\Debug\VBCal.vbprojAssemblyReference.cache
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\obj\Debug\VBCal.Resources.resources
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\obj\Debug\VBCal.vbproj.GenerateResource.cache
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\obj\Debug\VBCal.vbproj.CoreCompileInputs.cache
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\obj\Debug\VBCal.dll
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\obj\Debug\VBCal.xml
+D:\workspace\netProject\MyFirstConsoleApp\VBCal\obj\Debug\VBCal.pdb

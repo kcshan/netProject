@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstConsoleApp", "MyFirstConsoleApp\MyFirstConsoleApp.csproj", "{6F728DED-7451-462C-9EF2-FE9DB627AD96}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBCal", "VBCal\VBCal.vbproj", "{A41CEE1E-15FB-4530-99E6-9873DFC1B136}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6F728DED-7451-462C-9EF2-FE9DB627AD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F728DED-7451-462C-9EF2-FE9DB627AD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F728DED-7451-462C-9EF2-FE9DB627AD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41CEE1E-15FB-4530-99E6-9873DFC1B136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41CEE1E-15FB-4530-99E6-9873DFC1B136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41CEE1E-15FB-4530-99E6-9873DFC1B136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41CEE1E-15FB-4530-99E6-9873DFC1B136}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
