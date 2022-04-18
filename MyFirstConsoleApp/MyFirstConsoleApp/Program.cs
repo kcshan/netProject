@@ -11,6 +11,8 @@ namespace MyFirstConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("hello world");
+            int a = 20;
+            Console.WriteLine(a);
             Console.ReadLine();
         }
     }
