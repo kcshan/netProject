@@ -14,13 +14,16 @@ namespace thinger.csharpbase
     {
         static void Main(string[] args)
         {
-            Test1();
+            //Test1();
 
             int result = Add(10,20);
 
-            Console.Read();
+            Test2();
+
+            Console.ReadLine();
         }
 
+        #region 01.变量的基本使用
         static void Test1()
         {
             int score; // 变量类型 变量名称
@@ -45,5 +48,26 @@ namespace thinger.csharpbase
         {
             return a + b;
         }
+        #endregion
+
+        #region 02.控制台的使用技巧
+
+        static void Test2()
+        {
+            //int score = 90;
+            //string name = "jack";
+
+            Console.Write("请输入学员姓名：");
+            string name = Console.ReadLine();
+            Console.Write("请输入学员成绩：");
+            int score = int.Parse(Console.ReadLine()); // 90
+
+            //Console.WriteLine(90);
+            //Console.WriteLine("C#编程");
+
+            Console.WriteLine("姓名：" + name + " 成绩：" + score);
+
+        }
+        #endregion
     }
 }
