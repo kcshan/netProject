@@ -1,0 +1,7 @@
+D:\workspace\netProject\thinger.csharpbase\thinger.csharpbase\bin\Debug\thinger.csharpbase.exe.config
+D:\workspace\netProject\thinger.csharpbase\thinger.csharpbase\bin\Debug\thinger.csharpbase.exe
+D:\workspace\netProject\thinger.csharpbase\thinger.csharpbase\bin\Debug\thinger.csharpbase.pdb
+D:\workspace\netProject\thinger.csharpbase\thinger.csharpbase\obj\Debug\thinger.csharpbase.csprojAssemblyReference.cache
+D:\workspace\netProject\thinger.csharpbase\thinger.csharpbase\obj\Debug\thinger.csharpbase.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\thinger.csharpbase\thinger.csharpbase\obj\Debug\thinger.csharpbase.exe
+D:\workspace\netProject\thinger.csharpbase\thinger.csharpbase\obj\Debug\thinger.csharpbase.pdb
