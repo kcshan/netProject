@@ -34,7 +34,9 @@ namespace thinger.csharpbase
 
             //Test9();
 
-            Test10();
+            //Test10();
+
+            Test11();
 
             Console.ReadLine();
         }
@@ -273,6 +275,10 @@ namespace thinger.csharpbase
             Console.WriteLine($"自动实现类型转换： 100.5 + 200 = {result}");
         }
 
+        #endregion
+
+        #region 07.强制类型转换：值类型之间
+
         static void Test9()
         {
             double a = 100.5;
@@ -300,5 +306,26 @@ namespace thinger.csharpbase
 
         #endregion
 
+        #region 08.强制类型转换：字符串和值类型之间
+
+        static void Test11()
+        {
+            // 只有"有效的"字符串类型，才能转换成对应的值类型。有效的：也就是说字符串内容必须符合目标类型
+            double a = double.Parse("100.5");
+            float b = float.Parse("20.36");
+            int c = int.Parse("500");
+
+            //int d = int.Parse("19.56"); // 这种方式会出错，因为"19.56"不是int的有效表示形式
+            int d = (int)double.Parse("19.56");
+            double e = double.Parse("100");
+
+            // 总结转换方法： 目标类型 变量 = 目标类型.Parse("字符串的有效表示");
+
+            // -> 值类型 ==> 字符串
+            string s1 = a.ToString();
+            string s2 = b.ToString();
+        }
+
+        #endregion
     }
 }
