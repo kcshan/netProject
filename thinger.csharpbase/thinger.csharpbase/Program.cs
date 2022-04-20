@@ -28,7 +28,9 @@ namespace thinger.csharpbase
 
             //Test6();
 
-            Test7();
+            //Test7();
+
+            Test8();
 
             Console.ReadLine();
         }
@@ -253,6 +255,29 @@ namespace thinger.csharpbase
             Console.WriteLine(a <= c);
         }
 
+        #endregion
+
+        #region 06.自动类型转换：值类型之间
+
+        static void Test8()
+        {
+            //Console.WriteLine("*****************************");
+            double a = 100.5;
+            int b = 200;
+
+            double result = a + b; // 这个转换是自动完成的
+            Console.WriteLine($"自动实现类型转换： 100.5 + 200 = {result}");
+        }
+
+        static void Test9()
+        {
+            //Console.WriteLine("*****************************");
+            double a = 100.5;
+            int b = 200;
+
+            //int result = a + b; // 这个转换是自动完成的
+            //Console.WriteLine($"自动实现类型转换： 100.5 + 200 = {result}");
+        }
         #endregion
 
     }
