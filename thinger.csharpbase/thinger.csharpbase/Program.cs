@@ -46,7 +46,9 @@ namespace thinger.csharpbase
 
             //Test15();
 
-            Test16();
+            //Test16();
+
+            Test17();
 
             Console.ReadLine();
         }
@@ -479,6 +481,28 @@ namespace thinger.csharpbase
             if (!isAdmin)
             {
                 Console.WriteLine("当前用户不是管理员！");
+            }
+        }
+
+        #endregion
+
+        #region 11.if条件选择与逻辑运算符
+
+        static void Test17()
+        {
+            Console.Write("请输入笔试成绩：");
+            int writeScore = Convert.ToInt32(Console.ReadLine());
+            Console.Write("请输入机试成绩：");
+            int labScore = int.Parse(Console.ReadLine());
+
+            if (writeScore >= 80 && labScore >= 90)
+            {
+                Console.WriteLine("考试成绩优秀！");
+            }
+
+            if ((writeScore == 100 && labScore > 60) || (writeScore > 60 && labScore == 100))
+            {
+                Console.WriteLine("考试成绩优秀！");
             }
         }
 
