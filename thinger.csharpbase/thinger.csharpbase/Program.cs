@@ -22,7 +22,9 @@ namespace thinger.csharpbase
 
             //Test3();
 
-            Test4();
+            //Test4();
+
+            Test5();
 
             Console.ReadLine();
         }
@@ -171,6 +173,28 @@ namespace thinger.csharpbase
 
             int h = 500;
             Console.WriteLine($"--h后的值：{--h}");
+        }
+
+        #endregion
+
+        #region 04.本阶段练习
+
+        static void Test5()
+        {
+            Console.Write("请输入第1位学员的成绩：");
+            int stuScore1 = int.Parse(Console.ReadLine());
+            Console.Write("请输入第2位学员的成绩：");
+            int stuScore2 = int.Parse(Console.ReadLine());
+            Console.Write("请输入第3位学员的成绩：");
+            int stuScore3 = int.Parse(Console.ReadLine());
+            Console.Write("请输入第4位学员的成绩：");
+            int stuScore4 = int.Parse(Console.ReadLine());
+            Console.Write("请输入第5位学员的成绩：");
+            int stuScore5 = int.Parse(Console.ReadLine());
+
+            int avgScore = (stuScore1 + stuScore2 + stuScore3 + stuScore4 + stuScore5) / 5;
+            // 计算平均成绩
+            Console.WriteLine($"5位学员的平均成绩：{avgScore}");
         }
 
         #endregion
