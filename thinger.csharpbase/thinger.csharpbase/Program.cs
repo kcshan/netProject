@@ -26,7 +26,9 @@ namespace thinger.csharpbase
 
             //Test5();
 
-            Test6();
+            //Test6();
+
+            Test7();
 
             Console.ReadLine();
         }
@@ -217,6 +219,38 @@ namespace thinger.csharpbase
             Console.WriteLine(info1);
             Console.WriteLine(info2);
             Console.WriteLine(info3);
+        }
+
+        #endregion
+
+        #region 05.比较运算符
+
+        static void Test7()
+        {
+            string name1 = "james";
+            string name2 = "jacks";
+            string name3 = "james";
+
+            bool result1 = name1.Equals(name2);
+            Console.WriteLine(name1 == name2);
+            Console.WriteLine(name1 == name3);
+            Console.WriteLine(name1 != name2);
+
+            //if (name1 == name2)
+            //{
+
+            //}
+            Console.WriteLine("*****************************");
+            int a = 100;
+            int b = 200;
+            int c = b - a;
+
+            Console.WriteLine(a == b);
+            Console.WriteLine(a == c);
+            Console.WriteLine(b != c);
+
+            Console.WriteLine(a > b);
+            Console.WriteLine(a <= c);
         }
 
         #endregion
