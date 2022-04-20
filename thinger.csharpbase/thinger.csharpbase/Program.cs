@@ -36,7 +36,9 @@ namespace thinger.csharpbase
 
             //Test10();
 
-            Test11();
+            //Test11();
+
+            Test12();
 
             Console.ReadLine();
         }
@@ -324,6 +326,23 @@ namespace thinger.csharpbase
             // -> 值类型 ==> 字符串
             string s1 = a.ToString();
             string s2 = b.ToString();
+        }
+
+        #endregion
+
+        #region 09.强制类型转换：万能转换器Convert
+
+        static void Test12()
+        {
+            double a = Convert.ToDouble("100.5");
+            float b = Convert.ToSingle("20.36");
+            int c = Convert.ToInt32("500");
+            DateTime dt = Convert.ToDateTime("2022-10-01");
+
+            int d = Convert.ToInt32(a);
+
+            // 注意：以上情况，同样要求，字符串或者要转换的类型，必须是目标类型的有效表示形式
+            c = (int)Convert.ToInt32("500.5");
         }
 
         #endregion
