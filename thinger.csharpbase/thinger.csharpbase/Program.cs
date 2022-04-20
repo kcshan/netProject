@@ -20,7 +20,9 @@ namespace thinger.csharpbase
 
             //Test2();
 
-            Test3();
+            //Test3();
+
+            Test4();
 
             Console.ReadLine();
         }
@@ -101,6 +103,76 @@ namespace thinger.csharpbase
         }
         #endregion
 
+        #region 03.赋值和算数运算符的使用
 
+        static void Test4()
+        {
+            int a = 10;
+            int b = 20;
+            int result = a + b;
+            Console.WriteLine($"a + b = {result}");
+
+            result = a - b;
+            Console.WriteLine($"a - b = {result}");
+
+            result = a * b;
+            Console.WriteLine($"a * b = {result}");
+
+            result = a / b;
+            Console.WriteLine($"a / b = {result}");
+
+            result = b / a;
+            Console.WriteLine($"b / a = {result}");
+
+            int c = 12;
+            result = c % a;
+            Console.WriteLine($"c % a = {result}");
+
+            result = a * (b - c) / 2;
+            Console.WriteLine($"a * (b - c) / 2 = {result}");
+
+            a = a + b;
+            Console.WriteLine("a=" + a);
+            a = a - b;
+            Console.WriteLine("a=" + a);
+
+            a += b;
+            Console.WriteLine($"a += b -> {a}");
+
+            a -= b;
+            Console.WriteLine($"a -= b -> {a}");
+
+            a *= b;
+            Console.WriteLine($"a *= b -> {a}");
+
+            int d = 100;
+            d++;
+            Console.WriteLine($"d = {d}");
+
+            d--;
+            Console.WriteLine($"d = {d}");
+
+            ++d;
+            Console.WriteLine($"d = {d}");
+
+            --d;
+            Console.WriteLine($"d = {d}");
+
+            int i = 200;
+            Console.WriteLine($"i++后的值：{i++}");
+            Console.WriteLine($"i的值：{i}");
+
+            int e = 300;
+            Console.WriteLine($"++e后的值：{++e}");
+
+            int f = 400;
+            Console.WriteLine($"f++后的值：{f--}");
+            Console.WriteLine($"f的值：{f}");
+
+            int h = 500;
+            Console.WriteLine($"--h后的值：{--h}");
+        }
+
+        #endregion
     }
 }
