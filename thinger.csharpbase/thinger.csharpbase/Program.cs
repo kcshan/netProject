@@ -92,6 +92,12 @@ namespace thinger.csharpbase
 
             // WriteLine方法支持直接的格式化方法
             Console.WriteLine("姓名：{0} 成绩：{1} 班级：{2}", name, score, className);
+
+            Console.WriteLine("**********下面是新特性的格式化方法***********");
+            // 使用新特性简化字符串格式化
+            string info3 = $"姓名: {name} 成绩: {score} 班级：{className}";
+            Console.WriteLine(info3);
+            Console.WriteLine($"姓名: {name} 成绩: {score} 班级：{className}");
         }
         #endregion
 
