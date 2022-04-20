@@ -48,7 +48,11 @@ namespace thinger.csharpbase
 
             //Test16();
 
-            Test17();
+            //Test17();
+
+            //Test18();
+
+            Test19();
 
             Console.ReadLine();
         }
@@ -504,6 +508,59 @@ namespace thinger.csharpbase
             {
                 Console.WriteLine("考试成绩优秀！");
             }
+        }
+
+        #endregion
+
+        #region 12.if-else 条件选择与三元运算符
+
+        static void Test18()
+        {
+            Console.Write("请输入笔试成绩：");
+            int writeScore = Convert.ToInt32(Console.ReadLine());
+            Console.Write("请输入机试成绩：");
+            int labScore = int.Parse(Console.ReadLine());
+
+            if (writeScore >= 80 && labScore >= 90)
+            {
+                Console.WriteLine("考试成绩优秀！");
+            }
+            else
+            {
+                Console.WriteLine("请继续努力哦！争取下次考试优秀！");
+            }
+        }
+
+        static void Test19()
+        {
+            Console.Write("请输入笔试成绩：");
+            int writeScore = Convert.ToInt32(Console.ReadLine());
+            Console.Write("请输入机试成绩：");
+            int labScore = int.Parse(Console.ReadLine());
+
+            string result = "";
+
+            if (writeScore > labScore)
+            {
+                result = "请加强机试练习";
+            }
+            else
+            {
+                result = "请加强笔试练习";
+            }
+
+            Console.WriteLine(result);
+            Console.WriteLine("********************");
+
+            // 三元运算符适合if-else的简单条件和简单赋值的语句
+            result = writeScore > labScore ? "请加强机试练习" : "请加强笔试练习";
+            Console.WriteLine(result);
+
+            int a = 10;
+            int b = 20;
+            int c = a - b > 0 ? a * b : a + b;
+
+            Console.WriteLine(c);
         }
 
         #endregion
