@@ -30,7 +30,11 @@ namespace thinger.csharpbase
 
             //Test7();
 
-            Test8();
+            //Test8();
+
+            //Test9();
+
+            Test10();
 
             Console.ReadLine();
         }
@@ -271,13 +275,29 @@ namespace thinger.csharpbase
 
         static void Test9()
         {
-            //Console.WriteLine("*****************************");
             double a = 100.5;
             int b = 200;
 
-            //int result = a + b; // 这个转换是自动完成的
-            //Console.WriteLine($"自动实现类型转换： 100.5 + 200 = {result}");
+            int result = (int)a + b; // 这种语法的转换，一般是值类型之间可以用。
+            Console.WriteLine($"强制类型转换一： 100.5 + 200 = {result}");
+
+            // 结论： 这种方式，会出现精度丢失！
         }
+
+        // 特别的：如果要转换的类型是object类型，也可以使用这种语法。
+        static void Test10()
+        {
+            object a = 100.5;
+            int b = 200;
+
+            int result = (int)(double)a + b; // object属于引用类型
+            Console.WriteLine($"强制类型转换二： 100.5 + 200 = {result}");
+
+            // 结论： 这种方式，会出现精度丢失！
+        }
+
+        // 总结：当我们使用（数据类型）这种强制转换方法的时候，要求被转换的变量"大类型"必须和目标大类型一致
+
         #endregion
 
     }
