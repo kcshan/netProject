@@ -24,7 +24,9 @@ namespace thinger.csharpbase
 
             //Test4();
 
-            Test5();
+            //Test5();
+
+            Test6();
 
             Console.ReadLine();
         }
@@ -197,6 +199,27 @@ namespace thinger.csharpbase
             Console.WriteLine($"5位学员的平均成绩：{avgScore}");
         }
 
+        static void Test6()
+        {
+            Console.Write("请输入第1位进入本楼的人员姓名：");
+            string name_1 = Console.ReadLine();
+            Console.Write("请输入第2位进入本楼的人员姓名：");
+            string name_2 = Console.ReadLine();
+            Console.Write("请输入第3位进入本楼的人员姓名：");
+            string name_3 = Console.ReadLine();
+
+            Console.WriteLine("*****************************");
+
+            string info1 = "刚才进出的3位人员是：" + name_1 + ";" + name_2 + ";" + name_3 + ";";
+            string info2 = "刚才进出的3位人员是：" + string.Format("{0};{1};{2};", name_1, name_2, name_3);
+            string info3 = $"刚才进出的3位人员是：{name_1};{name_2};{name_3};";
+
+            Console.WriteLine(info1);
+            Console.WriteLine(info2);
+            Console.WriteLine(info3);
+        }
+
         #endregion
+
     }
 }
