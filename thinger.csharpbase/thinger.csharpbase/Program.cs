@@ -38,7 +38,15 @@ namespace thinger.csharpbase
 
             //Test11();
 
-            Test12();
+            //Test12();
+
+            //Test13();
+
+            //Test14();
+
+            //Test15();
+
+            Test16();
 
             Console.ReadLine();
         }
@@ -343,6 +351,135 @@ namespace thinger.csharpbase
 
             // 注意：以上情况，同样要求，字符串或者要转换的类型，必须是目标类型的有效表示形式
             c = (int)Convert.ToInt32("500.5");
+        }
+
+        #endregion
+
+        #region 10.if条件选择与逻辑运算符
+
+        static void Test13()
+        {
+            Console.Write("请输入用户名：");
+            string uName = Console.ReadLine();
+            Console.Write("请输入用户密码：");
+            string uPwd = Console.ReadLine();
+
+            // 判断
+            //if (uName == null) // 在控制台输入中，如果用户什么都没有输入，返回的是空字符串，不是空值null
+            //{
+            //    Console.WriteLine("用户名不能为空!");
+            //}
+
+            // 判断字符串是空通常用下面的三种方式（注意不是null）
+            if (uName == "")
+            {
+                Console.WriteLine("【1】用户名不能为空!");
+            }
+            if (uName == string.Empty)
+            {
+                Console.WriteLine("【2】用户名不能为空!");
+            }
+            if (uName.Length == 0)
+            {
+                Console.WriteLine("【3】用户名不能为空!");
+            }
+
+            if (uName == "" || uPwd == "")
+            {
+                Console.WriteLine("用户密码不能为空！");
+            }
+            // 这种或运算符，只要检测到一个条件满足，后面的就不再检测（短路）
+        }
+
+        static void Test14()
+        {
+            Console.Write("请输入用户名：");
+            string uName = Console.ReadLine();
+            Console.Write("请输入用户密码：");
+            string uPwd = Console.ReadLine();
+
+            // 判断字符串是空通常用下面的三种方式（注意不是null）
+            if (uName == "")
+            {
+                Console.WriteLine("【1】用户名不能为空!");
+            }
+            if (uName == string.Empty)
+            {
+                Console.WriteLine("【2】用户名不能为空!");
+            }
+            if (uName.Length == 0)
+            {
+                Console.WriteLine("【3】用户名不能为空!");
+            }
+
+            if (uName != "" && uPwd != "")
+            {
+                Console.WriteLine("账号密码正确");
+            }
+        }
+
+        static void Test15()
+        {
+            Console.Write("请输入用户名：");
+            string uName = Console.ReadLine();
+            Console.Write("请输入用户密码：");
+            string uPwd = Console.ReadLine();
+
+            // 判断字符串是空通常用下面的三种方式（注意不是null）
+            if (uName == "")
+            {
+                Console.WriteLine("【1】用户名不能为空!");
+            }
+            if (uName == string.Empty)
+            {
+                Console.WriteLine("【2】用户名不能为空!");
+            }
+            if (uName.Length == 0)
+            {
+                Console.WriteLine("【3】用户名不能为空!");
+            }
+            if (uName != "" || uPwd != "")
+            {
+                if (uName == "abc" && uPwd == "123")
+                {
+                    Console.WriteLine("用户登录成功");
+                }
+            }
+        }
+
+        static void Test16()
+        {
+            Console.Write("请输入用户名：");
+            string uName = Console.ReadLine();
+            Console.Write("请输入用户密码：");
+            string uPwd = Console.ReadLine();
+            Console.Write("您是管理员吗？");
+            bool isAdmin = Convert.ToBoolean(Console.ReadLine());
+
+            // 判断字符串是空通常用下面的三种方式（注意不是null）
+            if (uName == "")
+            {
+                Console.WriteLine("【1】用户名不能为空!");
+            }
+            if (uName == string.Empty)
+            {
+                Console.WriteLine("【2】用户名不能为空!");
+            }
+            if (uName.Length == 0)
+            {
+                Console.WriteLine("【3】用户名不能为空!");
+            }
+            if (uName != "" || uPwd != "")
+            {
+                if (uName == "abc" && uPwd == "123")
+                {
+                    Console.WriteLine("用户登录成功");
+                }
+            }
+            if (!isAdmin)
+            {
+                Console.WriteLine("当前用户不是管理员！");
+            }
         }
 
         #endregion
