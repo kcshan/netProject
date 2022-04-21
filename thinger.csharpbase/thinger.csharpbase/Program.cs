@@ -82,7 +82,9 @@ namespace thinger.csharpbase
 
             //Test33();
 
-            Test34();
+            //Test34();
+
+            Test35();
 
             Console.ReadLine();
         }
@@ -843,7 +845,7 @@ namespace thinger.csharpbase
         static void Test30()
         {
             string email = "thinger@qq.com";
-            int index1 = email.IndexOf("@");
+            int index1 = email.IndexOf("@"); // 获取符合字符串条件的第一个索引的位置
             int index2 = email.IndexOf("qq.com");
 
             int index3 = email.IndexOf("qq.net"); // 这个返回-1表示没有找到
@@ -937,6 +939,28 @@ namespace thinger.csharpbase
             // 字符串我们后面在学习对象的时候，string其实是String的一个别名
             // 也就是说String对象在使用的时候必须要实例化（有具体值，不能是null）如果是null是没有办法调用方法或属性
             Console.WriteLine(name4.Equals(name1));
+        }
+
+        // 字符串处理的其他方法（简单但非常实用）
+        static void Test35()
+        {
+            // 字符串去空格的方法（我们在获取用户表单数据的时候，通常会去掉）
+            string info = "  jack";
+            Console.WriteLine(info.Length);
+            // 从当前 System.String 对象移除所有前导空白字符和尾部空白字符
+            Console.WriteLine(info.Trim().Length);
+
+            string name3 = "james";
+            string name4 = "JAMES";
+            // 把name4全部转换成小写后再比较
+            Console.WriteLine(name3.Equals(name4.ToLower()));
+            Console.WriteLine(name3.ToUpper().Equals(name4));
+
+            // 获取符合字符串条件的最后一个索引位置
+            string url = "http://xiketang.ke.qq.com/?tuin=aee16c2e";
+            Console.WriteLine(url.LastIndexOf("."));
+
+            // 关于字符串其他的方法，可以通过查看定义去了解
         }
 
         #endregion
