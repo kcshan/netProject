@@ -76,7 +76,9 @@ namespace thinger.csharpbase
 
             //Test30();
 
-            Test31();
+            //Test31();
+
+            Test32();
 
             Console.ReadLine();
         }
@@ -868,6 +870,23 @@ namespace thinger.csharpbase
             // 如果我们希望得到某一个字符串后面的全部内容，截取的位置是这个字符串索引位置+1
             string type = email.Substring(email.IndexOf("@") + 1);
             Console.WriteLine(type);
+        }
+
+        static void Test32()
+        {
+            string name1 = "jack";
+            string name2 = "jack";
+            string name3 = "james";
+            string name4 = "JAMES";
+
+            // 字符串判断是否相等，在项目中实现用户登录账号或密码判断的时候，经常使用。
+            Console.WriteLine(name1 == name2);
+            Console.WriteLine(name1.Equals(name2));
+            Console.WriteLine(name1 == name3);
+            Console.WriteLine(name3.Equals(name4)); // 字符串这种比较的方法是区分大小写的
+            Console.WriteLine(name3 == name4);
+            
+            // 提醒： ==或Equals方法默认只能比较值类型或字符串类型。对象类型（引用类型）是不能使用这种方式比较的。
         }
 
         #endregion
