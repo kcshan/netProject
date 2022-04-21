@@ -58,7 +58,9 @@ namespace thinger.csharpbase
 
             //Test21();
 
-            Test22();
+            //Test22();
+
+            Test23();
 
             Console.ReadLine();
         }
@@ -654,5 +656,33 @@ namespace thinger.csharpbase
         }
 
         #endregion
+
+        #region 14.switch分支结构
+
+        static void Test23()
+        {
+            Console.Write("请输入您购买的课程类型：");
+            string type = Console.ReadLine();
+
+            switch (type)
+            {
+                case "A":
+                    Console.WriteLine("可以抽奖安卓手机！");
+                    break;
+                case "B":
+                    Console.WriteLine("可以抽奖平板电脑！");
+                    break;
+                case "C":
+                    Console.WriteLine("可以抽奖固态硬盘！");
+                    break;
+                default:
+                    Console.WriteLine("您不能参与抽奖！");
+                    break;
+            }
+        }
+
+        #endregion
+
+
     }
 }
