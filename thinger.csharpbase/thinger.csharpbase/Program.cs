@@ -72,7 +72,9 @@ namespace thinger.csharpbase
 
             //Test28();
 
-            Test29();
+            //Test29();
+
+            Test30();
 
             Console.ReadLine();
         }
@@ -783,6 +785,10 @@ namespace thinger.csharpbase
             }            
         }
 
+        #endregion
+
+        #region 17.do while循环的使用
+
         // 把前面的while循环，其实可以改成do while
         static void Test28()
         {
@@ -820,6 +826,31 @@ namespace thinger.csharpbase
                     break;
                 }
             } while (true);
+        }
+
+        #endregion
+
+        #region 18.字符串的常用处理方法
+
+        static void Test30()
+        {
+            string email = "thinger@qq.com";
+            int index1 = email.IndexOf("@");
+            int index2 = email.IndexOf("qq.com");
+
+            int index3 = email.IndexOf("qq.net"); // 这个返回-1表示没有找到
+
+            Console.WriteLine($"{index1}\t{index2}\t{index3}");
+
+            int length = email.Length; // 获得字符串的长度是通过Length属性得到
+
+            Console.WriteLine("当前字符串的长度是：" + length);
+
+            string info = "现在大家学习的是常老师主讲的.NET/C#开发的系列课程！ ";
+
+            Console.WriteLine(info.IndexOf("常老师")); // 返回8
+
+            Console.WriteLine(info.Length); // 字符串长度是30（因为最后有一个空格）
         }
 
         #endregion
