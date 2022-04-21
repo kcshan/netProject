@@ -52,7 +52,11 @@ namespace thinger.csharpbase
 
             //Test18();
 
-            Test19();
+            //Test19();
+
+            //Test20();
+
+            Test21();
 
             Console.ReadLine();
         }
@@ -561,6 +565,62 @@ namespace thinger.csharpbase
             int c = a - b > 0 ? a * b : a + b;
 
             Console.WriteLine(c);
+        }
+
+        #endregion
+
+        #region 13.多条件选择else-if与选择嵌套
+
+        static void Test20()
+        {
+            Console.Write("请输入客户消费金额：");
+            int totalMoney = int.Parse(Console.ReadLine());
+            if (totalMoney >= 1000 && totalMoney < 2000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.8);
+            }
+            if (totalMoney >= 2000 && totalMoney < 3000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.7);
+            }
+            if (totalMoney >= 3000 && totalMoney < 4000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.6);
+            }
+            if (totalMoney >= 4000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.5);
+            }
+            if (totalMoney < 1000)
+            {
+                Console.WriteLine("需付款：" + totalMoney);
+            }
+        }
+
+        static void Test21()
+        {
+            Console.Write("请输入客户消费金额：");
+            int totalMoney = int.Parse(Console.ReadLine());
+            if (totalMoney >= 1000 && totalMoney < 2000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.8);
+            }
+            else if (totalMoney >= 2000 && totalMoney < 3000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.7);
+            }
+            else if (totalMoney >= 3000 && totalMoney < 4000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.6);
+            }
+            else if (totalMoney >= 4000)
+            {
+                Console.WriteLine("需付款：" + totalMoney * 0.5);
+            }
+            else
+            {
+                Console.WriteLine("需付款：" + totalMoney);
+            }
         }
 
         #endregion
