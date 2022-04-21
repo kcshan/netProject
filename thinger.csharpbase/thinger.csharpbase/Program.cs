@@ -74,7 +74,9 @@ namespace thinger.csharpbase
 
             //Test29();
 
-            Test30();
+            //Test30();
+
+            Test31();
 
             Console.ReadLine();
         }
@@ -851,6 +853,21 @@ namespace thinger.csharpbase
             Console.WriteLine(info.IndexOf("常老师")); // 返回8
 
             Console.WriteLine(info.Length); // 字符串长度是30（因为最后有一个空格）
+        }
+
+        static void Test31()
+        {
+            string email = "thinger@qq.com";
+            string userName = email.Substring(0, 7);
+            Console.WriteLine(userName);
+
+            // 如果我们想从某一个字符串位置之前的内容全部获取，只需要找到这个字符串的索引即可
+            string userName2 = email.Substring(0, email.IndexOf("@"));
+            Console.WriteLine(userName2);
+
+            // 如果我们希望得到某一个字符串后面的全部内容，截取的位置是这个字符串索引位置+1
+            string type = email.Substring(email.IndexOf("@") + 1);
+            Console.WriteLine(type);
         }
 
         #endregion
