@@ -80,7 +80,9 @@ namespace thinger.csharpbase
 
             //Test32();
 
-            Test33();
+            //Test33();
+
+            Test34();
 
             Console.ReadLine();
         }
@@ -910,6 +912,31 @@ namespace thinger.csharpbase
             int money = 255555;
             string moneyType = string.Format("总金额：{0:C}", money);
             Console.WriteLine(moneyType);
+        }
+
+        // 字符串空值的处理方法
+        static void Test34()
+        {
+            string name1 = ""; // 这个空字符串是占用空间的
+            string name2 = string.Empty; // 这个和上面是一样的
+            Console.WriteLine(name1.Equals(name2));
+
+            string name3; // 这个是没有赋值的过程
+            string name4 = null; // 这个存在着一个赋值的过程
+
+            //Console.WriteLine(name3 == name4); // 这个会有语法错误
+
+            Console.WriteLine(name4 == name1); // 这个是允许使用的，返回的是false
+
+            Console.WriteLine("name1.Length=" + name1.Length);
+            Console.WriteLine("name2.Length=" + name2.Length);
+
+            // 下面这个会出现错误 System.NullReferenceException: 未将对象引用设置到对象的实例
+            Console.WriteLine("name4.Length=" + name4.Length);
+
+            // 字符串我们后面在学习对象的时候，string其实是String的一个别名
+            // 也就是说String对象在使用的时候必须要实例化（有具体值，不能是null）如果是null是没有办法调用方法或属性
+            Console.WriteLine(name4.Equals(name1));
         }
 
         #endregion
