@@ -68,7 +68,11 @@ namespace thinger.csharpbase
 
             //Test26();
 
-            Test27();
+            //Test27();
+
+            //Test28();
+
+            Test29();
 
             Console.ReadLine();
         }
@@ -778,6 +782,46 @@ namespace thinger.csharpbase
                 }
             }            
         }
+
+        // 把前面的while循环，其实可以改成do while
+        static void Test28()
+        {
+            for (int i = 0; i < 3; i++) // 外层循环：控制箱数
+            {
+                int count = 0;
+                do
+                {
+                    Console.Write("当前产品是否合格？");
+                    string result = Console.ReadLine();
+                    if (result == "y" || result == "1")
+                    {
+                        count++; // 计数累计
+                        Console.WriteLine(".....放入箱中！");
+                    }
+                    else
+                    {
+                        Console.WriteLine("《剔除当前不合格产品！》");
+                    }
+                }
+                while (count < 6); // 内层循环：控制的是每箱包装的瓶数
+                Console.WriteLine($"......第{i + 1}箱包装成功！");
+            }
+            Console.WriteLine("**********订单包装数完成！");
+        }
+
+        static void Test29()
+        {
+            do
+            {
+                Console.Write("当前网络返回的数据是：");
+                if (Console.ReadLine() == "1")
+                {
+                    Console.WriteLine("******网络测试成功！");
+                    break;
+                }
+            } while (true);
+        }
+
         #endregion
     }
 }
