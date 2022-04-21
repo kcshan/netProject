@@ -60,7 +60,11 @@ namespace thinger.csharpbase
 
             //Test22();
 
-            Test23();
+            //Test23();
+
+            //Test24();
+
+            Test25();
 
             Console.ReadLine();
         }
@@ -683,6 +687,35 @@ namespace thinger.csharpbase
 
         #endregion
 
+        #region 15.for循环的使用
 
+        static void Test24()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine($"这个是我第{i + 1}次做项目");
+            }
+        }
+
+        static void Test25()
+        {
+            for (int a = 1; a <= 3; a++) // 外层循环；控制的是3次温度的显示
+            {
+                double t_sum = 0; // 用来累计温度
+
+                for (int b = 0; b < 3; b++) // 内层循环；控制的是3次采集的次数
+                {
+                    Console.Write("请输入当前温度：");
+                    t_sum += double.Parse(Console.ReadLine());
+                    if (b == 2)
+                    {
+                        double t_avg = t_sum / 3;
+                        Console.WriteLine($"**********第{a}次温度采集结果是：{t_avg}度");
+                    }
+                }
+            }
+        }
+
+        #endregion
     }
 }
