@@ -66,7 +66,9 @@ namespace thinger.csharpbase
 
             //Test25();
 
-            Test26();
+            //Test26();
+
+            Test27();
 
             Console.ReadLine();
         }
@@ -747,6 +749,35 @@ namespace thinger.csharpbase
             Console.WriteLine("**********订单包装数完成！");
         }
 
+        // 不固定箱数包装饮料
+        static void Test27()
+        {
+            int sum = 0; // 用于保存包装总数
+            while(true) // 外层循环：控制箱数（不固定）
+            {
+                int count = 0;
+                while (count < 6) // 内层循环：控制的是每箱包装的瓶数
+                {
+                    Console.Write("当前产品是否合格？");
+                    string result = Console.ReadLine();
+                    if (result != "y" && result != "1") // 如果产品不合格
+                    {
+                        Console.WriteLine("《剔除当前不合格产品！》");
+                        continue; // 放弃本次循环，开始下一次新的循环
+                    }
+                    count++; // 计数累计（循环条件的改变）
+                    Console.WriteLine(".....放入箱中！");
+                }
+                sum++;
+                Console.WriteLine($"......第{sum}箱包装成功！");
+                Console.Write("还继续打包吗？y/n");
+                if (Console.ReadLine() == "n")
+                {
+                    Console.WriteLine("**********订单包装数完成！");
+                    break; // 退出整个while循环
+                }
+            }            
+        }
         #endregion
     }
 }
