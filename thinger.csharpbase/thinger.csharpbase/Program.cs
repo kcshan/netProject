@@ -56,7 +56,9 @@ namespace thinger.csharpbase
 
             //Test20();
 
-            Test21();
+            //Test21();
+
+            Test22();
 
             Console.ReadLine();
         }
@@ -620,6 +622,34 @@ namespace thinger.csharpbase
             else
             {
                 Console.WriteLine("需付款：" + totalMoney);
+            }
+        }
+
+        static void Test22()
+        {
+            Console.Write("请输入客户消费金额：");
+            int totalMoney = int.Parse(Console.ReadLine());
+
+            if (totalMoney >= 1000)
+            {
+                int realMoney = totalMoney - 500;
+                Console.WriteLine("需要付款：" + realMoney);
+
+                Console.Write("请输入会员类型：");
+                // 再次判断
+                string customerType = Console.ReadLine();
+                if (customerType == "普通")
+                {
+                    Console.WriteLine("同时送100元代金券！");
+                }
+                else if (customerType.Equals("vip"))
+                {
+                    Console.WriteLine("同时送200元代金券！");
+                }                
+            }
+            else
+            {
+                Console.WriteLine($"需要付款：{totalMoney}");
             }
         }
 
