@@ -78,7 +78,9 @@ namespace thinger.csharpbase
 
             //Test31();
 
-            Test32();
+            //Test32();
+
+            Test33();
 
             Console.ReadLine();
         }
@@ -885,8 +887,29 @@ namespace thinger.csharpbase
             Console.WriteLine(name1 == name3);
             Console.WriteLine(name3.Equals(name4)); // 字符串这种比较的方法是区分大小写的
             Console.WriteLine(name3 == name4);
-            
+
             // 提醒： ==或Equals方法默认只能比较值类型或字符串类型。对象类型（引用类型）是不能使用这种方式比较的。
+
+            Console.WriteLine("********************");
+            int a = 20;
+            int b = 30;
+            int c = 20;
+            Console.WriteLine(a == b);
+            Console.WriteLine(b.Equals(c));
+            Console.WriteLine(a.Equals(c));
+        }
+
+        // 字符串格式化和形式扩展
+        static void Test33()
+        {
+            string name = "tom";
+            int age = 20;
+            Console.WriteLine($"学员姓名：{name} 年龄：{age}");
+            string info = string.Format("学员姓名：{0} 年龄 {1}", name, age);
+
+            int money = 255555;
+            string moneyType = string.Format("总金额：{0:C}", money);
+            Console.WriteLine(moneyType);
         }
 
         #endregion
