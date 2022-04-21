@@ -64,7 +64,9 @@ namespace thinger.csharpbase
 
             //Test24();
 
-            Test25();
+            //Test25();
+
+            Test26();
 
             Console.ReadLine();
         }
@@ -714,6 +716,35 @@ namespace thinger.csharpbase
                     }
                 }
             }
+        }
+
+        #endregion
+
+        #region 16.while循环的使用
+
+        // 按照订单箱数包装饮料
+        static void Test26()
+        {
+            for (int i = 0; i < 3; i++) // 外层循环：控制箱数
+            {
+                int count = 0;
+                while (count < 6) // 内层循环：控制的是每箱包装的瓶数
+                {
+                    Console.Write("当前产品是否合格？");
+                    string result = Console.ReadLine();
+                    if (result == "y" || result == "1")
+                    {
+                        count++; // 计数累计
+                        Console.WriteLine(".....放入箱中！");
+                    }
+                    else
+                    {
+                        Console.WriteLine("《剔除当前不合格产品！》");
+                    }
+                }
+                Console.WriteLine($"......第{i+1}箱包装成功！");
+            }
+            Console.WriteLine("**********订单包装数完成！");
         }
 
         #endregion
