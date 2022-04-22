@@ -88,7 +88,13 @@ namespace thinger.csharpbase
 
             //Test36();
 
-            Test37();
+            //Test37();
+
+            //Test38();
+
+            //Test39();
+
+            Test40();
 
             Console.ReadLine();
         }
@@ -1059,9 +1065,67 @@ namespace thinger.csharpbase
             Console.WriteLine($"for循环得到学员的平均成绩：{avgScore}");
         }
 
+        #endregion
+
+        #region 21.字符串的分隔和连接
+
         static void Test38()
         {
-            
+            string data = "AB EF HU 00"; // 使用空字符分隔的字符串
+            string[] dataArray = data.Split(); // 使用空格分隔的时候，此方法内部不需要参数。
+            string newData = string.Join("_", dataArray);
+            Console.WriteLine(newData);
+
+            Console.WriteLine("*********************");
+            // 使用逗号分隔字符串
+            data = "AB,EF,HU,00";
+            dataArray = data.Split(',');
+            newData = string.Join("&", dataArray);
+            Console.WriteLine("数组元素个数：" + dataArray.Length);
+
+            Console.WriteLine("*********************");
+            // 字符串替换
+            data = "AB,EF,HU,00";
+            string dataInfo = data.Replace(',','-');
+            Console.WriteLine(dataInfo);
+
+            // 数组使用中常见问题
+            //int[] netScore = new int[5] { 90, 56, 78 }; // 这行代码编译不通过
+            int[] netScore2 = new int[3] { 90, 56, 78 }; // 正确的写
+            //int myScore = netScore2[3]; // System.IndexOutOfRangeException:“索引超出了数组界限。”
+            // 数组界限：数组最大的索引值。-> 索引超出了数组最大的索引值。
+
+        }
+
+        #endregion
+
+        #region 22.值类型变量的使用
+
+        static void Test39()
+        {
+            int wangScore = 90;
+            int zhangScore = wangScore;
+            Console.WriteLine($"修改前二人的成绩如下：小王成绩：{wangScore} 小张成绩：{zhangScore}");
+
+            // 修改小张的成绩
+            zhangScore += 5;
+            Console.WriteLine($"修改后二人的成绩如下：小王成绩：{wangScore} 小张成绩：{zhangScore}");
+        }
+
+        // 引用类型的变量传递
+        static void Test40()
+        {
+            int[] oldScore = { 90, 90 }; // 定义数组保存小王和小张的成绩
+            Console.WriteLine($"修改前二人的成绩如下：小王成绩：{oldScore[0]} 小张成绩：{oldScore[1]}");
+
+            // 修改小张的成绩
+            int[] newScore = oldScore;
+            newScore[1] += 5;
+            Console.WriteLine($"修改后【oldScore】二人的成绩如下：小王成绩：{oldScore[0]} 小张成绩：{oldScore[1]}");
+            // 思考：上面的输出会不会是90 90
+            Console.WriteLine("********************************");
+            // 思考：上面的输出会不会是90 95
+            Console.WriteLine($"修改后【newScore】二人的成绩如下：小王成绩：{newScore[0]} 小张成绩：{newScore[1]}");
         }
 
         #endregion
