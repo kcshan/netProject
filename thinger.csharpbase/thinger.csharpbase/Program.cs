@@ -16,7 +16,7 @@ namespace thinger.csharpbase
         {
             //Test1();
 
-            int result = Add(10,20);
+            int result = Add(10, 20);
 
             //Test2();
 
@@ -86,7 +86,9 @@ namespace thinger.csharpbase
 
             //Test35();
 
-            Test36();
+            //Test36();
+
+            Test37();
 
             Console.ReadLine();
         }
@@ -673,7 +675,7 @@ namespace thinger.csharpbase
                 else if (customerType.Equals("vip"))
                 {
                     Console.WriteLine("同时送200元代金券！");
-                }                
+                }
             }
             else
             {
@@ -762,7 +764,7 @@ namespace thinger.csharpbase
                         Console.WriteLine("《剔除当前不合格产品！》");
                     }
                 }
-                Console.WriteLine($"......第{i+1}箱包装成功！");
+                Console.WriteLine($"......第{i + 1}箱包装成功！");
             }
             Console.WriteLine("**********订单包装数完成！");
         }
@@ -771,7 +773,7 @@ namespace thinger.csharpbase
         static void Test27()
         {
             int sum = 0; // 用于保存包装总数
-            while(true) // 外层循环：控制箱数（不固定）
+            while (true) // 外层循环：控制箱数（不固定）
             {
                 int count = 0;
                 while (count < 6) // 内层循环：控制的是每箱包装的瓶数
@@ -794,7 +796,7 @@ namespace thinger.csharpbase
                     Console.WriteLine("**********订单包装数完成！");
                     break; // 退出整个while循环
                 }
-            }            
+            }
         }
 
         #endregion
@@ -1011,6 +1013,30 @@ namespace thinger.csharpbase
             Console.WriteLine("*******************");
             builder3.Remove(0, builder3.ToString().IndexOf("."));
             Console.WriteLine(builder3.ToString());
+        }
+
+        #endregion
+
+        #region 20.数组Array的使用
+
+        static void Test37()
+        {
+            // 4个步骤
+            int[] scores; // 声明数组
+            scores = new int[5]; // 分配空间（具体空间一般在开发中，会根据实际情况确定）
+            scores[0] = 67;
+            scores[1] = 89;
+            scores[2] = 78;
+            scores[3] = 80;
+            scores[4] = 75;
+            // 元素操作
+            int avgScore = (scores[0] + scores[1] + scores[2] + scores[3] + scores[4]) / 5;
+            Console.WriteLine($"简单相加得到学员的平均成绩：{ avgScore }");
+
+            // 3种情况
+            int[] score1 = new int[5] { 67, 89, 78, 80, 75 };
+            int[] score2 = new int[] { 67, 89, 78, 80, 75 };
+            int[] score3 = { 67, 89, 78, 80, 75 };
         }
 
         #endregion
