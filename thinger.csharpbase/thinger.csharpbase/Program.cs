@@ -1037,6 +1037,31 @@ namespace thinger.csharpbase
             int[] score1 = new int[5] { 67, 89, 78, 80, 75 };
             int[] score2 = new int[] { 67, 89, 78, 80, 75 };
             int[] score3 = { 67, 89, 78, 80, 75 };
+
+            // 使用for循环遍历数组
+            Console.WriteLine("*******************");
+            int sumScore = 0;
+            for (int i = 0; i < score1.Length; i++)
+            {
+                sumScore += score1[i];
+            }
+            avgScore = sumScore / score1.Length;
+            Console.WriteLine($"for循环得到学员的平均成绩：{avgScore}");
+
+            // 使用foreach循环遍历数组（同样也是不用关心循环次数，但是要求循环的对象，必须有固定的循环次数）
+            // 对比： while循环，不仅不关心循环次数，而且也不关心，具体什么时候结束，因为结束是根据条件决定的
+            sumScore = 0;
+            foreach (int item in score1)
+            {
+                sumScore += item;
+            }
+            avgScore = sumScore / score1.Length;
+            Console.WriteLine($"for循环得到学员的平均成绩：{avgScore}");
+        }
+
+        static void Test38()
+        {
+            
         }
 
         #endregion
