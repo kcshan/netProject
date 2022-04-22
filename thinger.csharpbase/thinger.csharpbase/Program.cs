@@ -94,7 +94,9 @@ namespace thinger.csharpbase
 
             //Test39();
 
-            Test40();
+            //Test40();
+
+            TestString();
 
             Console.ReadLine();
         }
@@ -1126,6 +1128,15 @@ namespace thinger.csharpbase
             Console.WriteLine("********************************");
             // 思考：上面的输出会不会是90 95
             Console.WriteLine($"修改后【newScore】二人的成绩如下：小王成绩：{newScore[0]} 小张成绩：{newScore[1]}");
+        }
+
+        // 字符串在类型划分上属于引用类型，但是实际应用效果上是和值类型一样的！
+        static void TestString()
+        {
+            string teacherName = "常老师";
+            string newTeacher = teacherName;
+            newTeacher = "james";
+            Console.WriteLine(teacherName + "\t" + newTeacher );
         }
 
         #endregion
