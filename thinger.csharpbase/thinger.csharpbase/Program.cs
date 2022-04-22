@@ -98,7 +98,13 @@ namespace thinger.csharpbase
 
             //TestString();
 
-            Test41();
+            //Test41();
+
+            //Test42();
+
+            //Test43();
+
+            debugTest();
 
             Console.ReadLine();
         }
@@ -1090,7 +1096,7 @@ namespace thinger.csharpbase
             Console.WriteLine("*********************");
             // 字符串替换
             data = "AB,EF,HU,00";
-            string dataInfo = data.Replace(',','-');
+            string dataInfo = data.Replace(',', '-');
             Console.WriteLine(dataInfo);
 
             // 数组使用中常见问题
@@ -1138,7 +1144,7 @@ namespace thinger.csharpbase
             string teacherName = "常老师";
             string newTeacher = teacherName;
             newTeacher = "james";
-            Console.WriteLine(teacherName + "\t" + newTeacher );
+            Console.WriteLine(teacherName + "\t" + newTeacher);
         }
 
         #endregion
@@ -1153,6 +1159,81 @@ namespace thinger.csharpbase
             Console.WriteLine("圆的面积 = " + result);
         }
 
+        static void Test42()
+        {
+            Gender gender = Gender.Female;
+            // gender = "女";
+            Console.WriteLine((int)gender);
+        }
+
+        // 系统定义的枚举
+        static void Test43()
+        {
+            DayOfWeek week = DayOfWeek.Thursday;
+            switch (week)
+            {
+                case DayOfWeek.Sunday:
+                    Console.WriteLine("今天是星期日");
+                    break;
+                case DayOfWeek.Monday:
+                    Console.WriteLine("今天是星期一");
+                    break;
+                case DayOfWeek.Tuesday:
+                    Console.WriteLine("今天是星期二");
+                    break;
+                case DayOfWeek.Wednesday:
+                    Console.WriteLine("今天是星期三");
+                    break;
+                case DayOfWeek.Thursday:
+                    Console.WriteLine("今天是星期四");
+                    break;
+                case DayOfWeek.Friday:
+                    Console.WriteLine("今天是星期五");
+                    break;
+                case DayOfWeek.Saturday:
+                    Console.WriteLine("今天是星期六");
+                    break;
+                default:
+                    break;
+            }
+        }
+
         #endregion
+
+        #region 24.debug程序调试测试
+
+        static void debugTest()
+        {
+            Console.WriteLine("请看下面的5行文字：");
+            int i = 1;
+            Test();
+            while (i <= 5)
+            {
+                Console.WriteLine($"第{i}行：我们正在跟常老师学习C#开发语言");
+                i++;
+            }
+        }
+
+        // 打断点；预估程序可能在哪里出现问题，如果你不知道或者无法准确的判断，那么可以在程序入口处打断点！
+        // 断点方法：鼠标/F9在指定行
+        // 调试：俩个断点之间，如果不想在=再逐行调试，可以直接按F5把中间这部分代码全部跳过。
+        // 逐过程：F10，可以直接跳过某个方法的调用，而F11，如果遇到方法调用，会进入方法内部逐条语句执行。
+        // 以后大家会经常遇到：未将对引用到对象的实例！这种问题，通常都会需要调试或观察！
+
+        static void Test()
+        {
+            int a = 10;
+            int b = 20;
+            Console.WriteLine(a + b);
+
+        }
+        #endregion
+    }
+
+    // 定义性别枚举
+    public enum Gender
+    {
+        Male = 1,
+        Female = 0
     }
 }
