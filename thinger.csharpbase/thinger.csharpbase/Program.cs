@@ -96,7 +96,9 @@ namespace thinger.csharpbase
 
             //Test40();
 
-            TestString();
+            //TestString();
+
+            Test41();
 
             Console.ReadLine();
         }
@@ -1137,6 +1139,18 @@ namespace thinger.csharpbase
             string newTeacher = teacherName;
             newTeacher = "james";
             Console.WriteLine(teacherName + "\t" + newTeacher );
+        }
+
+        #endregion
+
+        #region 23.常量和枚举的使用
+
+        static void Test41()
+        {
+            const double PAI = 3.14;
+            //PAI += 1; // 常量不允许修改
+            double result = PAI * (5 * 5);
+            Console.WriteLine("圆的面积 = " + result);
         }
 
         #endregion
