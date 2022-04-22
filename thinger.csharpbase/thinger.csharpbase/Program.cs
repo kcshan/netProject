@@ -84,7 +84,9 @@ namespace thinger.csharpbase
 
             //Test34();
 
-            Test35();
+            //Test35();
+
+            Test36();
 
             Console.ReadLine();
         }
@@ -961,6 +963,54 @@ namespace thinger.csharpbase
             Console.WriteLine(url.LastIndexOf("."));
 
             // 关于字符串其他的方法，可以通过查看定义去了解
+        }
+
+        #endregion
+
+        #region 19.StringBuilder字符串的高效处理
+
+        static void Test36()
+        {
+            // 普通字符串的拼接
+            string data = string.Empty;
+            data += "AB";
+            data += "CD";
+            data += "EF";
+            Console.WriteLine(data);
+
+            // 高效字符串的组合
+            Console.WriteLine("*******************");
+            StringBuilder builder1 = new StringBuilder();
+            builder1.Append("AB");
+            builder1.Append("CD");
+            builder1.Append("EF");
+            Console.WriteLine(builder1.ToString());
+
+            Console.WriteLine("*******************");
+            builder1.Clear();
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write($"请输入第{i + 1}个数据：");
+                builder1.Append(Console.ReadLine());
+            }
+            Console.WriteLine(builder1.ToString());
+
+            Console.WriteLine("*******************");
+            StringBuilder builder2 = new StringBuilder("本期课程信息-》");
+            string teacher = "常老师";
+            string month = "3个月";
+            builder2.AppendFormat("主讲老师：{0},课程周期：{1}", teacher, month);
+            Console.WriteLine(builder2.ToString());
+
+            Console.WriteLine("*******************");
+            StringBuilder builder3 = new StringBuilder(".Net工控上位机发展势头迅猛！");
+            builder3.Insert(0, "中国的");
+            builder3.Insert(builder3.ToString().Length, "大家要加快学习速度！");
+            Console.WriteLine(builder3.ToString());
+
+            Console.WriteLine("*******************");
+            builder3.Remove(0, builder3.ToString().IndexOf("."));
+            Console.WriteLine(builder3.ToString());
         }
 
         #endregion
