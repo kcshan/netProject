@@ -9,7 +9,7 @@ namespace xiketang.com.Property
     class Course1
     {
         // C#2.0时代标准属性
-        private int courseId; // 当我们想断点观察字段的初始化过程，请务必显示的赋值
+        private int courseId = 0; // 当我们想断点观察字段的初始化过程，请务必显示的赋值
         public int CourseId
         {
             get { return courseId; }
@@ -17,7 +17,7 @@ namespace xiketang.com.Property
         }
         // C#3.0时代，对标准属性做了简化（以后，标准属性，都可以这样用）
         public string CourseName { get; set; } // 我们没有显示写出对应私有字段的，编译器都会帮我们自动生成，IL DASM中可以查看
-        
+
         // C#4.0时代，增加属性表达式（下面的写法，不是我们常用的写法）
         private int unitPrice = 4000;
         public int UnitPrice { get => unitPrice; set => unitPrice = value; }
