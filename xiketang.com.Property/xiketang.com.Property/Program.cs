@@ -13,7 +13,8 @@ namespace xiketang.com.Property
             TestClass testClass = new TestClass();
             //testClass.Dowork1();
             //testClass.Dowork2();
-            testClass.Dowork3();
+            //testClass.Dowork3();
+            testClass.Dowork4();
 
             //TestClass1 testClass1 = new TestClass1();
             //testClass1.Dowork1();
