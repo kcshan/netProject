@@ -26,7 +26,7 @@ namespace xiketang.com.Property
         }
 
         public Course(int courseId, string courseName, string type)
-            :this(courseId, courseName)
+            : this(courseId, courseName)
         {
             //this.CourseId = courseId;
             //this.CourseName = courseName;
@@ -100,7 +100,7 @@ namespace xiketang.com.Property
         {
             Course course1 = new Course();
             Console.WriteLine("[无参数构造方法]" + course1.ShowCourseInfo());
-            
+
             Course course2 = new Course(10002, "C#面向对象编程");
             Console.WriteLine("[2个参数构造方法]" + course2.ShowCourseInfo());
 
@@ -109,6 +109,25 @@ namespace xiketang.com.Property
 
             string info = $"课程名称：{course3.CourseName} 课程编号：{course3.CourseId} 课程价格：{course3.UnitPrice}";
             Console.WriteLine(info);
+
+            Course course4 = new Course();
+            course4.CourseId = 100005;
+            course4.CourseName = "新课程";
+        }
+
+        public void Dowork4()
+        {
+            Course course1 = new Course()
+            {
+                CourseId = 2000,
+                CourseName = "C#上位机课程"
+            };
+
+            //Course course2 = new Course(10002, "C#面向对象编程")
+            //{
+            //    Type = ""
+            //};
         }
     }
+
 }
