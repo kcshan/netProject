@@ -18,7 +18,8 @@ namespace xiketang.com.Property
             //testClass1.Dowork1();
 
             TestClass2 testClass2 = new TestClass2();
-            testClass2.Dowork1();
+            //testClass2.Dowork1();
+            testClass2.Dowork2();
 
             Console.ReadLine();
         }
