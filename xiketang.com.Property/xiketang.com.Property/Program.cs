@@ -10,16 +10,17 @@ namespace xiketang.com.Property
     {
         static void Main(string[] args)
         {
-            //TestClass testClass = new TestClass();
+            TestClass testClass = new TestClass();
             //testClass.Dowork1();
             //testClass.Dowork2();
+            testClass.Dowork3();
 
             //TestClass1 testClass1 = new TestClass1();
             //testClass1.Dowork1();
 
-            TestClass2 testClass2 = new TestClass2();
+            //TestClass2 testClass2 = new TestClass2();
             //testClass2.Dowork1();
-            testClass2.Dowork2();
+            //testClass2.Dowork2();
 
             Console.ReadLine();
         }

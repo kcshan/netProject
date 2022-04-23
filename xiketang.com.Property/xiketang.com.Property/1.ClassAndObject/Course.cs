@@ -11,12 +11,34 @@ namespace xiketang.com.Property
     /// </summary>
     class Course
     {
+        public Course()
+        {
+            CourseId = 10001;
+            CourseName = ".NET全栈开发、上位机开发";
+            Type = ".NET系列";
+            // 在这里还可以编写读取相关文件或者从其他数据源读取的方法或逻辑...
+        }
+
+        public Course(int courseId, string courseName)
+        {
+            this.CourseId = courseId;
+            this.CourseName = courseName;
+        }
+
+        public Course(int courseId, string courseName, string type)
+            :this(courseId, courseName)
+        {
+            //this.CourseId = courseId;
+            //this.CourseName = courseName;
+            this.Type = type;
+        }
+
         // 公有的成员变量（存储数据，或对外提供数据）
         public int CourseId;
 
         public string CourseName;
 
-        private int UnitPrice = 4000;
+        public int UnitPrice = 4000;
 
         public string Type = ".NET系列";
 
@@ -71,6 +93,21 @@ namespace xiketang.com.Property
             // 调用对象的方法
             string info = course.ShowCourseInfo();
 
+            Console.WriteLine(info);
+        }
+
+        public void Dowork3()
+        {
+            Course course1 = new Course();
+            Console.WriteLine("[无参数构造方法]" + course1.ShowCourseInfo());
+            
+            Course course2 = new Course(10002, "C#面向对象编程");
+            Console.WriteLine("[2个参数构造方法]" + course2.ShowCourseInfo());
+
+            Course course3 = new Course(10003, "C#面向对象", ".NET开发系列");
+            Console.WriteLine("[3个参数构造方法]" + course3.ShowCourseInfo());
+
+            string info = $"课程名称：{course3.CourseName} 课程编号：{course3.CourseId} 课程价格：{course3.UnitPrice}";
             Console.WriteLine(info);
         }
     }
