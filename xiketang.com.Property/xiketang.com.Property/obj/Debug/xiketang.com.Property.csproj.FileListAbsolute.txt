@@ -1,0 +1,7 @@
+D:\workspace\netProject\xiketang.com.Property\xiketang.com.Property\bin\Debug\xiketang.com.Property.exe.config
+D:\workspace\netProject\xiketang.com.Property\xiketang.com.Property\bin\Debug\xiketang.com.Property.exe
+D:\workspace\netProject\xiketang.com.Property\xiketang.com.Property\bin\Debug\xiketang.com.Property.pdb
+D:\workspace\netProject\xiketang.com.Property\xiketang.com.Property\obj\Debug\xiketang.com.Property.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.Property\xiketang.com.Property\obj\Debug\xiketang.com.Property.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.Property\xiketang.com.Property\obj\Debug\xiketang.com.Property.exe
+D:\workspace\netProject\xiketang.com.Property\xiketang.com.Property\obj\Debug\xiketang.com.Property.pdb
