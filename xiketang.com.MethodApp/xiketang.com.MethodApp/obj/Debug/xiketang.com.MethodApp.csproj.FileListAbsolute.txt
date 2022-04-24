@@ -1,0 +1,7 @@
+D:\workspace\netProject\xiketang.com.MethodApp\xiketang.com.MethodApp\bin\Debug\xiketang.com.MethodApp.exe.config
+D:\workspace\netProject\xiketang.com.MethodApp\xiketang.com.MethodApp\bin\Debug\xiketang.com.MethodApp.exe
+D:\workspace\netProject\xiketang.com.MethodApp\xiketang.com.MethodApp\bin\Debug\xiketang.com.MethodApp.pdb
+D:\workspace\netProject\xiketang.com.MethodApp\xiketang.com.MethodApp\obj\Debug\xiketang.com.MethodApp.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.MethodApp\xiketang.com.MethodApp\obj\Debug\xiketang.com.MethodApp.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.MethodApp\xiketang.com.MethodApp\obj\Debug\xiketang.com.MethodApp.exe
+D:\workspace\netProject\xiketang.com.MethodApp\xiketang.com.MethodApp\obj\Debug\xiketang.com.MethodApp.pdb
