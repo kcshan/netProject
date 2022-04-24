@@ -1,0 +1,7 @@
+D:\workspace\netProject\xiketang.com.GenericList\xiketang.com.GenericList\bin\Debug\xiketang.com.GenericList.exe.config
+D:\workspace\netProject\xiketang.com.GenericList\xiketang.com.GenericList\bin\Debug\xiketang.com.GenericList.exe
+D:\workspace\netProject\xiketang.com.GenericList\xiketang.com.GenericList\bin\Debug\xiketang.com.GenericList.pdb
+D:\workspace\netProject\xiketang.com.GenericList\xiketang.com.GenericList\obj\Debug\xiketang.com.GenericList.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.GenericList\xiketang.com.GenericList\obj\Debug\xiketang.com.GenericList.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.GenericList\xiketang.com.GenericList\obj\Debug\xiketang.com.GenericList.exe
+D:\workspace\netProject\xiketang.com.GenericList\xiketang.com.GenericList\obj\Debug\xiketang.com.GenericList.pdb
