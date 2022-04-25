@@ -9,7 +9,7 @@ namespace xiketang.com.GenericList
     /// <summary>
     /// 课程类
     /// </summary>
-    public class Course : IComparable<Course>
+    public class Course :IComparable<Course>
     {
         public Course() { }
         public Course(int courseId, string courseName, int classHour, string teacher)
@@ -24,7 +24,7 @@ namespace xiketang.com.GenericList
         public int ClassHour { get; set; }//课时
         public string Teacher { get; set; }//主讲老师
 
-        //接口对应的比较方法（这个方法的签名，千万不要动）
+        // 接口对应的比较方法（这个方法的签名，千万不要动）
         public int CompareTo(Course other)
         {
             //return this.CourseId.CompareTo(other.CourseId);
@@ -134,7 +134,94 @@ namespace xiketang.com.GenericList
         #endregion
 
         #region 集合元素排序
+        public void ListOrder()
+        {
+            Console.WriteLine("\r\n*****************值类型元素排序*************\r\n");
+            List<int> ageList = new List<int> { 20, 19, 25, 30, 26 };
+            ageList.Sort();
+            foreach (int item in ageList)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("*******************");
+            ageList.Reverse();
+            foreach (int item in ageList)
+            {
+                Console.WriteLine(item);
+            }
+
+            // 对象集合元素排序
+            Console.WriteLine("\r\n*************集合默认排序**************\r\n");
+            List<Course> courseList = CreateCourses();
+            courseList.Sort();
+            // 以上Sort方法默认会报错的！所以在Course类中实现系统接口!Comparable<Course>
+
+            TraversalList1(courseList);
+            // 以上我们使用默认比较器进行排序，很不方便，如果我们需要多种排序，怎么办？
+            // 比较器接口：其实就是我们可以任意的指定对象属性排序，从而实现动态排序。
+
+            Console.WriteLine("\r\n**************集合动态排序************\r\n");
+            // 排序方法的定义：public void Sort(IComparer<T> comparer);
+            
+            Console.WriteLine("\r\n------------按照编号升序-------------\r\n");
+            courseList.Sort(new CourseIdASC());
+            TraversalList1(courseList);
+
+            Console.WriteLine("\r\n------------按照编号降序-------------\r\n");
+            courseList.Sort(new CourseIdDESC());
+            TraversalList1(courseList);
+
+            // 其实上面我们的练习，我希望大家，能够自己写出来，但是更重要的是理解多态的原理。
+            // 因为Sort这个重载的方法就是多态原理的一个应用。
+            // 我们后面深入学习架构开发等更高级的理论，技能，设计模式等，处处都在用多态！
+            // 通过上面的练习，我们发现实际应用中，还是有点麻烦的。大家如果深入系统学习VIP课程，会给大家讲解更好的方法。
+            // 高级阶级我们用的方法：这里先体验（了解）
+            Console.WriteLine("\r\n--------后面高级课程中，使用LINQ实现排序------------\r\n");
+            var list1 = from c in courseList orderby c.CourseId ascending select c;
+            TraversalList1(list1.ToList());
+
+            Console.WriteLine("\r\n--------后面高级课程中，使用扩展方法OrderByDescending实现降序------------\r\n");
+            var list2 = courseList.OrderByDescending(c => c.CourseId);
+            TraversalList1(list2.ToList());
+
+            Console.WriteLine("\r\n--------后面高级课程中，使用扩展方法OrderBy实现升序序------------\r\n");
+            var list3 = courseList.OrderBy(c => c.ClassHour);
+            TraversalList1(list3.ToList());
+        }
 
         #endregion
     }
+
+    #region 自定义排序类：根据需要，添加对应个数的排序类
+    /// <summary>
+    /// 课程编号升序
+    /// </summary>
+    class CourseIdASC : IComparer<Course>
+    {
+        public int Compare(Course x, Course y)
+        {
+            return x.CourseId.CompareTo(y.CourseId);
+        }
+    }
+    /// <summary>
+    /// 课程编号降序
+    /// </summary>
+    class CourseIdDESC : IComparer<Course>
+    {
+        public int Compare(Course x, Course y)
+        {
+            return y.CourseId.CompareTo(x.CourseId);
+        }
+    }
+    /// <summary>
+    /// 课时升序
+    /// </summary>
+    class CourseClassASC : IComparer<Course>
+    {
+        public int Compare(Course x, Course y)
+        {
+            return x.ClassHour.CompareTo(y.ClassHour);
+        }
+    }
+    #endregion
 }
