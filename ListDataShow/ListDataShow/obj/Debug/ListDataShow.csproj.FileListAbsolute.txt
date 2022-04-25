@@ -1,0 +1,10 @@
+D:\workspace\netProject\ListDataShow\ListDataShow\bin\Debug\ListDataShow.exe.config
+D:\workspace\netProject\ListDataShow\ListDataShow\bin\Debug\ListDataShow.exe
+D:\workspace\netProject\ListDataShow\ListDataShow\bin\Debug\ListDataShow.pdb
+D:\workspace\netProject\ListDataShow\ListDataShow\obj\Debug\ListDataShow.csprojAssemblyReference.cache
+D:\workspace\netProject\ListDataShow\ListDataShow\obj\Debug\ListDataShow.FrmDgvList.resources
+D:\workspace\netProject\ListDataShow\ListDataShow\obj\Debug\ListDataShow.Properties.Resources.resources
+D:\workspace\netProject\ListDataShow\ListDataShow\obj\Debug\ListDataShow.csproj.GenerateResource.cache
+D:\workspace\netProject\ListDataShow\ListDataShow\obj\Debug\ListDataShow.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\ListDataShow\ListDataShow\obj\Debug\ListDataShow.exe
+D:\workspace\netProject\ListDataShow\ListDataShow\obj\Debug\ListDataShow.pdb
