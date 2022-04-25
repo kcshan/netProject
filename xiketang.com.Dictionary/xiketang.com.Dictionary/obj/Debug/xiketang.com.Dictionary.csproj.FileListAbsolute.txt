@@ -1,0 +1,7 @@
+D:\workspace\netProject\xiketang.com.Dictionary\xiketang.com.Dictionary\bin\Debug\xiketang.com.Dictionary.exe.config
+D:\workspace\netProject\xiketang.com.Dictionary\xiketang.com.Dictionary\bin\Debug\xiketang.com.Dictionary.exe
+D:\workspace\netProject\xiketang.com.Dictionary\xiketang.com.Dictionary\bin\Debug\xiketang.com.Dictionary.pdb
+D:\workspace\netProject\xiketang.com.Dictionary\xiketang.com.Dictionary\obj\Debug\xiketang.com.Dictionary.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.Dictionary\xiketang.com.Dictionary\obj\Debug\xiketang.com.Dictionary.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.Dictionary\xiketang.com.Dictionary\obj\Debug\xiketang.com.Dictionary.exe
+D:\workspace\netProject\xiketang.com.Dictionary\xiketang.com.Dictionary\obj\Debug\xiketang.com.Dictionary.pdb
