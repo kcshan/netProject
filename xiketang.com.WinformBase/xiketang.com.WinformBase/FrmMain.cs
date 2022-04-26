@@ -21,7 +21,9 @@ namespace xiketang.com.WinformBase
             InitializeComponent(); // 调用后面的Desinger类中的方法，用于控件初始化
 
             // 将控件的Click事件和事件方法关联
-            this.btnTest.Click += new System.EventHandler(this.btnMyTest_Click);
+            //this.btnTest.Click += new System.EventHandler(this.btnMyTest_Click);
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            this.button1.Click += new System.EventHandler(this.btnTest_Click);
         }
 
         // 事件方法
@@ -45,8 +47,8 @@ namespace xiketang.com.WinformBase
 
         private void btnTest_MouseEnter(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            MessageBox.Show(btn.Tag.ToString());
+            //Button btn = (Button)sender;
+            //MessageBox.Show(btn.Tag.ToString());
         }
 
         // 窗体所有控件和初始化完毕后要执行的事件，我们通常不用
@@ -78,6 +80,11 @@ namespace xiketang.com.WinformBase
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
         }
     }
 }

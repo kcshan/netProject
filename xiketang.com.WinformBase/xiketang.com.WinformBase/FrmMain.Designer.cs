@@ -35,18 +35,23 @@
             this.tsml_file = new System.Windows.Forms.ToolStripMenuItem();
             this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTest
             // 
+            this.btnTest.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTest.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTest.Location = new System.Drawing.Point(22, 37);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(106, 39);
             this.btnTest.TabIndex = 0;
             this.btnTest.Tag = "\"btn1\"";
             this.btnTest.Text = "测试按钮";
-            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.UseVisualStyleBackColor = false;
+            
             // 
             // contextMenuStrip1
             // 
@@ -79,6 +84,20 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(22, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 39);
+            this.button1.TabIndex = 0;
+            this.button1.Tag = "\"btn1\"";
+            this.button1.Text = "测试按钮";
+            this.button1.UseVisualStyleBackColor = false;
+            
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -86,7 +105,9 @@
             this.ClientSize = new System.Drawing.Size(784, 450);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTest);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -106,6 +127,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsml_file;
         private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button button1;
     }
 }
 

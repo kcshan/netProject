@@ -16,7 +16,7 @@ namespace xiketang.com.WinformBase
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new FrmEventApp());
         }
     }
 }

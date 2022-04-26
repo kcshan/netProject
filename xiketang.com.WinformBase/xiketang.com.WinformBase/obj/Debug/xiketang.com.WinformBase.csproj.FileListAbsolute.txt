@@ -9,3 +9,4 @@ D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\De
 D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.exe
 D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.pdb
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.FrmEventApp.resources
