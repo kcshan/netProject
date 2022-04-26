@@ -1,0 +1,11 @@
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\bin\Debug\xiketang.com.WinformBase.exe.config
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\bin\Debug\xiketang.com.WinformBase.exe
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\bin\Debug\xiketang.com.WinformBase.pdb
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.FrmMain.resources
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.MyForm.resources
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.Properties.Resources.resources
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.csproj.GenerateResource.cache
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.exe
+D:\workspace\netProject\xiketang.com.WinformBase\xiketang.com.WinformBase\obj\Debug\xiketang.com.WinformBase.pdb
