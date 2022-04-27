@@ -12,6 +12,8 @@ namespace xiketang.com.WinformBase
 {
     public partial class FrmEventApp : Form
     {
+        private List<Course> courseList = new List<Course>();
+
         public FrmEventApp()
         {
             InitializeComponent();
@@ -32,13 +34,9 @@ namespace xiketang.com.WinformBase
 
             foreach (Control item in Controls)
             {
-                if (item is Button) // 通过控件类型过滤我们不需要的控件
+                if (item is Button && item.Tag.ToString() != "Save")
                 {
-                    Button btn = item as Button;
-                    if (btn.Tag.ToString() != "Save") // 过滤我们不需要的按钮，请大家特别注意Tag的使用
-                    {
-                        btn.Click += new System.EventHandler(this.btn_Click);
-                    }
+                    item.Click += new System.EventHandler(this.btn_Click);
                 }
             }
         }
@@ -47,7 +45,31 @@ namespace xiketang.com.WinformBase
         private void btn_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            MessageBox.Show(btn.Tag.ToString());
+
+            // 将当前按钮Tag属性中封装的课程信息，通过字符串分割得到
+            string[] info = btn.Tag.ToString().Split(',');
+            // 将当前课程信息封装到课程对象，并将课程对象封装到集合中
+            this.courseList.Add(new Course
+            {
+                CourseName = btn.Text,
+                CourseId = Convert.ToInt32(info[0]),
+                ClassHour = Convert.ToInt32(info[1]),
+            });
+            // 改变当前按钮的背景色
+            btn.BackColor = Color.Green;
+
+            // 请大家思考：如何避免用户多次添加同一个课程按钮，而导致多次添加的问题
+        }
+        // 保存所选课程
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            // 实际开发中，保存可以到数据库、文件...
+
+            // 测试看看所选择的课程
+            foreach (var item in this.courseList)
+            {
+                Console.WriteLine(item.CourseId + "\t" + item.ClassHour + "\t" + item.CourseName);
+            }
         }
     }
 }

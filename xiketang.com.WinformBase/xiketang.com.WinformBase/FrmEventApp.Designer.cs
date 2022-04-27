@@ -79,6 +79,7 @@
             this.btnSave.Tag = "Save";
             this.btnSave.Text = "保存所选课程";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btn02
             // 
