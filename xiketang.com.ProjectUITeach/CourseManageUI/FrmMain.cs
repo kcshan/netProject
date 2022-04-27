@@ -48,9 +48,49 @@ namespace CourseManageUI
 
         #endregion
 
+        private void OpenForm(Form childForm)
+        {
+            // 首先判断容器中是否有其他的窗体
+            foreach (Control item in this.panelRight.Controls)
+            {
+                if (item is Form)
+                {
+                    ((Form)item).Close();
+                }
+            }
+            // 嵌入新的窗体
+            childForm.TopLevel = false; // 将子窗体设置成非顶级控件
+            //childFrom.FormBorderStyle = FormBorderStyle.None; // 去掉窗体边框，现在不需要
+            childForm.Parent = this.panelRight;
+            childForm.Dock = DockStyle.Fill; // 随着容器大小自动调整窗体大小（目前可能没有效果）
+            childForm.Show();
+        }
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        // 课程信息管理
+        private void btnCousreManage_Click(object sender, EventArgs e)
+        {
+            OpenForm(new FrmCourseManage());
+        }
+        // 添加课程
+        private void btnAddCourse_Click(object sender, EventArgs e)
+        {
+            OpenForm(new FrmAddCourse());
+        }
+        // 修改登录密码
+        private void btnModifyPwd_Click(object sender, EventArgs e)
+        {
+            OpenForm(new FrmModifyPwd());
+        }
+        // 讲师管理
+        private void btnTeacherManage_Click(object sender, EventArgs e)
+        {
+            OpenForm(new FrmTeacherManage());
+        }
+         
     }
 }

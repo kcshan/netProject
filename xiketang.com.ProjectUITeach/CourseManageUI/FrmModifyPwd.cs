@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CourseManageUI
 {
-    public partial class FrmCourseManage : Form
+    public partial class FrmModifyPwd : Form
     {
-        public FrmCourseManage()
+        public FrmModifyPwd()
         {
             InitializeComponent();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

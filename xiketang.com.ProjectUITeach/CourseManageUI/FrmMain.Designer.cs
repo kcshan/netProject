@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.panelRight = new System.Windows.Forms.Panel();
             this.btnModifyPwd = new System.Windows.Forms.Button();
             this.btnTeacherManage = new System.Windows.Forms.Button();
             this.btnCousreManage = new System.Windows.Forms.Button();
             this.btnAddCourse = new System.Windows.Forms.Button();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCurrentUser = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
@@ -56,6 +56,21 @@
             this.panel2.Size = new System.Drawing.Size(208, 468);
             this.panel2.TabIndex = 1;
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(0, 1);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 0;
+            // 
+            // panelRight
+            // 
+            this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(109)))), ((int)(((byte)(176)))));
+            this.panelRight.BackgroundImage = global::CourseManageUI.Properties.Resources.mainbg;
+            this.panelRight.Location = new System.Drawing.Point(223, 73);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(690, 470);
+            this.panelRight.TabIndex = 1;
+            // 
             // btnModifyPwd
             // 
             this.btnModifyPwd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
@@ -72,6 +87,7 @@
             this.btnModifyPwd.Text = "修 改 登 录 密 码 ";
             this.btnModifyPwd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModifyPwd.UseVisualStyleBackColor = false;
+            this.btnModifyPwd.Click += new System.EventHandler(this.btnModifyPwd_Click);
             // 
             // btnTeacherManage
             // 
@@ -89,6 +105,7 @@
             this.btnTeacherManage.Text = "讲 师 信 息 管 理 ";
             this.btnTeacherManage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTeacherManage.UseVisualStyleBackColor = false;
+            this.btnTeacherManage.Click += new System.EventHandler(this.btnTeacherManage_Click);
             // 
             // btnCousreManage
             // 
@@ -106,6 +123,7 @@
             this.btnCousreManage.Text = "课 程 信 息 管 理 ";
             this.btnCousreManage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCousreManage.UseVisualStyleBackColor = false;
+            this.btnCousreManage.Click += new System.EventHandler(this.btnCousreManage_Click);
             // 
             // btnAddCourse
             // 
@@ -123,21 +141,7 @@
             this.btnAddCourse.Text = "添 加 课 程 信 息 ";
             this.btnAddCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddCourse.UseVisualStyleBackColor = false;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(0, 1);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(109)))), ((int)(((byte)(176)))));
-            this.panel3.BackgroundImage = global::CourseManageUI.Properties.Resources.mainbg;
-            this.panel3.Location = new System.Drawing.Point(223, 73);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(690, 470);
-            this.panel3.TabIndex = 1;
+            this.btnAddCourse.Click += new System.EventHandler(this.btnAddCourse_Click);
             // 
             // panel1
             // 
@@ -186,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(184)))), ((int)(((byte)(213)))));
             this.ClientSize = new System.Drawing.Size(920, 550);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -203,7 +207,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Button btnModifyPwd;
         private System.Windows.Forms.Button btnTeacherManage;
         private System.Windows.Forms.Button btnCousreManage;

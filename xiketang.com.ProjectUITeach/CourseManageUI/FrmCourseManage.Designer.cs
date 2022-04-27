@@ -28,19 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCourseManage));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCourseManage));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnDelCourse = new System.Windows.Forms.Button();
-            this.btnModifyCourse = new System.Windows.Forms.Button();
-            this.btnAddCourse = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCourseName = new System.Windows.Forms.TextBox();
             this.cbbCategory = new System.Windows.Forms.ComboBox();
-            this.btnQuery = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lblCount = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,8 +47,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCloseModify = new System.Windows.Forms.Button();
-            this.btnSaveToDB = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -67,6 +60,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblCourseId = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnCloseModify = new System.Windows.Forms.Button();
+            this.btnSaveToDB = new System.Windows.Forms.Button();
+            this.btnQuery = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnDelCourse = new System.Windows.Forms.Button();
+            this.btnModifyCourse = new System.Windows.Forms.Button();
+            this.btnAddCourse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseList)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,74 +80,6 @@
             this.label1.Size = new System.Drawing.Size(113, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "当前位置：课程管理";
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(590, 18);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(95, 30);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "关闭窗口";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.UseVisualStyleBackColor = false;
-            // 
-            // btnDelCourse
-            // 
-            this.btnDelCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnDelCourse.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnDelCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelCourse.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnDelCourse.ForeColor = System.Drawing.Color.White;
-            this.btnDelCourse.Image = ((System.Drawing.Image)(resources.GetObject("btnDelCourse.Image")));
-            this.btnDelCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelCourse.Location = new System.Drawing.Point(489, 18);
-            this.btnDelCourse.Name = "btnDelCourse";
-            this.btnDelCourse.Size = new System.Drawing.Size(95, 30);
-            this.btnDelCourse.TabIndex = 3;
-            this.btnDelCourse.Text = "删除课程";
-            this.btnDelCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDelCourse.UseVisualStyleBackColor = false;
-            // 
-            // btnModifyCourse
-            // 
-            this.btnModifyCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnModifyCourse.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnModifyCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModifyCourse.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnModifyCourse.ForeColor = System.Drawing.Color.White;
-            this.btnModifyCourse.Image = ((System.Drawing.Image)(resources.GetObject("btnModifyCourse.Image")));
-            this.btnModifyCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModifyCourse.Location = new System.Drawing.Point(388, 18);
-            this.btnModifyCourse.Name = "btnModifyCourse";
-            this.btnModifyCourse.Size = new System.Drawing.Size(95, 30);
-            this.btnModifyCourse.TabIndex = 4;
-            this.btnModifyCourse.Text = "修改课程";
-            this.btnModifyCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModifyCourse.UseVisualStyleBackColor = false;
-            // 
-            // btnAddCourse
-            // 
-            this.btnAddCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnAddCourse.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnAddCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCourse.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnAddCourse.ForeColor = System.Drawing.Color.White;
-            this.btnAddCourse.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCourse.Image")));
-            this.btnAddCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddCourse.Location = new System.Drawing.Point(287, 18);
-            this.btnAddCourse.Name = "btnAddCourse";
-            this.btnAddCourse.Size = new System.Drawing.Size(95, 30);
-            this.btnAddCourse.TabIndex = 5;
-            this.btnAddCourse.Text = "添加课程 ";
-            this.btnAddCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddCourse.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -171,23 +103,6 @@
             this.cbbCategory.Name = "cbbCategory";
             this.cbbCategory.Size = new System.Drawing.Size(110, 20);
             this.cbbCategory.TabIndex = 12;
-            // 
-            // btnQuery
-            // 
-            this.btnQuery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnQuery.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnQuery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuery.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnQuery.ForeColor = System.Drawing.Color.White;
-            this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
-            this.btnQuery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuery.Location = new System.Drawing.Point(388, 66);
-            this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(95, 30);
-            this.btnQuery.TabIndex = 11;
-            this.btnQuery.Text = "提交查询 ";
-            this.btnQuery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnQuery.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -308,40 +223,6 @@
             this.panel1.Size = new System.Drawing.Size(690, 163);
             this.panel1.TabIndex = 15;
             // 
-            // btnCloseModify
-            // 
-            this.btnCloseModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnCloseModify.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnCloseModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseModify.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnCloseModify.ForeColor = System.Drawing.Color.White;
-            this.btnCloseModify.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseModify.Image")));
-            this.btnCloseModify.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCloseModify.Location = new System.Drawing.Point(582, 3);
-            this.btnCloseModify.Name = "btnCloseModify";
-            this.btnCloseModify.Size = new System.Drawing.Size(95, 30);
-            this.btnCloseModify.TabIndex = 3;
-            this.btnCloseModify.Text = "退出修改 ";
-            this.btnCloseModify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCloseModify.UseVisualStyleBackColor = false;
-            // 
-            // btnSaveToDB
-            // 
-            this.btnSaveToDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnSaveToDB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnSaveToDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveToDB.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSaveToDB.ForeColor = System.Drawing.Color.White;
-            this.btnSaveToDB.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveToDB.Image")));
-            this.btnSaveToDB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveToDB.Location = new System.Drawing.Point(474, 3);
-            this.btnSaveToDB.Name = "btnSaveToDB";
-            this.btnSaveToDB.Size = new System.Drawing.Size(95, 30);
-            this.btnSaveToDB.TabIndex = 4;
-            this.btnSaveToDB.Text = " 提交修改 ";
-            this.btnSaveToDB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSaveToDB.UseVisualStyleBackColor = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label12);
@@ -459,6 +340,126 @@
             this.label6.Size = new System.Drawing.Size(65, 12);
             this.label6.TabIndex = 0;
             this.label6.Text = "课程编号：";
+            // 
+            // btnCloseModify
+            // 
+            this.btnCloseModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnCloseModify.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnCloseModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseModify.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCloseModify.ForeColor = System.Drawing.Color.White;
+            this.btnCloseModify.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseModify.Image")));
+            this.btnCloseModify.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCloseModify.Location = new System.Drawing.Point(582, 3);
+            this.btnCloseModify.Name = "btnCloseModify";
+            this.btnCloseModify.Size = new System.Drawing.Size(95, 30);
+            this.btnCloseModify.TabIndex = 3;
+            this.btnCloseModify.Text = "退出修改 ";
+            this.btnCloseModify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCloseModify.UseVisualStyleBackColor = false;
+            // 
+            // btnSaveToDB
+            // 
+            this.btnSaveToDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnSaveToDB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnSaveToDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveToDB.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSaveToDB.ForeColor = System.Drawing.Color.White;
+            this.btnSaveToDB.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveToDB.Image")));
+            this.btnSaveToDB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveToDB.Location = new System.Drawing.Point(474, 3);
+            this.btnSaveToDB.Name = "btnSaveToDB";
+            this.btnSaveToDB.Size = new System.Drawing.Size(95, 30);
+            this.btnSaveToDB.TabIndex = 4;
+            this.btnSaveToDB.Text = " 提交修改 ";
+            this.btnSaveToDB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSaveToDB.UseVisualStyleBackColor = false;
+            // 
+            // btnQuery
+            // 
+            this.btnQuery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnQuery.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnQuery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuery.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnQuery.ForeColor = System.Drawing.Color.White;
+            this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
+            this.btnQuery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuery.Location = new System.Drawing.Point(388, 66);
+            this.btnQuery.Name = "btnQuery";
+            this.btnQuery.Size = new System.Drawing.Size(95, 30);
+            this.btnQuery.TabIndex = 11;
+            this.btnQuery.Text = "提交查询 ";
+            this.btnQuery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnQuery.UseVisualStyleBackColor = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(590, 18);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(95, 30);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "关闭窗口";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnDelCourse
+            // 
+            this.btnDelCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnDelCourse.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnDelCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelCourse.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnDelCourse.ForeColor = System.Drawing.Color.White;
+            this.btnDelCourse.Image = ((System.Drawing.Image)(resources.GetObject("btnDelCourse.Image")));
+            this.btnDelCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelCourse.Location = new System.Drawing.Point(489, 18);
+            this.btnDelCourse.Name = "btnDelCourse";
+            this.btnDelCourse.Size = new System.Drawing.Size(95, 30);
+            this.btnDelCourse.TabIndex = 3;
+            this.btnDelCourse.Text = "删除课程";
+            this.btnDelCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDelCourse.UseVisualStyleBackColor = false;
+            // 
+            // btnModifyCourse
+            // 
+            this.btnModifyCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnModifyCourse.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnModifyCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifyCourse.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnModifyCourse.ForeColor = System.Drawing.Color.White;
+            this.btnModifyCourse.Image = ((System.Drawing.Image)(resources.GetObject("btnModifyCourse.Image")));
+            this.btnModifyCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModifyCourse.Location = new System.Drawing.Point(388, 18);
+            this.btnModifyCourse.Name = "btnModifyCourse";
+            this.btnModifyCourse.Size = new System.Drawing.Size(95, 30);
+            this.btnModifyCourse.TabIndex = 4;
+            this.btnModifyCourse.Text = "修改课程";
+            this.btnModifyCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModifyCourse.UseVisualStyleBackColor = false;
+            // 
+            // btnAddCourse
+            // 
+            this.btnAddCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnAddCourse.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnAddCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCourse.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnAddCourse.ForeColor = System.Drawing.Color.White;
+            this.btnAddCourse.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCourse.Image")));
+            this.btnAddCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddCourse.Location = new System.Drawing.Point(287, 18);
+            this.btnAddCourse.Name = "btnAddCourse";
+            this.btnAddCourse.Size = new System.Drawing.Size(95, 30);
+            this.btnAddCourse.TabIndex = 5;
+            this.btnAddCourse.Text = "添加课程 ";
+            this.btnAddCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddCourse.UseVisualStyleBackColor = false;
             // 
             // FrmCourseManage
             // 
