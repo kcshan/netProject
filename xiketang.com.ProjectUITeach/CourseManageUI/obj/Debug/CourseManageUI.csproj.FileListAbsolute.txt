@@ -8,3 +8,4 @@ D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\Cou
 D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.exe
 D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.pdb
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.FrmMain.resources

@@ -16,7 +16,7 @@ namespace CourseManageUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmAdminLogin());
+            Application.Run(new FrmMain());
         }
     }
 }

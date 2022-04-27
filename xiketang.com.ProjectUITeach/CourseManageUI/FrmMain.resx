@@ -117,14 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bannerbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bannerbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblCurrentUser.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIZIAAAAAGVEA21IACk0QKCvvUM/Pm54gsfQ2fL4/sKOABF34NaiAABlzOWxAMyZALaC
+        AP/ZANKfAFw2AP///694AMGNAObt9Kx1APr6+s2ZANekANikADeF1eayAMCMAPb39+KvAOCtAHqEkCsd
+        APb8/7Whd36x5N+sAPG9AHN9iHmEj3uv5HKs53Su6fLz9Gpzfuju9PTAAMOPAOnv9c6aAO/0+294gn+M
+        mHV/ibyqge/2//rFAPb29suYAC8iAMfQ2oCLlsbP2Ovt8NWiALmEAPP09Oy5AGRygv///wAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AABIACwAAAAAEAAQAAAIpwCRCBQooKDBgQgJAvABAMAIAAISCgzQsGLFABIDLOgAAcKOBhsqYEyosQOK
+        GEZAisyYQcMJECE0OHgwEmGADDQiDInQY2ZNhAUSJJDhwQORAhIHFqBA4cIFpEmR3CghQIIEATmOJFXx
+        Q8cEBQomkCAARGKKIDA+rDDxoQYBERINHJjhggOHIggI4JD44oAFHgwYYMhrI65fISxaDCZgIOmAx5Af
+        IwwIADs=
+</value>
   </data>
-  <data name="AdminLoginbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AdminLoginbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnTeacherManage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIU5AABmAAAAAGVEA21IAABHAA6eCEM/PnrgQjW1G5j+Y1rILYjuUsKOAMGNAJP5Xnfd
+        QOWxANikAKx1AOayALaCAE8uAP/ZAMCMAMyZANKfANekAK94AM2ZANaiAP///+KvAHFKBXjeQXrgQy8i
+        APG9APTAAH3lRvP8AM6aAMOPANWiAIF9ACsdAOy5AI/4YN+sAPrFAMuYAPD6AIiFAOCtAJH3XbmEAHFK
+        BzK0HP///wAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA5ACwAAAAAEAAQ
+        AAAInwBzCBQ4oKDBgQgJBhgRIACLAAMSChTQsGJFARIFdJhgwQIMCBEaYEyocQKJEi1AiszIQcOLDzQ0
+        YKAwEqEADigyqMgQY2ZNhAYYMEhx4YINAxIHGtiwQYIEpElzAFgBokKFGzMAJAVgAoAMDx5OACigNSEA
+        ES4AqAWAg6xEAAdqJFjwQAECt2YPOJhb925ZhHD3LghhF29CAogTI0YYEAA7
+</value>
   </data>
-  <data name="mainbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCousreManage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIU5AP///x6q/8bP2CgzPwAbiSczPs3w/+3y9/n7/Nbz/7vFz/n8/iKs//f5/LzG0ABc
+        yAAbigCd/wBky/D0+fz9/sfQ2QBaxb/J0rjBzG14g7vFzoyVmnmDkOzx9gBdyMrT2wAciio1Qa7h/83V
+        3gBDsMPN1vn6/CSv//b4+2NtdwAdi3uIlMHL1QBfyWpzf7/J07zH0cvV3WJqdQCT/0pTXnJ+iODl5wBg
+        yc7x/////wAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA5ACwAAAAAEAAQ
+        AAAIvQBzCBxIsKDBgwQltPDwwEIECw8aPnzgoYWEGyJwGEgwI4GBjR0N4BBxQ8KJAAEYRGCAUiXLACck
+        kABBgAAEFRBq3sxJAASJDQCCArAhdGjRDSuKxlBadAWHEQIEVPhQIerUqgJGcKgBwAQCCiUoIPgaFoEJ
+        ADUyAEDRYMGLBQ3avm2AAkAGFyw0KHBwwYGCvX0VaGDhIgWADgcmYJhwIPHiAx0ApJBRFEblojJoDChQ
+        YECIzZ0/cx5AAyHCgAA7
+</value>
+  </data>
+  <data name="btnAddCourse.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIZNAP///wBdAP//AB6q/8bP2AAbiQBcyAAbiiKs/wCd/wBaxcfQ2c3w/wBky9bz//f5
+        /Pn7/CgzP7zG0ABdyMvV3XmDkMrT2wBEAAAciiczPq7h/3J+iABfyW14g/D0+QAdiwCT//n8/gBDsABI
+        AABgyfz9/iSv/4yVmuDl583V3nuIlABJAM7x/wBCABeuEUpTXie6I7zH0Q6iDmJqdQOhEbvFzyivG1DV
+        Puzx9jK1Gy+6He3y92Ntd+Pn6/b4+ximDv7+//n6/MPN1r/J0xytHgBAAMHL1bvFzmpzfxuqD7/J0rjB
+        zCo1Qf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AABNACwAAAAAEAAQAAAI0gAbcJhgQEECBQYKHjQwgUMDEhpYMHAAwgGDiRUZsNBAooGJAQMQJEAAUiTJ
+        ASYaiMBQoMCBDwdavoxZAIOIEwByAkChc2fPEyp6UhDaU0WFFAQILLCwIOnSpgRSVNgAIAiEEkJKQIAA
+        pCeADR0A+HgQYkiIBw8ABFgbAEAHJEaO1JCgREKPnAEECGgLgAcAHDs8LPGgdq0AImxn9IyBV68AGzD2
+        voiQIUMEJhHUCqAh40cSFwGaiB4tekSRADdyBLiwgrTrJnl1hH7tekQL1qIDAgA7
+</value>
+  </data>
+  <data name="btnModifyPwd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIZCAP///5JfAP/rav/yapNfADGU4qXX9AA0odH6/wCd//+vH5lmAPYkAJ5qA2xJAGRC
+        AP/LUl06AP/sav/65//aAJJdAP//AJNgAAxszZ1pA8gVAGQ/AHhUEJpnApdkAP/YAP/50P/7xv+sEv/t
+        cwhpzJtnCJFcAAZp0ANr1c0yC//1dmVDAJRhAM+5lsUTAIhRAP/eoP/uAP/6ligzP9K8lolWAP/TAP/t
+        bP/qdYtVAIhUAJRgAP/wAP/M/886FdS/lmRBAP/ZAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AABCACwAAAAAEAAQAAAIuACFCBQYoGCAgQgRBhDAUMDBhAMXCtiwgeFDiAsbCGzgECJBCRkEZpBwEIBJ
+        AAM5DBjQocNKDiZTuEAZceWNASVMYmDQwwfCCi9iiNBBAwAGAwAYaBi4w4IKHCNCACBhAEEBpR4uBGBR
+        IwcPGABOVC2Q4ACACxQsLBBSQQYAFGPLmgzwwcZaEwAIxDWL0sMDBRQWtMgLgazZHwIdCPkbJO8EEBD4
+        KkYIRIHjCBFMehSyAsAMAicTBgQAOw==
+</value>
   </data>
 </root>
