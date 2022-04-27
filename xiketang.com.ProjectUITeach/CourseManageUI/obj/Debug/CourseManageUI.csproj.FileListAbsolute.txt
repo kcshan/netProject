@@ -1,0 +1,10 @@
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\bin\Debug\CourseManageUI.exe.config
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\bin\Debug\CourseManageUI.exe
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\bin\Debug\CourseManageUI.pdb
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.FrmAdminLogin.resources
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.Properties.Resources.resources
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.csproj.GenerateResource.cache
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.exe
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.pdb
