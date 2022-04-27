@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.btnModifyPwd = new System.Windows.Forms.Button();
             this.btnTeacherManage = new System.Windows.Forms.Button();
             this.btnCousreManage = new System.Windows.Forms.Button();
             this.btnAddCourse = new System.Windows.Forms.Button();
-            this.btnModifyPwd = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lblCurrentUser = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,31 +56,22 @@
             this.panel2.Size = new System.Drawing.Size(208, 468);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // btnModifyPwd
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(109)))), ((int)(((byte)(176)))));
-            this.panel3.BackgroundImage = global::CourseManageUI.Properties.Resources.mainbg;
-            this.panel3.Location = new System.Drawing.Point(223, 74);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(690, 468);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::CourseManageUI.Properties.Resources.bannerbg;
-            this.panel1.Controls.Add(this.lblCurrentUser);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(920, 66);
-            this.panel1.TabIndex = 0;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(0, 1);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
+            this.btnModifyPwd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnModifyPwd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnModifyPwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifyPwd.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnModifyPwd.ForeColor = System.Drawing.Color.White;
+            this.btnModifyPwd.Image = ((System.Drawing.Image)(resources.GetObject("btnModifyPwd.Image")));
+            this.btnModifyPwd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModifyPwd.Location = new System.Drawing.Point(32, 377);
+            this.btnModifyPwd.Name = "btnModifyPwd";
+            this.btnModifyPwd.Size = new System.Drawing.Size(151, 38);
+            this.btnModifyPwd.TabIndex = 4;
+            this.btnModifyPwd.Text = "修 改 登 录 密 码 ";
+            this.btnModifyPwd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModifyPwd.UseVisualStyleBackColor = false;
             // 
             // btnTeacherManage
             // 
@@ -133,22 +124,47 @@
             this.btnAddCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddCourse.UseVisualStyleBackColor = false;
             // 
-            // btnModifyPwd
+            // monthCalendar1
             // 
-            this.btnModifyPwd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnModifyPwd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnModifyPwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModifyPwd.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnModifyPwd.ForeColor = System.Drawing.Color.White;
-            this.btnModifyPwd.Image = ((System.Drawing.Image)(resources.GetObject("btnModifyPwd.Image")));
-            this.btnModifyPwd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModifyPwd.Location = new System.Drawing.Point(32, 377);
-            this.btnModifyPwd.Name = "btnModifyPwd";
-            this.btnModifyPwd.Size = new System.Drawing.Size(151, 38);
-            this.btnModifyPwd.TabIndex = 4;
-            this.btnModifyPwd.Text = "修 改 登 录 密 码 ";
-            this.btnModifyPwd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModifyPwd.UseVisualStyleBackColor = false;
+            this.monthCalendar1.Location = new System.Drawing.Point(0, 1);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(109)))), ((int)(((byte)(176)))));
+            this.panel3.BackgroundImage = global::CourseManageUI.Properties.Resources.mainbg;
+            this.panel3.Location = new System.Drawing.Point(223, 73);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(690, 470);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::CourseManageUI.Properties.Resources.bannerbg;
+            this.panel1.Controls.Add(this.lblCurrentUser);
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(920, 66);
+            this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Frm_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Frm_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Frm_MouseUp);
+            // 
+            // lblCurrentUser
+            // 
+            this.lblCurrentUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(54)))), ((int)(((byte)(115)))));
+            this.lblCurrentUser.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblCurrentUser.Image = ((System.Drawing.Image)(resources.GetObject("lblCurrentUser.Image")));
+            this.lblCurrentUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblCurrentUser.Location = new System.Drawing.Point(800, 27);
+            this.lblCurrentUser.Name = "lblCurrentUser";
+            this.lblCurrentUser.Size = new System.Drawing.Size(74, 23);
+            this.lblCurrentUser.TabIndex = 6;
+            this.lblCurrentUser.Text = "常老师";
+            this.lblCurrentUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnClose
             // 
@@ -163,19 +179,6 @@
             this.btnClose.Text = "×";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // lblCurrentUser
-            // 
-            this.lblCurrentUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(54)))), ((int)(((byte)(115)))));
-            this.lblCurrentUser.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblCurrentUser.Image = ((System.Drawing.Image)(resources.GetObject("lblCurrentUser.Image")));
-            this.lblCurrentUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblCurrentUser.Location = new System.Drawing.Point(800, 27);
-            this.lblCurrentUser.Name = "lblCurrentUser";
-            this.lblCurrentUser.Size = new System.Drawing.Size(74, 23);
-            this.lblCurrentUser.TabIndex = 6;
-            this.lblCurrentUser.Text = "常老师";
-            this.lblCurrentUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FrmMain
             // 
