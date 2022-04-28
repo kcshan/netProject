@@ -48,12 +48,12 @@ drop table Teacher
 go
 create table Teacher
 (
-	TeacherId int primary key, -- 讲师编号，主键
+	TeacherId int identity(1000,1) primary key, -- 讲师编号，主键
 	LoginAccount varchar(50) not null, -- 登录账号
-	LoginPwd varchar(18) not null,
+	LoginPwd varchar(18) check(len(LoginPwd)>=6 and len(LoginPwd)<=18)  not null,
 	TeacherName varchar(20) not null,
-	Phonenumber char(11) not null, -- 电话
-	NowAddress nvarchar(100) not null -- 住址
+	PhoneNumber char(11) not null, -- 电话
+	NowAddress nvarchar(100) -- 住址
 )
 go
 -- 课程分类表
@@ -79,6 +79,30 @@ create table Course
 	Credit int not null -- 学分
 )
 go
+-- 其他的数据表，可以根据需要添加...
+-- 可以在这个地方编写约束，但是这种方式，后面维护比较麻烦，我们不讲
+use CourseManageDB
+go
 
+-- 添加测试数据（必须要学会自己写测试数据）
+--insert into Teacher(TeacherId,LoginAccount,LoginPwd,TeacherName,PhoneNumber)
+--values(10001,'xiketang01','1234567', '常老师', '13600001234'),
+--(10002,'xiketang02','123456', '付老师', '13600001235'),
+--(10003,'xiketang03','123457', '张老师', '13600001236')
 
+-- 当我们启用标识列的时候，不能显示的插入值，应该改成下面的方法
 
+insert into Teacher(LoginAccount,LoginPwd,TeacherName,PhoneNumber)
+values('xiketang01','1234567', '常老师', '13600001234'),
+('xiketang02','123456', '付老师', '13600001235'),
+('xiketang03','123457', '张老师', '13600001236')
+
+insert into Teacher(LoginAccount,LoginPwd,TeacherName,PhoneNumber)
+values('xiketang03','1234567', '常老师', '13600001234')
+
+select * from Teacher
+
+delete from Teacher where TeacherId=1002
+
+-- 修改数据
+update Teacher set LoginPwd='1222222',TeacherName='Carter老师' where TeacherId=1004
