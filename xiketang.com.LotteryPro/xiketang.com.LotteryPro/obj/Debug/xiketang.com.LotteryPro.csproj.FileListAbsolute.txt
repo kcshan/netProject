@@ -2,9 +2,9 @@ D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\bin\Debu
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\bin\Debug\xiketang.com.LotteryPro.exe
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\bin\Debug\xiketang.com.LotteryPro.pdb
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.csprojAssemblyReference.cache
-D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.Form1.resources
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.Properties.Resources.resources
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.csproj.GenerateResource.cache
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.exe
 D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.pdb
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.LotteryPro\obj\Debug\xiketang.com.LotteryPro.FrmMain.resources

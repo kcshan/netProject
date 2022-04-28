@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblNum1 = new System.Windows.Forms.Label();
+            this.lblNum2 = new System.Windows.Forms.Label();
+            this.lblNum3 = new System.Windows.Forms.Label();
+            this.lblNum4 = new System.Windows.Forms.Label();
+            this.lblNum5 = new System.Windows.Forms.Label();
+            this.lblNum6 = new System.Windows.Forms.Label();
+            this.lblNum7 = new System.Windows.Forms.Label();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.lbNumberList = new System.Windows.Forms.ListBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.timerCreateNum = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -57,6 +59,9 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "LotteryPro";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseDown);
+            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseMove);
+            this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseUp);
             // 
             // label2
             // 
@@ -69,89 +74,89 @@
             this.label2.TabIndex = 26;
             this.label2.Text = "双 色 球 随 机 选 号 器";
             // 
-            // label3
+            // lblNum1
             // 
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
-            this.label3.Location = new System.Drawing.Point(28, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 47);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "00";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNum1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNum1.ForeColor = System.Drawing.Color.White;
+            this.lblNum1.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
+            this.lblNum1.Location = new System.Drawing.Point(28, 107);
+            this.lblNum1.Name = "lblNum1";
+            this.lblNum1.Size = new System.Drawing.Size(47, 47);
+            this.lblNum1.TabIndex = 27;
+            this.lblNum1.Text = "00";
+            this.lblNum1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lblNum2
             // 
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
-            this.label4.Location = new System.Drawing.Point(81, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 47);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "00";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNum2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNum2.ForeColor = System.Drawing.Color.White;
+            this.lblNum2.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
+            this.lblNum2.Location = new System.Drawing.Point(81, 107);
+            this.lblNum2.Name = "lblNum2";
+            this.lblNum2.Size = new System.Drawing.Size(47, 47);
+            this.lblNum2.TabIndex = 27;
+            this.lblNum2.Text = "00";
+            this.lblNum2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lblNum3
             // 
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
-            this.label5.Location = new System.Drawing.Point(134, 107);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 47);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "00";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNum3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNum3.ForeColor = System.Drawing.Color.White;
+            this.lblNum3.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
+            this.lblNum3.Location = new System.Drawing.Point(134, 107);
+            this.lblNum3.Name = "lblNum3";
+            this.lblNum3.Size = new System.Drawing.Size(47, 47);
+            this.lblNum3.TabIndex = 27;
+            this.lblNum3.Text = "00";
+            this.lblNum3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lblNum4
             // 
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
-            this.label6.Location = new System.Drawing.Point(187, 107);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 47);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "00";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNum4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNum4.ForeColor = System.Drawing.Color.White;
+            this.lblNum4.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
+            this.lblNum4.Location = new System.Drawing.Point(187, 107);
+            this.lblNum4.Name = "lblNum4";
+            this.lblNum4.Size = new System.Drawing.Size(47, 47);
+            this.lblNum4.TabIndex = 27;
+            this.lblNum4.Text = "00";
+            this.lblNum4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // lblNum5
             // 
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
-            this.label7.Location = new System.Drawing.Point(240, 107);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 47);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "00";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNum5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNum5.ForeColor = System.Drawing.Color.White;
+            this.lblNum5.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
+            this.lblNum5.Location = new System.Drawing.Point(240, 107);
+            this.lblNum5.Name = "lblNum5";
+            this.lblNum5.Size = new System.Drawing.Size(47, 47);
+            this.lblNum5.TabIndex = 27;
+            this.lblNum5.Text = "00";
+            this.lblNum5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lblNum6
             // 
-            this.label8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
-            this.label8.Location = new System.Drawing.Point(293, 107);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 47);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "00";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNum6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNum6.ForeColor = System.Drawing.Color.White;
+            this.lblNum6.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg;
+            this.lblNum6.Location = new System.Drawing.Point(293, 107);
+            this.lblNum6.Name = "lblNum6";
+            this.lblNum6.Size = new System.Drawing.Size(47, 47);
+            this.lblNum6.TabIndex = 27;
+            this.lblNum6.Text = "00";
+            this.lblNum6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // lblNum7
             // 
-            this.label9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg2;
-            this.label9.Location = new System.Drawing.Point(346, 107);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 47);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "00";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNum7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNum7.ForeColor = System.Drawing.Color.White;
+            this.lblNum7.Image = global::xiketang.com.LotteryPro.Properties.Resources.Lotterybg2;
+            this.lblNum7.Location = new System.Drawing.Point(346, 107);
+            this.lblNum7.Name = "lblNum7";
+            this.lblNum7.Size = new System.Drawing.Size(47, 47);
+            this.lblNum7.TabIndex = 27;
+            this.lblNum7.Text = "00";
+            this.lblNum7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnDel
             // 
@@ -168,6 +173,7 @@
             this.btnDel.TabIndex = 37;
             this.btnDel.Text = "清  除";
             this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnConfirm
             // 
@@ -183,6 +189,7 @@
             this.btnConfirm.TabIndex = 38;
             this.btnConfirm.Text = "确认购买";
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnSelect
             // 
@@ -198,6 +205,7 @@
             this.btnSelect.TabIndex = 39;
             this.btnSelect.Text = "选  择";
             this.btnSelect.UseVisualStyleBackColor = false;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // btnStart
             // 
@@ -213,6 +221,7 @@
             this.btnStart.TabIndex = 40;
             this.btnStart.Text = "启  动";
             this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lbNumberList
             // 
@@ -241,7 +250,12 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Form1
+            // timerCreateNum
+            // 
+            this.timerCreateNum.Interval = 50;
+            this.timerCreateNum.Tick += new System.EventHandler(this.timerCreateNum_Tick);
+            // 
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -253,19 +267,22 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblNum7);
+            this.Controls.Add(this.lblNum6);
+            this.Controls.Add(this.lblNum5);
+            this.Controls.Add(this.lblNum4);
+            this.Controls.Add(this.lblNum3);
+            this.Controls.Add(this.lblNum2);
+            this.Controls.Add(this.lblNum1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,19 +292,20 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblNum1;
+        private System.Windows.Forms.Label lblNum2;
+        private System.Windows.Forms.Label lblNum3;
+        private System.Windows.Forms.Label lblNum4;
+        private System.Windows.Forms.Label lblNum5;
+        private System.Windows.Forms.Label lblNum6;
+        private System.Windows.Forms.Label lblNum7;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.ListBox lbNumberList;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Timer timerCreateNum;
     }
 }
 

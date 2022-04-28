@@ -1,0 +1,10 @@
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\bin\Debug\xiketang.com.NonOOPDemo.exe.config
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\bin\Debug\xiketang.com.NonOOPDemo.exe
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\bin\Debug\xiketang.com.NonOOPDemo.pdb
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\obj\Debug\xiketang.com.NonOOPDemo.FrmMain.resources
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\obj\Debug\xiketang.com.NonOOPDemo.Properties.Resources.resources
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\obj\Debug\xiketang.com.NonOOPDemo.csproj.GenerateResource.cache
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\obj\Debug\xiketang.com.NonOOPDemo.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\obj\Debug\xiketang.com.NonOOPDemo.exe
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\obj\Debug\xiketang.com.NonOOPDemo.pdb
+D:\workspace\netProject\xiketang.com.LotteryPro\xiketang.com.NonOOPDemo\obj\Debug\xiketang.com.NonOOPDemo.csprojAssemblyReference.cache

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiketang.com.LotteryPro", "xiketang.com.LotteryPro\xiketang.com.LotteryPro.csproj", "{3A03DAA4-5AA5-494F-84B9-0E5F9F9564FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiketang.com.NonOOPDemo", "xiketang.com.NonOOPDemo\xiketang.com.NonOOPDemo.csproj", "{86CACEE4-EE0F-4E09-A19A-E2C43F2F308C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3A03DAA4-5AA5-494F-84B9-0E5F9F9564FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A03DAA4-5AA5-494F-84B9-0E5F9F9564FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A03DAA4-5AA5-494F-84B9-0E5F9F9564FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CACEE4-EE0F-4E09-A19A-E2C43F2F308C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CACEE4-EE0F-4E09-A19A-E2C43F2F308C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CACEE4-EE0F-4E09-A19A-E2C43F2F308C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CACEE4-EE0F-4E09-A19A-E2C43F2F308C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
