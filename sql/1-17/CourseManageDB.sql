@@ -39,3 +39,46 @@ log on
 	filegrowth=1MB
 )
 go
+-- 指向要操作的数据库
+use CourseManageDB
+go
+-- 创建讲师表
+if exists(select * from sysobjects where name='Teacher')
+drop table Teacher
+go
+create table Teacher
+(
+	TeacherId int primary key, -- 讲师编号，主键
+	LoginAccount varchar(50) not null, -- 登录账号
+	LoginPwd varchar(18) not null,
+	TeacherName varchar(20) not null,
+	Phonenumber char(11) not null, -- 电话
+	NowAddress nvarchar(100) not null -- 住址
+)
+go
+-- 课程分类表
+if exists(select * from sysobjects where name='CourseCategory')
+drop table CourseCategory
+go
+create table CourseCategory
+(
+	CategoryId int identity(10,1) primary key,
+	CategoryName varchar(20) not null,
+)
+go
+-- 课程表
+if exists(select * from sysobjects where name='Course')
+drop table Course
+go
+create table Course
+(
+	CourseId int primary key,
+	CourseName varchar(20) not null,
+	CourseContent nvarchar(500) not null,
+	ClassHour int not null, -- 课时
+	Credit int not null -- 学分
+)
+go
+
+
+
