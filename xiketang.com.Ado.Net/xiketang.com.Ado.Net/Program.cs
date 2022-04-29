@@ -19,7 +19,8 @@ namespace xiketang.com.Ado.Net
             //ExecuteUpdate();
             //ExecuteDelete();
             //ExecuteSingleResult();
-            ExecuteReader();
+            //ExecuteReader();
+            ExecuteInsertByHelper();
             Console.Read();
         }
 
@@ -46,7 +47,6 @@ namespace xiketang.com.Ado.Net
 
         }
         #endregion
-
 
         #region 插入数据
         static void ExecuteInsert()
@@ -210,5 +210,13 @@ namespace xiketang.com.Ado.Net
         }
         #endregion
 
+        static void ExecuteInsertByHelper()
+        {
+            // 定义sql语句
+            string sql = "insert into Course(CourseName,CourseContent,ClassHour,Credit,CategoryId,TeacherId)";
+            sql += "values('运动控制开发VIP课程', '雷赛固高Zmotion运动控制卡', 200, 10, 11, 1000)";
+            int result = SQLHelper.Update(sql);
+            Console.WriteLine(result);
+        }
     }
 }
