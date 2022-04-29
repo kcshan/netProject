@@ -1,0 +1,7 @@
+D:\workspace\netProject\xiketang.com.Ado.Net\xiketang.com.Ado.Net\bin\Debug\xiketang.com.Ado.Net.exe.config
+D:\workspace\netProject\xiketang.com.Ado.Net\xiketang.com.Ado.Net\bin\Debug\xiketang.com.Ado.Net.exe
+D:\workspace\netProject\xiketang.com.Ado.Net\xiketang.com.Ado.Net\bin\Debug\xiketang.com.Ado.Net.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\xiketang.com.Ado.Net\obj\Debug\xiketang.com.Ado.Net.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\xiketang.com.Ado.Net\obj\Debug\xiketang.com.Ado.Net.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\xiketang.com.Ado.Net\obj\Debug\xiketang.com.Ado.Net.exe
+D:\workspace\netProject\xiketang.com.Ado.Net\xiketang.com.Ado.Net\obj\Debug\xiketang.com.Ado.Net.pdb

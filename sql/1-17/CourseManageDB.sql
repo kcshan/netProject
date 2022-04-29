@@ -39,6 +39,7 @@ log on
 	filegrowth=1MB
 )
 go
+
 -- 指向要操作的数据库
 use CourseManageDB
 go
@@ -112,11 +113,11 @@ insert into CourseCategory(CategoryName)
 values('上位机开发'),('运动控制开发'),('机器视觉开发')
 
 -- 添加课程信息
-insert into Course(CourseName,CourseContent,ClassHour,Credit,CategoryId,TeacherId)
-values('.Net/C#上位机开发VIP课程','C#基础/OOP/SQL/WinForm/ASP.NET/WPF/WCF',500,10,10,1000)
+insert into Course(CourseName, CourseContent, ClassHour, Credit,CategoryId, TeacherId)
+values('.Net/C#上位机开发VIP课程','C#基础/OOP/SQL/WinForm/ASP.NET/WPF/WCF',500,10,10,1004)
 
-insert into Course(CourseName,CourseContent,ClassHour,Credit,CategoryId,TeacherId)
-values('运动控制开发VIP课程','雷赛固高Zmotion运动控制卡',200,10,11,1001)
+insert into Course(CourseName, CourseContent, ClassHour, Credit,CategoryId, TeacherId)
+values('运动控制开发VIP课程','雷赛固高Zmotion运动控制卡',200,10,11,1005)
 
 -- 查询(内连接)
 select CourseName,CourseContent,ClassHour,Credit,Course.CategoryId from Course
