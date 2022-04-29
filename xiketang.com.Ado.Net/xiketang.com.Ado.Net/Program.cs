@@ -20,7 +20,9 @@ namespace xiketang.com.Ado.Net
             //ExecuteDelete();
             //ExecuteSingleResult();
             //ExecuteReader();
-            ExecuteInsertByHelper();
+            //ExecuteInsertByHelper();
+            //ExecuteSingleResultByHelper();
+            ExecuteReaderByHelper();
             Console.Read();
         }
 
@@ -210,6 +212,7 @@ namespace xiketang.com.Ado.Net
         }
         #endregion
 
+        #region 增删改
         static void ExecuteInsertByHelper()
         {
             // 定义sql语句
@@ -218,5 +221,29 @@ namespace xiketang.com.Ado.Net
             int result = SQLHelper.Update(sql);
             Console.WriteLine(result);
         }
+        #endregion
+
+        #region 单一查询
+        static void ExecuteSingleResultByHelper()
+        {
+            string sql = "select Count(*) as 课程总数 from Course";
+            object result = SQLHelper.GetSingleResult(sql);
+            Console.WriteLine(result);
+        }
+        #endregion
+
+        static void ExecuteReaderByHelper()
+        {
+            // 定义sql语句
+            string sql = "select CourseName,CourseContent,ClassHour from Course where CourseId<1020";
+            SqlDataReader reader = SQLHelper.GetReader(sql);
+
+            while (reader.Read())
+            {
+                Console.WriteLine($"{reader["CourseName"]}\t{reader[1]}\t{reader["ClassHour"]}");
+            }
+            reader.Close(); // 关闭读取器对象
+        }
+
     }
 }
