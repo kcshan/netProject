@@ -134,5 +134,15 @@
   <ItemGroup>
     <None Include="Resources\mainbg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CourseManageBLL\CourseManageBLL.csproj">
+      <Project>{7a2bef1a-a0b2-4b06-a8a7-06286799661b}</Project>
+      <Name>CourseManageBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CourseManageModels\CourseManageModels.csproj">
+      <Project>{d222f622-1654-4916-9535-381f312b2c44}</Project>
+      <Name>CourseManageModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

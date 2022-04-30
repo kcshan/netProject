@@ -1,0 +1,6 @@
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageModels\bin\Debug\CourseManageModels.dll
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageModels\bin\Debug\CourseManageModels.pdb
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageModels\obj\Debug\CourseManageModels.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageModels\obj\Debug\CourseManageModels.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageModels\obj\Debug\CourseManageModels.dll
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageModels\obj\Debug\CourseManageModels.pdb

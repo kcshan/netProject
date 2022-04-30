@@ -13,3 +13,8 @@ D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\Cou
 D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.FrmCourseManage.resources
 D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.FrmModifyPwd.resources
 D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.FrmTeacherManage.resources
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\bin\Debug\CourseManageBLL.dll
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\bin\Debug\CourseManageModels.dll
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\bin\Debug\CourseManageBLL.pdb
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\bin\Debug\CourseManageModels.pdb
+D:\workspace\netProject\xiketang.com.ProjectUITeach\CourseManageUI\obj\Debug\CourseManageUI.csproj.CopyComplete
