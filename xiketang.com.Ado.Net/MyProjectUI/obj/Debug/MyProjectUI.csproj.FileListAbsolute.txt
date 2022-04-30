@@ -1,0 +1,14 @@
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\MyProjectUI.exe.config
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\MyProjectUI.exe
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\MyProjectUI.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\BLL.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\Models.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\BLL.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\Models.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\obj\Debug\MyProjectUI.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\obj\Debug\MyProjectUI.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\obj\Debug\MyProjectUI.csproj.CopyComplete
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\obj\Debug\MyProjectUI.exe
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\obj\Debug\MyProjectUI.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\DAL.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\MyProjectUI\bin\Debug\DAL.pdb

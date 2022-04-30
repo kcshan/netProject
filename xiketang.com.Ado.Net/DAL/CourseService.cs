@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Data;
-using System.Data.SqlClient;
-
-namespace xiketang.com.Ado.Net
+namespace DAL
 {
     /// <summary>
     /// 课程数据访问类
@@ -88,7 +87,7 @@ namespace xiketang.com.Ado.Net
                     CourseId = (int)reader["CourseId"]
                 });
             }
-            reader.Close(); 
+            reader.Close();
             return list;
         }
     }

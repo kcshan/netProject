@@ -26,7 +26,8 @@ namespace xiketang.com.Ado.Net
             //AddCourse();
             //AddCourse1();
             //UpdateCourse();
-            DeleteCourse();
+            //DeleteCourse();
+            QueryCourseById();
             Console.Read();
         }
 
@@ -255,24 +256,6 @@ namespace xiketang.com.Ado.Net
         #endregion
 
         #region 使用一般数据访问类分离数据操作
-        static void AddCourse()
-        {
-            // 可以通过窗体或者web页面获取数据
-            // 【1】获取用户输入的信息：用户输入的每一项数据，保存到一个局部变量中。
-            Console.Write("请输入课程名称："); // 模拟从界面输入
-            string courseName = Console.ReadLine();
-            string courseContent = ".Net框架/C#oop/SQLServer/MVC/EF/WPF/WCF";
-            int classHour = 500;
-            int credit = 20;
-            int categoryId = 10;
-            int teacherId = 1000;
-
-            // 【2】调用后台数据访问方法
-            int result = new CourseService().AddCourse(courseName,courseContent,classHour,credit,categoryId,teacherId);
-
-            // 【3】显示操作结果
-            Console.WriteLine("受影响的行数" + result);
-        }
         public static void AddCourse1()
         {
             Console.Write("请输入课程名称："); // 模拟从界面输入
@@ -314,6 +297,15 @@ namespace xiketang.com.Ado.Net
             Course course = new Course { CourseId = 1046 };
             int result = new CourseService().DeleteCourse(course);
             Console.WriteLine("受影响的行数=" + result);
+        }
+        public static void QueryCourseById()
+        {
+            List<Course> courseList = new CourseService().QueryCourseById(1020);
+
+            foreach (var item in courseList)
+            {
+                Console.WriteLine(item.CourseId + "\t" + item.CourseName + "\t" + item.Credit);
+            }
         }
         #endregion
     }

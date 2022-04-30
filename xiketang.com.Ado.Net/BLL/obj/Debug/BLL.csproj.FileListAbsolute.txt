@@ -1,0 +1,11 @@
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\bin\Debug\BLL.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\bin\Debug\BLL.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\bin\Debug\DAL.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\bin\Debug\Models.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\bin\Debug\DAL.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\bin\Debug\Models.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\obj\Debug\BLL.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\BLL\obj\Debug\BLL.pdb

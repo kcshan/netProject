@@ -1,0 +1,6 @@
+D:\workspace\netProject\xiketang.com.Ado.Net\Models\bin\Debug\Models.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\Models\bin\Debug\Models.pdb
+D:\workspace\netProject\xiketang.com.Ado.Net\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\xiketang.com.Ado.Net\Models\obj\Debug\Models.dll
+D:\workspace\netProject\xiketang.com.Ado.Net\Models\obj\Debug\Models.pdb
