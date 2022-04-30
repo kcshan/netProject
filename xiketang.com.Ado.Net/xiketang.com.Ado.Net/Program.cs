@@ -22,7 +22,11 @@ namespace xiketang.com.Ado.Net
             //ExecuteReader();
             //ExecuteInsertByHelper();
             //ExecuteSingleResultByHelper();
-            ExecuteReaderByHelper();
+            //ExecuteReaderByHelper();
+            //AddCourse();
+            //AddCourse1();
+            //UpdateCourse();
+            DeleteCourse();
             Console.Read();
         }
 
@@ -232,18 +236,85 @@ namespace xiketang.com.Ado.Net
         }
         #endregion
 
+        #region 结果集查询
         static void ExecuteReaderByHelper()
         {
             // 定义sql语句
-            string sql = "select CourseName,CourseContent,ClassHour from Course where CourseId<1020";
+            //string sql = "select CourseName,CourseContent,ClassHour from Course where CourseId<1020";
+            string sql = "select CourseName,CourseContent,ClassHour from Course";
             SqlDataReader reader = SQLHelper.GetReader(sql);
 
             while (reader.Read())
             {
                 Console.WriteLine($"{reader["CourseName"]}\t{reader[1]}\t{reader["ClassHour"]}");
             }
-            reader.Close(); // 关闭读取器对象
+            reader.Close();
+            // 关闭读取器对象
+            // 在这个地方执行关闭时，会首先自动把它使用的链接对象关闭！
         }
+        #endregion
 
+        #region 使用一般数据访问类分离数据操作
+        static void AddCourse()
+        {
+            // 可以通过窗体或者web页面获取数据
+            // 【1】获取用户输入的信息：用户输入的每一项数据，保存到一个局部变量中。
+            Console.Write("请输入课程名称："); // 模拟从界面输入
+            string courseName = Console.ReadLine();
+            string courseContent = ".Net框架/C#oop/SQLServer/MVC/EF/WPF/WCF";
+            int classHour = 500;
+            int credit = 20;
+            int categoryId = 10;
+            int teacherId = 1000;
+
+            // 【2】调用后台数据访问方法
+            int result = new CourseService().AddCourse(courseName,courseContent,classHour,credit,categoryId,teacherId);
+
+            // 【3】显示操作结果
+            Console.WriteLine("受影响的行数" + result);
+        }
+        public static void AddCourse1()
+        {
+            Console.Write("请输入课程名称："); // 模拟从界面输入
+            // 封装对象：将要传递的数据，封装到实体的属性中。
+            Course course = new Course
+            {
+                CourseName = Console.ReadLine(),
+                CourseContent = ".Net框架/C#oop/SQLServer/MVC/EF/WPF/WCF",
+                ClassHour = 500,
+                Credit = 20,
+                CategoryId = 10,
+                TeacherId = 1000
+            };
+
+            // 【2】调用后台数据访问方法
+            int result = new CourseService().AddCourse(course);
+
+            // 【3】显示操作结果
+            Console.WriteLine("受影响的行数" + result);
+        }
+        public static void UpdateCourse()
+        {
+            Console.Write("请输入课程名称："); // 模拟从界面输入
+            // 封装对象：将要传递的数据，封装到实体的属性中。
+            Course course = new Course
+            {
+                CourseName = Console.ReadLine(),
+                CourseContent = ".Net框架/C#oop/SQLServer/MVC/EF/WPF/WCF",
+                CourseId = 1047
+            };
+            // 【2】调用后台数据访问方法
+            int result = new CourseService().UpdateCourse(course);
+
+            // 【3】显示操作结果
+            Console.WriteLine("受影响的行数" + result);
+        }
+        public static void DeleteCourse()
+        {
+            Course course = new Course { CourseId = 1046 };
+            int result = new CourseService().DeleteCourse(course);
+            Console.WriteLine("受影响的行数=" + result);
+        }
+        #endregion
     }
 }
