@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseManageDAL
+namespace CourseManageModels
 {
     /// <summary>
     /// 课程分类实体类

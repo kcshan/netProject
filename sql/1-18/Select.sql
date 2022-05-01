@@ -3,6 +3,7 @@ go
 
 select * from Course
 select * from Teacher
+select * from CourseCategory
 
 select Count(*) as ¿Î³Ì×ÜÊý from Course
 
