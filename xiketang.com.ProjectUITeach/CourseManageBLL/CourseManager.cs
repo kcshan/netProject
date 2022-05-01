@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CourseManageDAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,10 @@ namespace CourseManageBLL
 {
     class CourseManager
     {
+        private CourseService courseService = new CourseService();
+        public int AddCourse(Course course)
+        {
+            return courseService.AddCourse(course);
+        }
     }
 }

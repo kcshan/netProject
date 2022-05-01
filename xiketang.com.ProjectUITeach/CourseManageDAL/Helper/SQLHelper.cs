@@ -18,14 +18,19 @@ namespace CourseManageDAL
         private static string connString = ConfigurationManager.ConnectionStrings["connString"].ToString();
         
         /// <summary>
-        /// 执行insert、update、delete类型的SQL语句
+        /// 执行增删改操作的
         /// </summary>
-        /// <param name="sql"></param>
-        /// <returns>返回的是受影响的行数</returns>
-        public static int Update(string sql)
+        /// <param name="sql">普通sql语句或带参数的SQL语句</param>
+        /// <param name="param">参数数组</param>
+        /// <returns></returns>
+        public static int Update(string sql,SqlParameter[] param=null)
         {
             SqlConnection conn = new SqlConnection(connString);
             SqlCommand cmd = new SqlCommand(sql, conn);
+            if (param != null)
+            {
+                cmd.Parameters.AddRange(param);
+            }
             try
             {
                 conn.Open();
