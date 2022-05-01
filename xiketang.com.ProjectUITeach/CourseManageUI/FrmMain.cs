@@ -15,6 +15,11 @@ namespace CourseManageUI
         public FrmMain()
         {
             InitializeComponent();
+
+            // 显示当前登录用户名
+            this.lblCurrentUser.Text = Program.currentTeacher.TeacherName;
+
+            // 如果读取了用户的权限，请在这里设置...
         }
 
         #region 窗体移动

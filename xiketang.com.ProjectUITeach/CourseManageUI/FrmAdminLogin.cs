@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CourseManageModels;
+using CourseManageBLL;
 
 namespace CourseManageUI
 {
     public partial class FrmAdminLogin : Form
     {
+        private TeacherManager teacherManager = new TeacherManager();
+
         public FrmAdminLogin()
         {
             InitializeComponent();
@@ -51,6 +55,57 @@ namespace CourseManageUI
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        // 登录按钮
+        private void btnLoginSys_Click(object sender, EventArgs e)
+        {
+            // 输入验证
+            if (this.txtLoginAccount.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("请输入登录账号！","提示信息");
+                this.txtLoginAccount.Focus();
+                return;
+            }
+            if (this.txtLoginPwd.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("请输入登录密码！", "提示信息");
+                this.txtLoginPwd.Focus();
+                return;
+            }
+            // PS：在实际开发中，还可以进一步验证邮箱格式、密码长度、非法字符等...
+
+            // 【2】封装登录实体信息
+            Teacher teacher = new Teacher()
+            {
+                LoginAccount = this.txtLoginAccount.Text.Trim(),
+                LoginPwd = this.txtLoginPwd.Text.Trim()
+            };
+
+            // 【3】调用后台登录逻辑（在这个地方，可以加一个异常处理）
+            teacher = teacherManager.TeacherLogin(teacher);
+
+            // 【4】验证登录是否成功
+            if (teacher != null)
+            {
+                // 4.1 如果登录成功，我们首先要保存登录信息（保存到全局变量中，以备后续使用）
+                Program.currentTeacher = teacher;
+
+                // 在实际开发项目中，还应该考虑下面的内容；
+                // （1）账号有效性
+                // （2）用户的权限
+                // （3）登录日志保存
+                // （4）是否保存一定时间登录信息（可以通过序列化方式完成）
+
+                // 4.2 设置窗体返回值
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("登录账号或密码错误！","登录提示");
+            }
+
         }
     }
 }

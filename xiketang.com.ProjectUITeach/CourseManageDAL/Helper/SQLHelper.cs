@@ -16,7 +16,7 @@ namespace CourseManageDAL
     class SQLHelper
     {
         private static string connString = ConfigurationManager.ConnectionStrings["connString"].ToString();
-
+        
         /// <summary>
         /// 执行insert、update、delete类型的SQL语句
         /// </summary>

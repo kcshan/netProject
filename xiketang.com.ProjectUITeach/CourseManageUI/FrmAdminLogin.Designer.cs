@@ -65,7 +65,7 @@
             this.txtLoginAccount.Name = "txtLoginAccount";
             this.txtLoginAccount.Size = new System.Drawing.Size(132, 21);
             this.txtLoginAccount.TabIndex = 1;
-            this.txtLoginAccount.Text = "xiketang001";
+            this.txtLoginAccount.Text = "xiketang01";
             // 
             // txtLoginPwd
             // 
@@ -74,7 +74,7 @@
             this.txtLoginPwd.Name = "txtLoginPwd";
             this.txtLoginPwd.Size = new System.Drawing.Size(132, 21);
             this.txtLoginPwd.TabIndex = 1;
-            this.txtLoginPwd.Text = "123456";
+            this.txtLoginPwd.Text = "1234567";
             this.txtLoginPwd.UseSystemPasswordChar = true;
             // 
             // ckbSavePwd
@@ -102,6 +102,7 @@
             this.btnLoginSys.TabIndex = 3;
             this.btnLoginSys.Text = "登 录 系 统";
             this.btnLoginSys.UseVisualStyleBackColor = false;
+            this.btnLoginSys.Click += new System.EventHandler(this.btnLoginSys_Click);
             // 
             // btnClose
             // 

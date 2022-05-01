@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CourseManageModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,21 @@ namespace CourseManageUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+
+            // 显示登录窗体
+            FrmAdminLogin frmLogin = new FrmAdminLogin();
+            DialogResult result = frmLogin.ShowDialog(); // 模式窗体可以有返回值
+
+            // 通过登录窗体的返回值，确定是否显示主窗体
+            if (result == DialogResult.OK)
+            {
+                Application.Run(new FrmMain());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
+        public static Teacher currentTeacher = null;
     }
 }
