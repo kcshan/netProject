@@ -12,6 +12,8 @@ namespace CourseManageDAL
 {
     public class CourseService
     {
+
+        #region 添加课程
         //public int AddCourse(Course course)
         //{
         //    // 定义sql语句，并解析实体数据
@@ -30,7 +32,7 @@ namespace CourseManageDAL
             sql += " values(@CourseName,@CourseContent,@ClassHour,@Credit,@CategoryId,@TeacherId)";
 
             // 封装SQL语句中的参数
-            SqlParameter[] param = new SqlParameter[] 
+            SqlParameter[] param = new SqlParameter[]
             {
                 new SqlParameter("@CourseName", course.CourseName),
                 new SqlParameter("@CourseContent", course.CourseContent),
@@ -43,5 +45,59 @@ namespace CourseManageDAL
             // 执行SQL语句
             return SQLHelper.Update(sql, param);
         }
+        #endregion
+
+        #region 查询课程
+        /// <summary>
+        /// 根据多个查询条件动态组合查询
+        /// </summary>
+        /// <param name="categoryId">课程分类编号</param>
+        /// <param name="courseName">课程名称</param>
+        /// <returns></returns>
+        public List<Course> QueryCourse(int categoryId, string courseName)
+        {
+            // 【1】定义SQL语句
+            string sql = "select CourseId,CourseName,CourseContent,ClassHour,Credit,CategoryId,TeacherName from Course";
+            sql += "inner join Teacher on Teacher.TeacherId=Course.TeacherId where";
+
+            // 【2】组合条件
+            string whereSql = string.Empty;
+            if (categoryId != -1)
+            {
+                whereSql += " and CategoryId=" + categoryId;
+            }
+            if (courseName != "") // 这个地方没有必要检查null,因为我们通过文本框架文本传递的数据永远不可能为null
+            {
+                whereSql += $" and CourseName like '{courseName}%' ";
+            }
+            // 实际开发中，如果还有其他的条件，请在这里继续添加if判断即可
+
+            // 将动态的查询条件和前面的基本查询语句组合
+            sql += whereSql.Substring(3); // 把第一个and去掉后，组合
+
+            // 【3】执行查询
+            SqlDataReader reader = SQLHelper.GetReader(sql);
+
+            // 【4】封装结果
+            List<Course> list = new List<Course>();
+            while (reader.Read())
+            {
+                list.Add(new Course
+                {
+                    CourseId=(int)reader["CourseId"],
+                    CourseName=reader["CourseName"].ToString(),
+                    CourseContent = reader["CourseContent"].ToString(),
+                    ClassHour = (int)reader["ClassHour"],
+                    Credit = (int)reader["Credit"],
+                    CategoryId = (int)reader["CategoryId"],
+                    TeacherId = (int)reader["TeacherId"],
+                    TeacherName = reader["TeacherName"].ToString(),
+                });
+            }
+            reader.Close();
+            return list;
+        }
+        #endregion
+
     }
 }

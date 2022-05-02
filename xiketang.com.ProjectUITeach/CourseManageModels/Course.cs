@@ -22,5 +22,6 @@ namespace CourseManageModels
 
         // 简单扩展实体属性
         public string CategoryName { get; set; }
+        public string TeacherName { get; set; }
     }
 }
