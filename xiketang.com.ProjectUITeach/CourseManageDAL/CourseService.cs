@@ -57,8 +57,8 @@ namespace CourseManageDAL
         public List<Course> QueryCourse(int categoryId, string courseName)
         {
             // 【1】定义SQL语句
-            string sql = "select CourseId,CourseName,CourseContent,ClassHour,Credit,CategoryId,TeacherName from Course";
-            sql += "inner join Teacher on Teacher.TeacherId=Course.TeacherId where";
+            string sql = "select CourseId,CourseName,CourseContent,ClassHour,Credit,CategoryId,TeacherName,Course.TeacherId from Course";
+            sql += " inner join Teacher on Teacher.TeacherId=Course.TeacherId where";
 
             // 【2】组合条件
             string whereSql = string.Empty;
@@ -73,7 +73,7 @@ namespace CourseManageDAL
             // 实际开发中，如果还有其他的条件，请在这里继续添加if判断即可
 
             // 将动态的查询条件和前面的基本查询语句组合
-            sql += whereSql.Substring(3); // 把第一个and去掉后，组合
+            sql += whereSql.Substring(4); // 把第一个and去掉后，组合
 
             // 【3】执行查询
             SqlDataReader reader = SQLHelper.GetReader(sql);

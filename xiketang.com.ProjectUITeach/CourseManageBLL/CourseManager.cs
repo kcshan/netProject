@@ -27,4 +27,5 @@ namespace CourseManageBLL
         {
             return courseService.QueryCourse(categoryId, courseName);
         }
+    }
 }
