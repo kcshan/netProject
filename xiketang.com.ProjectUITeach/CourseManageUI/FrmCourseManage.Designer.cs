@@ -63,6 +63,7 @@
             this.btnModifyCourse = new System.Windows.Forms.Button();
             this.btnAddCourse = new System.Windows.Forms.Button();
             this.CourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CourseId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClassHour = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Credit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CourseContent = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -161,6 +162,7 @@
             this.dgvCourseList.ColumnHeadersHeight = 30;
             this.dgvCourseList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CourseName,
+            this.CourseId,
             this.ClassHour,
             this.Credit,
             this.CourseContent,
@@ -253,7 +255,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 12);
             this.label12.TabIndex = 10;
-            this.label12.Text = "课程讲师：";
+            this.label12.Text = "课程分类：";
             // 
             // label11
             // 
@@ -273,6 +275,7 @@
             // 
             // cbbCategory_Modify
             // 
+            this.cbbCategory_Modify.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbCategory_Modify.FormattingEnabled = true;
             this.cbbCategory_Modify.Location = new System.Drawing.Point(546, 63);
             this.cbbCategory_Modify.Name = "cbbCategory_Modify";
@@ -442,6 +445,14 @@
             this.CourseName.ReadOnly = true;
             this.CourseName.Width = 150;
             // 
+            // CourseId
+            // 
+            this.CourseId.DataPropertyName = "CourseId";
+            this.CourseId.HeaderText = "CourseId";
+            this.CourseId.Name = "CourseId";
+            this.CourseId.ReadOnly = true;
+            this.CourseId.Visible = false;
+            // 
             // ClassHour
             // 
             this.ClassHour.DataPropertyName = "ClassHour";
@@ -540,6 +551,7 @@
         private System.Windows.Forms.TextBox txtCoureName_Modify;
         private System.Windows.Forms.TextBox txtCourseContent;
         private System.Windows.Forms.DataGridViewTextBoxColumn CourseName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CourseId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClassHour;
         private System.Windows.Forms.DataGridViewTextBoxColumn Credit;
         private System.Windows.Forms.DataGridViewTextBoxColumn CourseContent;

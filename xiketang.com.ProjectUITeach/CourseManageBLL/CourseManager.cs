@@ -27,5 +27,10 @@ namespace CourseManageBLL
         {
             return courseService.QueryCourse(categoryId, courseName);
         }
+
+        public int ModifyCourse(Course course)
+        {
+            return courseService.ModifyCourse(course);
+        }
     }
 }

@@ -45,6 +45,14 @@ namespace CourseManageUI
             // 禁用修改和删除按钮（提高用户体验）
             this.btnModifyCourse.Enabled = this.btnDelCourse.Enabled = false;
 
+            // 绑定修改用的课程分类
+            //this.cbbCategory_Modify.DataSource = list; // 如果直接使用前面的集合，会造成俩个下拉框联动
+            this.cbbCategory_Modify.DataSource = new List<CourseCategory>(list); // 将前面的集合重新复制后再做数据源
+            // 我们在UI中看到的
+            this.cbbCategory_Modify.DisplayMember = "CategoryName";
+            // 保存到数据库使用的外键值
+            this.cbbCategory_Modify.ValueMember = "CategoryId";
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -89,11 +97,43 @@ namespace CourseManageUI
                 this.lblCount.Text = this.dgvCourseList.RowCount.ToString();
                 this.btnModifyCourse.Enabled = this.btnDelCourse.Enabled = true;
             }
+            this.panelModify.Visible = false; // 每次查询都要隐藏修改面板，提高用户体验
         }
         // 显示修改信息
         private void btnModifyCourse_Click(object sender, EventArgs e)
         {
+            if (this.dgvCourseList.CurrentRow == null)
+            {
+                MessageBox.Show("请首先选择一行！！", "修改提示");
+                return;
+            }
+            // 【1】获取当前选中行的对应的课程ID
+            int courseId = (int)this.dgvCourseList.CurrentRow.Cells["CourseId"].Value;
+            // 【2】根据课程ID从集合中查询课程对象
+            Course currentCourse = null;
+            //foreach (var item in this.queryList)
+            //{
+            //    if (item.CourseId.Equals(courseId))
+            //    {
+            //        currentCourse = item;
+            //        break;
+            //    }
+            //}
+            // 以上仅仅适合初学者理解，但是实际开发中，我们应该有更高效的方法（深入学习中讲解，今天我们会使用）
+            currentCourse = (from c in this.queryList where c.CourseId.Equals(courseId) select c).First();
+            //currentCourse = this.queryList.Where(c => c.CourseId.Equals(courseId)).First();
 
+            // 【3】显示要修改的课程对象
+            this.txtCoureName_Modify.Text = currentCourse.CourseName;
+            this.txtCredit.Text = currentCourse.Credit.ToString();
+            this.txtClassHour.Text = currentCourse.ClassHour.ToString();
+            this.txtCourseContent.Text = currentCourse.CourseContent;
+            this.lblCourseId.Text = currentCourse.CourseId.ToString(); // 为提交修改使用
+            
+            // 将当前课程分类和下拉框选择做同步
+            this.cbbCategory_Modify.SelectedValue = currentCourse.CategoryId;
+
+            this.panelModify.Visible = true;
         }
         // 关闭修改窗口
         private void btnSaveToDB_Click(object sender, EventArgs e)

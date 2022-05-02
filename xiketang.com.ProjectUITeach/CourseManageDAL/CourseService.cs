@@ -99,5 +99,30 @@ namespace CourseManageDAL
         }
         #endregion
 
+        #region 修改课程
+        /// <summary>
+        /// 修改课程对象
+        /// </summary>
+        /// <param name="course"></param>
+        /// <returns></returns>
+        public int ModifyCourse(Course course)
+        {
+            // 定义SQL语句
+            string sql = $"update Course Set CourseName=@CourseName,CourseContent=@CourseContent,ClassHour=@ClassHour,Credit=@Credit,CategoryId=@CategoryId ";
+            sql += " where CourseId=@CourseId";
+            // 封装SQL语句中的参数
+            SqlParameter[] param = new SqlParameter[]
+            {
+                new SqlParameter("@CourseName", course.CourseName),
+                new SqlParameter("@CourseContent", course.CourseContent),
+                new SqlParameter("@ClassHour", course.ClassHour),
+                new SqlParameter("@Credit", course.Credit),
+                new SqlParameter("@CategoryId", course.CategoryId),
+                new SqlParameter("@CourseId", course.CourseId)
+            };
+            // 提交保存
+            return SQLHelper.Update(sql, param);
+        }
+        #endregion
     }
 }
