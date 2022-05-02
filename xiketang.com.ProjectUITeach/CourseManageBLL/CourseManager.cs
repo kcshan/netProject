@@ -28,9 +28,24 @@ namespace CourseManageBLL
             return courseService.QueryCourse(categoryId, courseName);
         }
 
+        /// <summary>
+        /// 修改课程
+        /// </summary>
+        /// <param name="course"></param>
+        /// <returns></returns>
         public int ModifyCourse(Course course)
         {
             return courseService.ModifyCourse(course);
+        }
+
+        /// <summary>
+        /// 删除课程
+        /// </summary>
+        /// <param name="course"></param>
+        /// <returns></returns>
+        public int DeleteCourse(Course course)
+        {
+            return courseService.DeleteCourse(course);
         }
     }
 }

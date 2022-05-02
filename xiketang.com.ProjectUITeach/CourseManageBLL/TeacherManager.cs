@@ -22,5 +22,10 @@ namespace CourseManageBLL
             // PS：如果账号设置了有效性，要根据有效性决定是否读取权限等相关任务...
             return teacher;
         }
+
+        public int ModifyPwd(Teacher teacher)
+        {
+            return teacherService.ModifyPwd(teacher);
+        }
     }
 }

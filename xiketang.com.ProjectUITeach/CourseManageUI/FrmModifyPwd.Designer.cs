@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModifyPwd));
             this.groupBoxCourseInfo = new System.Windows.Forms.GroupBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSaveToDB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtConfirmNewPwd = new System.Windows.Forms.TextBox();
             this.txtNewPwd = new System.Windows.Forms.TextBox();
             this.txtOldPwd = new System.Windows.Forms.TextBox();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnSaveToDB = new System.Windows.Forms.Button();
             this.groupBoxCourseInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,40 @@
             this.groupBoxCourseInfo.TabIndex = 41;
             this.groupBoxCourseInfo.TabStop = false;
             this.groupBoxCourseInfo.Text = "[用户修改密码]";
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(220, 136);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(63, 27);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "   退出";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnSaveToDB
+            // 
+            this.btnSaveToDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(155)))), ((int)(((byte)(252)))));
+            this.btnSaveToDB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.btnSaveToDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveToDB.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSaveToDB.ForeColor = System.Drawing.Color.White;
+            this.btnSaveToDB.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveToDB.Image")));
+            this.btnSaveToDB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveToDB.Location = new System.Drawing.Point(114, 136);
+            this.btnSaveToDB.Name = "btnSaveToDB";
+            this.btnSaveToDB.Size = new System.Drawing.Size(100, 27);
+            this.btnSaveToDB.TabIndex = 3;
+            this.btnSaveToDB.Text = "  提交修改";
+            this.btnSaveToDB.UseVisualStyleBackColor = false;
+            this.btnSaveToDB.Click += new System.EventHandler(this.btnSaveToDB_Click);
             // 
             // label3
             // 
@@ -121,38 +155,6 @@
             this.txtOldPwd.PasswordChar = '*';
             this.txtOldPwd.Size = new System.Drawing.Size(169, 23);
             this.txtOldPwd.TabIndex = 0;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(220, 136);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(63, 27);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "   退出";
-            this.btnClose.UseVisualStyleBackColor = false;
-            // 
-            // btnSaveToDB
-            // 
-            this.btnSaveToDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(155)))), ((int)(((byte)(252)))));
-            this.btnSaveToDB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
-            this.btnSaveToDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveToDB.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSaveToDB.ForeColor = System.Drawing.Color.White;
-            this.btnSaveToDB.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveToDB.Image")));
-            this.btnSaveToDB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveToDB.Location = new System.Drawing.Point(114, 136);
-            this.btnSaveToDB.Name = "btnSaveToDB";
-            this.btnSaveToDB.Size = new System.Drawing.Size(100, 27);
-            this.btnSaveToDB.TabIndex = 3;
-            this.btnSaveToDB.Text = "  提交修改";
-            this.btnSaveToDB.UseVisualStyleBackColor = false;
             // 
             // FrmModifyPwd
             // 

@@ -176,7 +176,38 @@ namespace CourseManageUI
         // 删除课程
         private void btnDelCourse_Click(object sender, EventArgs e)
         {
+            // 【1】条件验证
+            if ((this.cbbCategory.SelectedIndex == -1 || this.cbbCategory.SelectedIndex == 0)
+                && this.txtCourseName.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("请至少选择一个查询条件！", "查询提示");
+                return;
+            }
 
+            // 【2】获取当前选中行对应的ID
+            int courseId = (int)this.dgvCourseList.CurrentRow.Cells["CourseId"].Value;
+
+            // 【3】删除前确认
+            DialogResult result = MessageBox.Show($"您确认要删除编号为:{courseId}的课程吗？","删除确认", MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Cancel)
+            {
+                return;
+            }
+
+            // 【4】从后台执行删除
+            int deleteCount = courseManager.DeleteCourse(new Course { CourseId = courseId});
+
+            // 【5】从集合中删除
+            // 初学者可以使用前面的遍历查找
+            // 使用linq查询或者扩展方法
+            this.queryList.Remove(this.queryList.Where(c => c.CourseId == courseId).First());
+
+            // 【6】同步刷新显示
+            this.dgvCourseList.DataSource = null;
+            this.dgvCourseList.DataSource = this.queryList;
+            this.lblCount.Text = this.queryList.Count.ToString();
         }
     }
 }

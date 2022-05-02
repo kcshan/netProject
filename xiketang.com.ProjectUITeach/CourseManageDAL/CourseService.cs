@@ -124,5 +124,20 @@ namespace CourseManageDAL
             return SQLHelper.Update(sql, param);
         }
         #endregion
+
+        #region 删除课程
+
+        /// <summary>
+        /// 删除课程
+        /// </summary>
+        /// <returns></returns>
+        public int DeleteCourse(Course course)
+        {
+            string sql = "delete from Course where CourseId=" + course.CourseId;
+
+            return SQLHelper.Update(sql);
+        }
+
+        #endregion
     }
 }
