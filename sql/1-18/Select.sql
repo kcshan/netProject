@@ -5,6 +5,8 @@ select * from Course
 select * from Teacher
 select * from CourseCategory
 
+select * from Course where CategoryId=10
+
 select Count(*) as ¿Î³Ì×ÜÊý from Course
 
 select CourseName from Course where CourseId=1039

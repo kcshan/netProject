@@ -135,15 +135,43 @@ namespace CourseManageUI
 
             this.panelModify.Visible = true;
         }
-        // 关闭修改窗口
+        // 保存修改信息
         private void btnSaveToDB_Click(object sender, EventArgs e)
         {
+            // 【1】数据验证：对要修改的信息检查（请自行完成）
 
+            // 【2】封装对象
+            Course course = new Course
+            {
+                CourseName = this.txtCoureName_Modify.Text.Trim(),
+                CourseContent = this.txtCourseContent.Text.Trim(),
+                ClassHour = Convert.ToInt32(this.txtClassHour.Text.Trim()),
+                Credit = Convert.ToInt32(this.txtCredit.Text.Trim()),
+                CategoryId = Convert.ToInt32(this.cbbCategory_Modify.SelectedValue),
+                TeacherId = Program.currentTeacher.TeacherId,
+                CategoryName = this.cbbCategory_Modify.Text,
+                CourseId = Convert.ToInt32(this.lblCourseId.Text) 
+            };
+
+            // 【3】调用后台
+            courseManager.ModifyCourse(course);
+            this.panelModify.Visible = false;
+
+            // 【4】同步显示修改后的信息（改进用户体验）（依然是从缓存中修改对象...）
+            Course currentCourse = (from c in this.queryList where c.CourseId.Equals(course.CourseId) select c).First();
+            currentCourse.CourseName = course.CourseName;
+            currentCourse.CourseContent = course.CourseContent;
+            currentCourse.ClassHour = course.ClassHour;
+            currentCourse.Credit = course.Credit;
+            currentCourse.CategoryId = course.CategoryId;
+            currentCourse.CategoryName = course.CategoryName;
+
+            this.dgvCourseList.Refresh();
         }
         // 关闭修改窗口
         private void btnCloseModify_Click(object sender, EventArgs e)
         {
-
+            this.panelModify.Visible = false;
         }
         // 删除课程
         private void btnDelCourse_Click(object sender, EventArgs e)
