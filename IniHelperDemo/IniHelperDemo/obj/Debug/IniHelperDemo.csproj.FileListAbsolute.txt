@@ -1,0 +1,10 @@
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\bin\Debug\IniHelperDemo.exe.config
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\bin\Debug\IniHelperDemo.exe
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\bin\Debug\IniHelperDemo.pdb
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\obj\Debug\IniHelperDemo.csprojAssemblyReference.cache
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\obj\Debug\IniHelperDemo.FrmMain.resources
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\obj\Debug\IniHelperDemo.Properties.Resources.resources
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\obj\Debug\IniHelperDemo.csproj.GenerateResource.cache
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\obj\Debug\IniHelperDemo.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\obj\Debug\IniHelperDemo.exe
+D:\workspace\netProject\IniHelperDemo\IniHelperDemo\obj\Debug\IniHelperDemo.pdb
