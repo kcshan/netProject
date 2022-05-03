@@ -1,0 +1,7 @@
+D:\workspace\netProject\TeachDemo02\xiketang,com.TeachDemo01\obj\Debug\xiketang,com.TeachDemo01.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\TeachDemo02\xiketang,com.TeachDemo01\bin\Debug\xiketang,com.TeachDemo01.exe.config
+D:\workspace\netProject\TeachDemo02\xiketang,com.TeachDemo01\bin\Debug\xiketang,com.TeachDemo01.exe
+D:\workspace\netProject\TeachDemo02\xiketang,com.TeachDemo01\bin\Debug\xiketang,com.TeachDemo01.pdb
+D:\workspace\netProject\TeachDemo02\xiketang,com.TeachDemo01\obj\Debug\xiketang,com.TeachDemo01.exe
+D:\workspace\netProject\TeachDemo02\xiketang,com.TeachDemo01\obj\Debug\xiketang,com.TeachDemo01.pdb
+D:\workspace\netProject\TeachDemo02\xiketang,com.TeachDemo01\obj\Debug\xiketang,com.TeachDemo01.csprojAssemblyReference.cache
