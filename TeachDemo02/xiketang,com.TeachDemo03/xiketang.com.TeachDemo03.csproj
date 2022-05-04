@@ -7,7 +7,7 @@
     <ProjectGuid>{FDEEB1D8-4C2B-4E2F-A6E1-919BEF7F5206}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>xiketang.com.TeachDemo03</RootNamespace>
-    <AssemblyName>xiketang,com.TeachDemo03</AssemblyName>
+    <AssemblyName>xiketang.com.TeachDemo03</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,6 +48,8 @@
     <Compile Include="2.接口\IMeeting.cs" />
     <Compile Include="2.接口\ITeach.cs" />
     <Compile Include="3.子类（实现类）\President.cs" />
+    <Compile Include="Dean.cs" />
+    <Compile Include="ObjectFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="3.子类（实现类）\Teacher.cs" />
