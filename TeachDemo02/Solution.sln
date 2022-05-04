@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiketang,com.TeachDemo01", "xiketang,com.TeachDemo01\xiketang,com.TeachDemo01.csproj", "{177AC4B2-64D9-4B3C-853E-6FB6BCD723FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiketang.com.TeachDemo01", "xiketang,com.TeachDemo01\xiketang.com.TeachDemo01.csproj", "{177AC4B2-64D9-4B3C-853E-6FB6BCD723FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiketang.com.TeachDemo02", "xiketang.com.TeachDemo02\xiketang.com.TeachDemo02.csproj", "{11F20780-9E7B-48C2-8A1E-5212B772420B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiketang.com.TeachDemo03", "xiketang,com.TeachDemo03\xiketang.com.TeachDemo03.csproj", "{FDEEB1D8-4C2B-4E2F-A6E1-919BEF7F5206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{11F20780-9E7B-48C2-8A1E-5212B772420B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F20780-9E7B-48C2-8A1E-5212B772420B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F20780-9E7B-48C2-8A1E-5212B772420B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEEB1D8-4C2B-4E2F-A6E1-919BEF7F5206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEEB1D8-4C2B-4E2F-A6E1-919BEF7F5206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEEB1D8-4C2B-4E2F-A6E1-919BEF7F5206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEEB1D8-4C2B-4E2F-A6E1-919BEF7F5206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
