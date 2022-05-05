@@ -401,6 +401,7 @@
             this.txt_Period.Name = "txt_Period";
             this.txt_Period.Size = new System.Drawing.Size(73, 21);
             this.txt_Period.TabIndex = 9;
+            this.txt_Period.Text = "1000";
             // 
             // label6
             // 
@@ -444,6 +445,7 @@
             this.btn_SendClear.TabIndex = 6;
             this.btn_SendClear.Text = "清空发送";
             this.btn_SendClear.UseVisualStyleBackColor = true;
+            this.btn_SendClear.Click += new System.EventHandler(this.btn_SendClear_Click);
             // 
             // chk_HexSend
             // 
@@ -474,6 +476,7 @@
             this.chk_AutoSend.TabIndex = 5;
             this.chk_AutoSend.Text = "自动发送";
             this.chk_AutoSend.UseVisualStyleBackColor = true;
+            this.chk_AutoSend.CheckedChanged += new System.EventHandler(this.chk_AutoSend_CheckedChanged);
             // 
             // groupBox4
             // 

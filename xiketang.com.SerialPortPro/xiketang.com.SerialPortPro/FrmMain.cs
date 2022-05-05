@@ -79,7 +79,10 @@ namespace xiketang.com.SerialPortPro
         private SerialPort serialPort = null;
 
         //private Encoding encoding = Encoding.UTF8;
-        private Encoding encoding = Encoding.ASCII;
+        private Encoding encoding = Encoding.Default;
+
+        // 定时器
+        private System.Timers.Timer AutoSendTimer = new System.Timers.Timer(); 
 
         #endregion
 
@@ -186,11 +189,84 @@ namespace xiketang.com.SerialPortPro
 
         }
 
+        #region 手动发送
+
         private void btn_HandSend_Click(object sender, EventArgs e)
         {
             SendData();
         }
+        #endregion
 
+        #region 定时发送
+        /// <summary>
+        /// 定时发送
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void chk_AutoSend_CheckedChanged(object sender, EventArgs e)
+        {
+            if (IsOpen == false && this.chk_AutoSend.CheckState == CheckState.Checked)
+            {
+                this.chk_AutoSend.CheckState = CheckState.Unchecked;
+
+                // 停止定时器
+                this.AutoSendTimer.Enabled = false;
+                this.tssl_Status.Text = "自动发送失败，串口未打开";
+                return;
+            }
+            if (IsOpen == true && this.chk_AutoSend.CheckState == CheckState.Checked)
+            {
+                // 禁用手动发送
+                this.btn_HandSend.Enabled = false;
+                // 获取时间周期
+                int interval = 0;
+                if (int.TryParse(this.txt_Period.Text.Trim(), out interval))
+                {
+                    if (interval < 1 || interval > 60000)
+                    {
+                        interval = 1000;
+                        txt_Period.Text = "1000";
+                        this.tssl_Status.Text = "周期设定过大，限制为1000ms";
+                    }
+                    // 开始自动发送
+                    this.AutoSendTimer.Interval = interval;
+                    this.AutoSendTimer.Elapsed += AutoSendTimer_Elapsed;
+                    this.AutoSendTimer.Enabled = true;
+                    // 禁用周期设置
+                    this.txt_Period.Enabled = false;
+                }
+                else
+                {
+                    this.chk_AutoSend.CheckState = CheckState.Unchecked;
+
+                    // 停止定时器
+                    this.AutoSendTimer.Enabled = false;
+                    this.tssl_Status.Text = "自动发送失败，周期设定格式不正确";
+                    return;
+                }
+            }
+            else
+            {
+                this.btn_HandSend.Enabled = true;
+                this.txt_Period.Enabled = true;
+                this.AutoSendTimer.Enabled = false;
+            }
+        }
+
+        private void AutoSendTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            Invoke(new Action(() =>
+            {
+                SendData();
+            }));
+        }
+        #endregion
+
+        #region 发送数据
+
+        /// <summary>
+        /// 发送数据
+        /// </summary>
         private void SendData()
         {
             if (this.chk_HexSend.Checked)
@@ -225,5 +301,23 @@ namespace xiketang.com.SerialPortPro
                 
             }
         }
+
+        #endregion
+
+        #region 清空发送区
+
+        /// <summary>
+        /// 清空发送区
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_SendClear_Click(object sender, EventArgs e)
+        {
+            this.rtb_Send.Clear();
+        }
+        #endregion
+
+        
+
     }
 }
