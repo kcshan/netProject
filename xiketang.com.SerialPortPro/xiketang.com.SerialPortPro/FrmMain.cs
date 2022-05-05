@@ -43,8 +43,43 @@ namespace xiketang.com.SerialPortPro
             }
         }
 
+        /// <summary>
+        /// 发送字节字数
+        /// </summary>
+
+        private int totalSendNum = 0;
+
+        public int TotalSendNum
+        {
+            get { return totalSendNum; }
+            set
+            {
+                totalSendNum = value;
+                this.tssl_SendCount.Text = value.ToString();
+            }
+        }
+
+        /// <summary>
+        /// 接收字节字数
+        /// </summary>
+
+        private int totalRcvNum = 0;
+
+        public int TotalRcvNum
+        {
+            get { return totalRcvNum; }
+            set
+            {
+                totalRcvNum = value;
+                this.tssl_ReceiveCount.Text = value.ToString();
+            }
+        }
+
         // 串口对象
         private SerialPort serialPort = null;
+
+        //private Encoding encoding = Encoding.UTF8;
+        private Encoding encoding = Encoding.ASCII;
 
         #endregion
 
@@ -148,7 +183,47 @@ namespace xiketang.com.SerialPortPro
         /// <param name="e"></param>
         private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            throw new NotImplementedException();
+
+        }
+
+        private void btn_HandSend_Click(object sender, EventArgs e)
+        {
+            SendData();
+        }
+
+        private void SendData()
+        {
+            if (this.chk_HexSend.Checked)
+            {
+                // 去掉空格 01 04 50
+                string temp = this.rtb_Send.Text.Replace(" ", "");
+                try
+                {
+                    byte[] b = HexHelper.HexStringToBytes(temp);
+                    serialPort.Write(b, 0, b.Length);
+                    TotalSendNum += b.Length;
+                }
+                catch (Exception ex)
+                {
+                    this.tssl_Status.Text = "发送失败：" + ex.Message;
+                    isOpen = false;
+                }
+            }
+            else
+            {
+                try
+                {
+                    byte[] b = encoding.GetBytes(this.rtb_Send.Text.Trim());
+                    serialPort.Write(b, 0, b.Length);
+                    TotalSendNum += b.Length;
+                }
+                catch (Exception ex)
+                {
+                    this.tssl_Status.Text = "发送失败：" + ex.Message;
+                    isOpen = false;
+                }
+                
+            }
         }
     }
 }

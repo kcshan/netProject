@@ -52,20 +52,26 @@
             this.btn_HandClear = new System.Windows.Forms.Button();
             this.chk_AutoClear = new System.Windows.Forms.CheckBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tssl_Status = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tssl_SendCount = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tssl_ReceiveCount = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_Period = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.txt_SendPath = new System.Windows.Forms.TextBox();
+            this.btn_OpenFile = new System.Windows.Forms.Button();
+            this.btn_SendFile = new System.Windows.Forms.Button();
+            this.btn_SendClear = new System.Windows.Forms.Button();
+            this.chk_HexSend = new System.Windows.Forms.CheckBox();
+            this.btn_HandSend = new System.Windows.Forms.Button();
+            this.chk_AutoSend = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.rtb_Send = new System.Windows.Forms.RichTextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -75,18 +81,14 @@
             this.button13 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tssl_Status = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tssl_Clear = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -322,26 +324,70 @@
             this.toolStripStatusLabel1,
             this.tssl_Status,
             this.toolStripStatusLabel3,
-            this.toolStripStatusLabel4,
+            this.tssl_SendCount,
             this.toolStripStatusLabel5,
-            this.toolStripStatusLabel6});
+            this.tssl_ReceiveCount,
+            this.tssl_Clear,
+            this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 706);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(776, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(112, 17);
+            this.toolStripStatusLabel1.Text = "     系统工作状态：";
+            // 
+            // tssl_Status
+            // 
+            this.tssl_Status.AutoSize = false;
+            this.tssl_Status.Name = "tssl_Status";
+            this.tssl_Status.Size = new System.Drawing.Size(230, 17);
+            this.tssl_Status.Text = "初始化正常！";
+            this.tssl_Status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(80, 17);
+            this.toolStripStatusLabel3.Text = "发送字节数：";
+            // 
+            // tssl_SendCount
+            // 
+            this.tssl_SendCount.AutoSize = false;
+            this.tssl_SendCount.Name = "tssl_SendCount";
+            this.tssl_SendCount.Size = new System.Drawing.Size(80, 17);
+            this.tssl_SendCount.Text = "0";
+            this.tssl_SendCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(80, 17);
+            this.toolStripStatusLabel5.Text = "接收字节数：";
+            // 
+            // tssl_ReceiveCount
+            // 
+            this.tssl_ReceiveCount.AutoSize = false;
+            this.tssl_ReceiveCount.Name = "tssl_ReceiveCount";
+            this.tssl_ReceiveCount.Size = new System.Drawing.Size(80, 17);
+            this.tssl_ReceiveCount.Text = "0";
+            this.tssl_ReceiveCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txt_Period);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.checkBox3);
-            this.groupBox3.Controls.Add(this.button9);
-            this.groupBox3.Controls.Add(this.checkBox4);
+            this.groupBox3.Controls.Add(this.txt_SendPath);
+            this.groupBox3.Controls.Add(this.btn_OpenFile);
+            this.groupBox3.Controls.Add(this.btn_SendFile);
+            this.groupBox3.Controls.Add(this.btn_SendClear);
+            this.groupBox3.Controls.Add(this.chk_HexSend);
+            this.groupBox3.Controls.Add(this.btn_HandSend);
+            this.groupBox3.Controls.Add(this.chk_AutoSend);
             this.groupBox3.Location = new System.Drawing.Point(27, 479);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(217, 220);
@@ -349,12 +395,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "发送配置";
             // 
-            // textBox3
+            // txt_Period
             // 
-            this.textBox3.Location = new System.Drawing.Point(123, 180);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 21);
-            this.textBox3.TabIndex = 9;
+            this.txt_Period.Location = new System.Drawing.Point(123, 180);
+            this.txt_Period.Name = "txt_Period";
+            this.txt_Period.Size = new System.Drawing.Size(73, 21);
+            this.txt_Period.TabIndex = 9;
             // 
             // label6
             // 
@@ -365,90 +411,94 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "自动发送周期（ms）";
             // 
-            // textBox2
+            // txt_SendPath
             // 
-            this.textBox2.Location = new System.Drawing.Point(20, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 21);
-            this.textBox2.TabIndex = 7;
+            this.txt_SendPath.Location = new System.Drawing.Point(20, 143);
+            this.txt_SendPath.Name = "txt_SendPath";
+            this.txt_SendPath.Size = new System.Drawing.Size(176, 21);
+            this.txt_SendPath.TabIndex = 7;
             // 
-            // button2
+            // btn_OpenFile
             // 
-            this.button2.Location = new System.Drawing.Point(20, 108);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 29);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "打开文件";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_OpenFile.Location = new System.Drawing.Point(20, 108);
+            this.btn_OpenFile.Name = "btn_OpenFile";
+            this.btn_OpenFile.Size = new System.Drawing.Size(85, 29);
+            this.btn_OpenFile.TabIndex = 6;
+            this.btn_OpenFile.Text = "打开文件";
+            this.btn_OpenFile.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn_SendFile
             // 
-            this.button7.Location = new System.Drawing.Point(111, 108);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(85, 29);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "发送文件";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_SendFile.Location = new System.Drawing.Point(111, 108);
+            this.btn_SendFile.Name = "btn_SendFile";
+            this.btn_SendFile.Size = new System.Drawing.Size(85, 29);
+            this.btn_SendFile.TabIndex = 6;
+            this.btn_SendFile.Text = "发送文件";
+            this.btn_SendFile.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btn_SendClear
             // 
-            this.button8.Location = new System.Drawing.Point(111, 63);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(85, 29);
-            this.button8.TabIndex = 6;
-            this.button8.Text = "清空发送";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_SendClear.Location = new System.Drawing.Point(111, 63);
+            this.btn_SendClear.Name = "btn_SendClear";
+            this.btn_SendClear.Size = new System.Drawing.Size(85, 29);
+            this.btn_SendClear.TabIndex = 6;
+            this.btn_SendClear.Text = "清空发送";
+            this.btn_SendClear.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chk_HexSend
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(28, 70);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(72, 16);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "十六进制";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chk_HexSend.AutoSize = true;
+            this.chk_HexSend.Location = new System.Drawing.Point(28, 70);
+            this.chk_HexSend.Name = "chk_HexSend";
+            this.chk_HexSend.Size = new System.Drawing.Size(72, 16);
+            this.chk_HexSend.TabIndex = 5;
+            this.chk_HexSend.Text = "十六进制";
+            this.chk_HexSend.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btn_HandSend
             // 
-            this.button9.Location = new System.Drawing.Point(112, 18);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(85, 29);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "手动发送";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn_HandSend.Location = new System.Drawing.Point(112, 18);
+            this.btn_HandSend.Name = "btn_HandSend";
+            this.btn_HandSend.Size = new System.Drawing.Size(85, 29);
+            this.btn_HandSend.TabIndex = 6;
+            this.btn_HandSend.Text = "手动发送";
+            this.btn_HandSend.UseVisualStyleBackColor = true;
+            this.btn_HandSend.Click += new System.EventHandler(this.btn_HandSend_Click);
             // 
-            // checkBox4
+            // chk_AutoSend
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(28, 24);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(72, 16);
-            this.checkBox4.TabIndex = 5;
-            this.checkBox4.Text = "自动发送";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chk_AutoSend.AutoSize = true;
+            this.chk_AutoSend.Location = new System.Drawing.Point(28, 24);
+            this.chk_AutoSend.Name = "chk_AutoSend";
+            this.chk_AutoSend.Size = new System.Drawing.Size(72, 16);
+            this.chk_AutoSend.TabIndex = 5;
+            this.chk_AutoSend.Text = "自动发送";
+            this.chk_AutoSend.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.richTextBox1);
             this.groupBox4.Location = new System.Drawing.Point(265, 18);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(482, 197);
+            this.groupBox4.Size = new System.Drawing.Size(482, 205);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "接收区";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(4, 20);
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
+            this.richTextBox1.Location = new System.Drawing.Point(3, 17);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(472, 166);
+            this.richTextBox1.Size = new System.Drawing.Size(476, 185);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.richTextBox2);
+            this.groupBox5.Controls.Add(this.rtb_Send);
             this.groupBox5.Location = new System.Drawing.Point(265, 229);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(482, 226);
@@ -456,13 +506,16 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "发送区";
             // 
-            // richTextBox2
+            // rtb_Send
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(6, 20);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(472, 200);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
+            this.rtb_Send.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rtb_Send.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtb_Send.ForeColor = System.Drawing.Color.Lime;
+            this.rtb_Send.Location = new System.Drawing.Point(3, 17);
+            this.rtb_Send.Name = "rtb_Send";
+            this.rtb_Send.Size = new System.Drawing.Size(476, 206);
+            this.rtb_Send.TabIndex = 0;
+            this.rtb_Send.Text = "";
             // 
             // groupBox6
             // 
@@ -557,6 +610,14 @@
             this.checkBox2.Text = "数据";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(82, 85);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(95, 20);
+            this.comboBox1.TabIndex = 1;
+            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(270, 85);
@@ -581,16 +642,6 @@
             this.textBox4.Size = new System.Drawing.Size(95, 21);
             this.textBox4.TabIndex = 7;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(48, 16);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "帧头";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
@@ -601,55 +652,33 @@
             this.checkBox8.Text = "校验";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // checkBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(82, 85);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(95, 20);
-            this.comboBox1.TabIndex = 1;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(48, 16);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "帧头";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // toolStripStatusLabel1
+            // toolStripStatusLabel2
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(112, 17);
-            this.toolStripStatusLabel1.Text = "     系统工作状态：";
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(131, 17);
+            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
-            // tssl_Status
+            // tssl_Clear
             // 
-            this.tssl_Status.AutoSize = false;
-            this.tssl_Status.Name = "tssl_Status";
-            this.tssl_Status.Size = new System.Drawing.Size(230, 17);
-            this.tssl_Status.Text = "初始化正常！";
-            this.tssl_Status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(80, 17);
-            this.toolStripStatusLabel3.Text = "发送字节数：";
-            // 
-            // toolStripStatusLabel4
-            // 
-            this.toolStripStatusLabel4.AutoSize = false;
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(100, 17);
-            this.toolStripStatusLabel4.Text = "0";
-            this.toolStripStatusLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripStatusLabel5
-            // 
-            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(80, 17);
-            this.toolStripStatusLabel5.Text = "接收字节数：";
-            // 
-            // toolStripStatusLabel6
-            // 
-            this.toolStripStatusLabel6.AutoSize = false;
-            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(100, 17);
-            this.toolStripStatusLabel6.Text = "0";
-            this.toolStripStatusLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tssl_Clear.AutoSize = false;
+            this.tssl_Clear.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tssl_Clear.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.tssl_Clear.BorderStyle = System.Windows.Forms.Border3DStyle.Bump;
+            this.tssl_Clear.Name = "tssl_Clear";
+            this.tssl_Clear.Size = new System.Drawing.Size(80, 17);
+            this.tssl_Clear.Text = "清空计数";
             // 
             // FrmMain
             // 
@@ -712,19 +741,19 @@
         private System.Windows.Forms.Button btn_HandClear;
         private System.Windows.Forms.CheckBox chk_AutoClear;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_Period;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.TextBox txt_SendPath;
+        private System.Windows.Forms.Button btn_OpenFile;
+        private System.Windows.Forms.Button btn_SendFile;
+        private System.Windows.Forms.Button btn_SendClear;
+        private System.Windows.Forms.CheckBox chk_HexSend;
+        private System.Windows.Forms.Button btn_HandSend;
+        private System.Windows.Forms.CheckBox chk_AutoSend;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox rtb_Send;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
@@ -743,9 +772,11 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel tssl_Status;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.ToolStripStatusLabel tssl_SendCount;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
+        private System.Windows.Forms.ToolStripStatusLabel tssl_ReceiveCount;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel tssl_Clear;
     }
 }
 
