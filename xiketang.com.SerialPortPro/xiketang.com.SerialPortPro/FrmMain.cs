@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -289,8 +291,10 @@ namespace xiketang.com.SerialPortPro
             {
                 try
                 {
-                    byte[] b = encoding.GetBytes(this.rtb_Send.Text.Trim());
+                    byte[] b = encoding.GetBytes(this.rtb_Send.Text);
+
                     serialPort.Write(b, 0, b.Length);
+
                     TotalSendNum += b.Length;
                 }
                 catch (Exception ex)
@@ -315,9 +319,85 @@ namespace xiketang.com.SerialPortPro
         {
             this.rtb_Send.Clear();
         }
+
+
         #endregion
 
-        
+        #region 选择文件
+        private void btn_OpenFile_Click(object sender, EventArgs e)
+        {
+            // 创建OpenFileDialog
+            OpenFileDialog dialog = new OpenFileDialog();
 
+            // 设置OpenFileDialog属性
+            dialog.Title = "请选择要发送的文件";
+            dialog.Filter = "文本文件(*.txt)|*.txt|二进制文件(*.bin)|*.bin|HEX文件(*.hex)|*.hex";
+            dialog.RestoreDirectory = true;
+
+            // 打开OpenFileDialog
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                // 把十六进制的选择取消
+                this.chk_HexSend.Checked = false;
+
+                // 获取文件的名称并显示
+                string fileName = dialog.FileName;
+                this.txt_SavePath.Text = fileName;
+
+                // 读取内容显示
+                StreamReader sr = new StreamReader(fileName, encoding);
+
+                this.rtb_Send.Text = sr.ReadToEnd();
+                sr.Close();
+            }
+        }
+        #endregion
+
+        #region 发送文件
+        private void btn_SendFile_Click(object sender, EventArgs e)
+        {
+            if (IsOpen)
+            {
+                if (this.txt_SendPath.Text.Length == 0)
+                {
+                    this.tssl_Status.Text = "请先选择要发送的文件";
+                    return;
+                }
+
+                
+                byte[] byteMessage = encoding.GetBytes(this.txt_SendPath.Text);
+                int sendCount = byteMessage.Length / 4096;
+                int sendRemaind = byteMessage.Length % 4086;
+                try
+                {
+                    // 循环发送
+                    for (int i = 0; i < sendCount; i++)
+                    {
+                        this.serialPort.Write(byteMessage, 4096 * i, 4096);
+                        Thread.Sleep(50);
+                    }
+                    // 最后一次发送
+                    if (sendRemaind > 0)
+                    {
+                        this.serialPort.Write(byteMessage, 4096 * sendCount, sendRemaind);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    this.tssl_Status.Text = "发送文件失败：" + ex.Message;
+                    return;
+                }
+
+                // 更新发送计数
+                TotalRcvNum += byteMessage.Length;
+            }
+            else
+            {
+                this.tssl_Status.Text = "发送文件失败：串口未连接";
+            }
+        }
+
+        #endregion
     }
 }

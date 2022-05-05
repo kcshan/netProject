@@ -427,6 +427,7 @@
             this.btn_OpenFile.TabIndex = 6;
             this.btn_OpenFile.Text = "打开文件";
             this.btn_OpenFile.UseVisualStyleBackColor = true;
+            this.btn_OpenFile.Click += new System.EventHandler(this.btn_OpenFile_Click);
             // 
             // btn_SendFile
             // 
@@ -436,6 +437,7 @@
             this.btn_SendFile.TabIndex = 6;
             this.btn_SendFile.Text = "发送文件";
             this.btn_SendFile.UseVisualStyleBackColor = true;
+            this.btn_SendFile.Click += new System.EventHandler(this.btn_SendFile_Click);
             // 
             // btn_SendClear
             // 
