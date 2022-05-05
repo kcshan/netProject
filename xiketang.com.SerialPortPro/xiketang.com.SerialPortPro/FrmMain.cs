@@ -27,7 +27,7 @@ namespace xiketang.com.SerialPortPro
         private bool isOpen = false;
         public bool IsOpen
         {
-            get { return isOpen;}
+            get { return isOpen; }
             set
             {
                 isOpen = value;
@@ -84,7 +84,7 @@ namespace xiketang.com.SerialPortPro
         private Encoding encoding = Encoding.Default;
 
         // 定时器
-        private System.Timers.Timer AutoSendTimer = new System.Timers.Timer(); 
+        private System.Timers.Timer AutoSendTimer = new System.Timers.Timer();
 
         #endregion
 
@@ -158,6 +158,8 @@ namespace xiketang.com.SerialPortPro
                     this.serialPort.RtsEnable = this.chk_Rts.Checked;
                     this.serialPort.DtrEnable = this.chk_Dtr.Checked;
 
+                    this.serialPort.Encoding = this.encoding;
+
                     // 触发接收的字节的大小
                     this.serialPort.ReceivedBytesThreshold = 1;
 
@@ -176,7 +178,7 @@ namespace xiketang.com.SerialPortPro
 
                     this.tssl_Status.Text = this.cmb_Port.Text.Trim() + "串口打开失败：" + ex.Message;
                 }
-                
+
             }
         }
         #endregion
@@ -188,7 +190,56 @@ namespace xiketang.com.SerialPortPro
         /// <param name="e"></param>
         private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
+            Invoke(new Action(() =>
+            {
+                // 定义最终的字符串
+                string Result = string.Empty;
+                if (this.chk_HexShow.Checked)
+                {
+                    // 定义一个字节数组
+                    try
+                    {
+                        byte[] data = new byte[serialPort.BytesToRead];
 
+
+                        // 读取缓冲区值到字节数组
+                        this.serialPort.Read(data, 0, data.Length);
+                        foreach (byte item in data)
+                        {
+                            string hex = Convert.ToString(item, 16).ToUpper();
+                            Result += (hex.Length == 1 ? "0" + hex : hex) + " ";
+                        }
+                        // 显示
+                        this.rtb_Receive.AppendText(Result + Environment.NewLine);
+
+                        // 更新接收字节总数
+                        TotalRcvNum += data.Length;
+                    }
+                    catch (Exception ex)
+                    {
+                        this.tssl_Status.Text = "接收出现错误：" + ex.Message;
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        Result = this.serialPort.ReadExisting();
+                        // 显示
+                        this.rtb_Receive.AppendText(Result + Environment.NewLine);
+
+                        // 更新接收字节总数
+                        TotalRcvNum += this.serialPort.Encoding.GetByteCount(Result);
+                    }
+                    catch (Exception ex)
+                    {
+                        this.tssl_Status.Text = "接收出现错误：" + ex.Message;
+                    }
+
+                }
+            }));
+
+            
         }
 
         #region 手动发送
@@ -302,7 +353,7 @@ namespace xiketang.com.SerialPortPro
                     this.tssl_Status.Text = "发送失败：" + ex.Message;
                     isOpen = false;
                 }
-                
+
             }
         }
 
@@ -342,7 +393,7 @@ namespace xiketang.com.SerialPortPro
 
                 // 获取文件的名称并显示
                 string fileName = dialog.FileName;
-                this.txt_SavePath.Text = fileName;
+                this.txt_SendPath.Text = fileName;
 
                 // 读取内容显示
                 StreamReader sr = new StreamReader(fileName, encoding);
@@ -364,8 +415,8 @@ namespace xiketang.com.SerialPortPro
                     return;
                 }
 
-                
-                byte[] byteMessage = encoding.GetBytes(this.txt_SendPath.Text);
+
+                byte[] byteMessage = encoding.GetBytes(this.rtb_Send.Text);
                 int sendCount = byteMessage.Length / 4096;
                 int sendRemaind = byteMessage.Length % 4086;
                 try
@@ -390,7 +441,7 @@ namespace xiketang.com.SerialPortPro
                 }
 
                 // 更新发送计数
-                TotalRcvNum += byteMessage.Length;
+                TotalSendNum += byteMessage.Length;
             }
             else
             {

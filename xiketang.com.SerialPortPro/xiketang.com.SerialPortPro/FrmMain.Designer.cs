@@ -58,6 +58,8 @@
             this.tssl_SendCount = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssl_ReceiveCount = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tssl_Clear = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txt_Period = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,7 +71,7 @@
             this.btn_HandSend = new System.Windows.Forms.Button();
             this.chk_AutoSend = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtb_Receive = new System.Windows.Forms.RichTextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rtb_Send = new System.Windows.Forms.RichTextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -87,8 +89,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tssl_Clear = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -377,6 +377,24 @@
             this.tssl_ReceiveCount.Text = "0";
             this.tssl_ReceiveCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tssl_Clear
+            // 
+            this.tssl_Clear.AutoSize = false;
+            this.tssl_Clear.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tssl_Clear.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.tssl_Clear.BorderStyle = System.Windows.Forms.Border3DStyle.Bump;
+            this.tssl_Clear.Name = "tssl_Clear";
+            this.tssl_Clear.Size = new System.Drawing.Size(80, 17);
+            this.tssl_Clear.Text = "清空计数";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(131, 17);
+            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txt_Period);
@@ -482,7 +500,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.richTextBox1);
+            this.groupBox4.Controls.Add(this.rtb_Receive);
             this.groupBox4.Location = new System.Drawing.Point(265, 18);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(482, 205);
@@ -490,16 +508,16 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "接收区";
             // 
-            // richTextBox1
+            // rtb_Receive
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 17);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(476, 185);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.rtb_Receive.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rtb_Receive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtb_Receive.ForeColor = System.Drawing.Color.Lime;
+            this.rtb_Receive.Location = new System.Drawing.Point(3, 17);
+            this.rtb_Receive.Name = "rtb_Receive";
+            this.rtb_Receive.Size = new System.Drawing.Size(476, 185);
+            this.rtb_Receive.TabIndex = 0;
+            this.rtb_Receive.Text = "";
             // 
             // groupBox5
             // 
@@ -667,24 +685,6 @@
             this.checkBox1.Text = "帧头";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(131, 17);
-            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
-            // 
-            // tssl_Clear
-            // 
-            this.tssl_Clear.AutoSize = false;
-            this.tssl_Clear.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tssl_Clear.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
-            this.tssl_Clear.BorderStyle = System.Windows.Forms.Border3DStyle.Bump;
-            this.tssl_Clear.Name = "tssl_Clear";
-            this.tssl_Clear.Size = new System.Drawing.Size(80, 17);
-            this.tssl_Clear.Text = "清空计数";
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -756,7 +756,7 @@
         private System.Windows.Forms.Button btn_HandSend;
         private System.Windows.Forms.CheckBox chk_AutoSend;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtb_Receive;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RichTextBox rtb_Send;
         private System.Windows.Forms.GroupBox groupBox6;
