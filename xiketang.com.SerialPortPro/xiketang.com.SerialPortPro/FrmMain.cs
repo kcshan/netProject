@@ -48,7 +48,6 @@ namespace xiketang.com.SerialPortPro
         /// <summary>
         /// 发送字节字数
         /// </summary>
-
         private int totalSendNum = 0;
 
         public int TotalSendNum
@@ -64,7 +63,6 @@ namespace xiketang.com.SerialPortPro
         /// <summary>
         /// 接收字节字数
         /// </summary>
-
         private int totalRcvNum = 0;
 
         public int TotalRcvNum
@@ -77,6 +75,34 @@ namespace xiketang.com.SerialPortPro
             }
         }
 
+        /// <summary>
+        /// 暂停接收
+        /// </summary>
+        private bool isPause = false;
+
+        public bool IsPause
+        {
+            get { return isPause; }
+            set
+            {
+                isPause = value;
+                if (value)
+                {
+                    this.btn_Pause.Text = "继续接收";
+                }
+                else
+                {
+                    this.btn_Pause.Text = "暂时接收";
+                }
+            }
+        }
+
+        // 保存文件的名称
+        private string SaveFile
+        {
+            get { return DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt"; }
+        }
+
         // 串口对象
         private SerialPort serialPort = null;
 
@@ -85,6 +111,8 @@ namespace xiketang.com.SerialPortPro
 
         // 定时器
         private System.Timers.Timer AutoSendTimer = new System.Timers.Timer();
+
+        private int ClearLimtNum = 4096;
 
         #endregion
 
@@ -183,6 +211,7 @@ namespace xiketang.com.SerialPortPro
         }
         #endregion
 
+        #region 串口接收数据
         /// <summary>
         /// 串口接收事件
         /// </summary>
@@ -190,6 +219,11 @@ namespace xiketang.com.SerialPortPro
         /// <param name="e"></param>
         private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
+            if (IsPause)
+            {
+                return;
+            }
+
             Invoke(new Action(() =>
             {
                 // 定义最终的字符串
@@ -237,10 +271,19 @@ namespace xiketang.com.SerialPortPro
                     }
 
                 }
+                // 是否开启自动清空
+                if (this.chk_AutoClear.Checked)
+                {
+                    if (this.rtb_Receive.Text.Length > ClearLimtNum)
+                    {
+                        this.rtb_Receive.Clear();
+                    }
+                }
             }));
 
-            
+
         }
+        #endregion
 
         #region 手动发送
 
@@ -359,7 +402,7 @@ namespace xiketang.com.SerialPortPro
 
         #endregion
 
-        #region 清空发送区
+        #region 清空发送接收区
 
         /// <summary>
         /// 清空发送区
@@ -370,8 +413,15 @@ namespace xiketang.com.SerialPortPro
         {
             this.rtb_Send.Clear();
         }
-
-
+        /// <summary>
+        /// 清空接收区
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_HandClear_Click(object sender, EventArgs e)
+        {
+            this.rtb_Receive.Clear();
+        }
         #endregion
 
         #region 选择文件
@@ -449,6 +499,53 @@ namespace xiketang.com.SerialPortPro
             }
         }
 
+
+        #endregion
+
+        #region 暂停接收
+        private void btn_Pause_Click(object sender, EventArgs e)
+        {
+            IsPause = !IsPause;
+        }
+        #endregion
+
+        #region 选择路径
+
+        private void btn_SelectPath_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                this.txt_SavePath.Text = dialog.SelectedPath;
+            }
+        }
+        #endregion
+
+        #region 保存数据
+
+        private void btn_SaveFile_Click(object sender, EventArgs e)
+        {
+            if (this.rtb_Receive.Text.Length == 0)
+            {
+                this.tssl_Status.Text = "接收数据为空，请检查！";
+                return;
+            }
+            if (this.txt_SavePath.Text.Length == 0)
+            {
+                this.tssl_Status.Text = "请先设置要保存的路径！";
+                return;
+            }
+
+            string savePath = this.txt_SavePath.Text + "\\" + SaveFile;
+
+            // 创建写入器
+            StreamWriter sw = new StreamWriter(savePath);
+            sw.Write(this.rtb_Receive.Text);
+            sw.Flush();
+            sw.Close();
+
+            this.tssl_Status.Text = "文件" + SaveFile + "保存成功";
+        }
         #endregion
     }
 }

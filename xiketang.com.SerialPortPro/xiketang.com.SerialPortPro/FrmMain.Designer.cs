@@ -270,6 +270,7 @@
             this.btn_SelectPath.TabIndex = 6;
             this.btn_SelectPath.Text = "选择路径";
             this.btn_SelectPath.UseVisualStyleBackColor = true;
+            this.btn_SelectPath.Click += new System.EventHandler(this.btn_SelectPath_Click);
             // 
             // btn_SaveFile
             // 
@@ -279,6 +280,7 @@
             this.btn_SaveFile.TabIndex = 6;
             this.btn_SaveFile.Text = "保存数据";
             this.btn_SaveFile.UseVisualStyleBackColor = true;
+            this.btn_SaveFile.Click += new System.EventHandler(this.btn_SaveFile_Click);
             // 
             // btn_Pause
             // 
@@ -288,6 +290,7 @@
             this.btn_Pause.TabIndex = 6;
             this.btn_Pause.Text = "暂停接收";
             this.btn_Pause.UseVisualStyleBackColor = true;
+            this.btn_Pause.Click += new System.EventHandler(this.btn_Pause_Click);
             // 
             // chk_HexShow
             // 
@@ -307,6 +310,7 @@
             this.btn_HandClear.TabIndex = 6;
             this.btn_HandClear.Text = "手动清空";
             this.btn_HandClear.UseVisualStyleBackColor = true;
+            this.btn_HandClear.Click += new System.EventHandler(this.btn_HandClear_Click);
             // 
             // chk_AutoClear
             // 
