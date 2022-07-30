@@ -3,4 +3,4 @@ D:\workspace\netProject\OOPPK\CalDll\bin\Debug\CalDll.pdb
 D:\workspace\netProject\OOPPK\CalDll\obj\Debug\CalDll.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\OOPPK\CalDll\obj\Debug\CalDll.dll
 D:\workspace\netProject\OOPPK\CalDll\obj\Debug\CalDll.pdb
-D:\workspace\netProject\OOPPK\CalDll\obj\Debug\CalDll.csprojAssemblyReference.cache
+D:\workspace\netProject\OOPPK\CalDll\obj\Debug\CalDll.csproj.AssemblyReference.cache

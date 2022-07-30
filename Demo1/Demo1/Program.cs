@@ -8,12 +8,27 @@ namespace Demo1
 {
     class Program
     {
+        public enum Genders
+        {
+            Male, Female
+        }
         static void Main(string[] args)
         {
+            #region 常量
+            //const double PAI = 3.14;
+            //double result = PAI * PAI;
+            //Console.WriteLine("result: " + result);
+            #endregion
+
+            #region 枚举
+            //Genders gender = Genders.Male;
+            //Console.WriteLine(gender);
+            #endregion
+
             #region 简单if 选择结构1
             //Console.WriteLine("请输入客户消费总金额：");
             //int totalMoney = int.Parse(Console.ReadLine());
-            //// 使用if条件作出判断
+            //使用if条件作出判断
             //if (totalMoney >= 1000)
             //{
             //    Console.WriteLine("客户消费金额满1000元，赠送300元代金券");

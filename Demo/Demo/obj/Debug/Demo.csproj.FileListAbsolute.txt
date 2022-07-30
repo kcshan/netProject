@@ -1,7 +1,0 @@
-D:\workspace\netProject\Demo\Demo\bin\Debug\Demo.exe.config
-D:\workspace\netProject\Demo\Demo\bin\Debug\Demo.exe
-D:\workspace\netProject\Demo\Demo\bin\Debug\Demo.pdb
-D:\workspace\netProject\Demo\Demo\obj\Debug\Demo.csprojAssemblyReference.cache
-D:\workspace\netProject\Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
-D:\workspace\netProject\Demo\Demo\obj\Debug\Demo.exe
-D:\workspace\netProject\Demo\Demo\obj\Debug\Demo.pdb

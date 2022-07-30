@@ -1,0 +1,10 @@
+D:\workspace\netProject\TeachDemo01\TeachDemo01\bin\Debug\TeachDemo01.exe.config
+D:\workspace\netProject\TeachDemo01\TeachDemo01\bin\Debug\TeachDemo01.exe
+D:\workspace\netProject\TeachDemo01\TeachDemo01\bin\Debug\TeachDemo01.pdb
+D:\workspace\netProject\TeachDemo01\TeachDemo01\obj\Debug\TeachDemo01.csproj.AssemblyReference.cache
+D:\workspace\netProject\TeachDemo01\TeachDemo01\obj\Debug\TeachDemo01.csproj.SuggestedBindingRedirects.cache
+D:\workspace\netProject\TeachDemo01\TeachDemo01\obj\Debug\TeachDemo01.Properties.Resources.resources
+D:\workspace\netProject\TeachDemo01\TeachDemo01\obj\Debug\TeachDemo01.csproj.GenerateResource.cache
+D:\workspace\netProject\TeachDemo01\TeachDemo01\obj\Debug\TeachDemo01.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\TeachDemo01\TeachDemo01\obj\Debug\TeachDemo01.exe
+D:\workspace\netProject\TeachDemo01\TeachDemo01\obj\Debug\TeachDemo01.pdb

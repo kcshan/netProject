@@ -4,7 +4,8 @@ D:\workspace\netProject\OOPPK\OOPPK\bin\Debug\OOPPK.pdb
 D:\workspace\netProject\OOPPK\OOPPK\obj\Debug\OOPPK.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\OOPPK\OOPPK\obj\Debug\OOPPK.exe
 D:\workspace\netProject\OOPPK\OOPPK\obj\Debug\OOPPK.pdb
-D:\workspace\netProject\OOPPK\OOPPK\obj\Debug\OOPPK.csprojAssemblyReference.cache
 D:\workspace\netProject\OOPPK\OOPPK\bin\Debug\CalDll.dll
 D:\workspace\netProject\OOPPK\OOPPK\bin\Debug\CalDll.pdb
 D:\workspace\netProject\OOPPK\OOPPK\obj\Debug\OOPPK.csproj.CopyComplete
+D:\workspace\netProject\OOPPK\OOPPK\obj\Debug\OOPPK.csproj.AssemblyReference.cache
+D:\workspace\netProject\OOPPK\OOPPK\obj\Debug\OOPPK.csproj.SuggestedBindingRedirects.cache

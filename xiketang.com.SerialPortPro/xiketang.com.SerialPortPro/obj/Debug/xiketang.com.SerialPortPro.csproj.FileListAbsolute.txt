@@ -1,10 +1,11 @@
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\bin\Debug\xiketang.com.SerialPortPro.exe.config
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\bin\Debug\xiketang.com.SerialPortPro.exe
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\bin\Debug\xiketang.com.SerialPortPro.pdb
-D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.csprojAssemblyReference.cache
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.FrmMain.resources
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.Properties.Resources.resources
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.csproj.GenerateResource.cache
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.exe
 D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.pdb
+D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.csproj.AssemblyReference.cache
+D:\workspace\netProject\xiketang.com.SerialPortPro\xiketang.com.SerialPortPro\obj\Debug\xiketang.com.SerialPortPro.csproj.SuggestedBindingRedirects.cache
