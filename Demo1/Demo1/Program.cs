@@ -25,6 +25,11 @@ namespace Demo1
             //Console.WriteLine(gender);
             #endregion
 
+            #region 运算符
+            
+
+            #endregion
+
             #region 简单if 选择结构1
             //Console.WriteLine("请输入客户消费总金额：");
             //int totalMoney = int.Parse(Console.ReadLine());
@@ -33,7 +38,7 @@ namespace Demo1
             //{
             //    Console.WriteLine("客户消费金额满1000元，赠送300元代金券");
             //}
-            Console.WriteLine("消费不够，不送代金券");
+            //Console.WriteLine("消费不够，不送代金券");
             #endregion
 
             #region 复杂if 选择结构2
