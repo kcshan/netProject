@@ -26,8 +26,18 @@ namespace Demo1
             #endregion
 
             #region 运算符
-            
-
+            Console.WriteLine("请输入笔试成绩");
+            int writeExam = int.Parse(Console.ReadLine());
+            Console.WriteLine("请输入机试成绩");
+            int labExam = int.Parse(Console.ReadLine());
+            if (writeExam >= 80 && labExam >= 90)
+            {
+                Console.WriteLine("考试成绩优秀！");
+            }
+            if ((writeExam == 100 && labExam >= 60) || (labExam == 100 && writeExam >= 60))
+            {
+                Console.WriteLine("考试成绩优秀！");
+            }
             #endregion
 
             #region 简单if 选择结构1
