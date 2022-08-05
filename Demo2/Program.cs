@@ -19,6 +19,10 @@ namespace Demo2
 
             String info = objStudent.GetStudent();
             Console.WriteLine(info);
+
+            objStudent.Birthday = Convert.ToDateTime("1990-12-12");
+            Console.WriteLine(objStudent.Age);
+
             Console.ReadLine();
         }
     }
