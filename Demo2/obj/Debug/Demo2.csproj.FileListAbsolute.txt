@@ -1,0 +1,8 @@
+D:\workspace\netProject\Demo2\bin\Debug\Demo2.exe.config
+D:\workspace\netProject\Demo2\bin\Debug\Demo2.exe
+D:\workspace\netProject\Demo2\bin\Debug\Demo2.pdb
+D:\workspace\netProject\Demo2\obj\Debug\Demo2.csproj.AssemblyReference.cache
+D:\workspace\netProject\Demo2\obj\Debug\Demo2.csproj.SuggestedBindingRedirects.cache
+D:\workspace\netProject\Demo2\obj\Debug\Demo2.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\Demo2\obj\Debug\Demo2.exe
+D:\workspace\netProject\Demo2\obj\Debug\Demo2.pdb
