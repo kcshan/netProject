@@ -1,0 +1,7 @@
+D:\workspace\netProject\Demo_2.3.5\Demo_2.3.5\bin\Debug\Demo_2.3.5.exe.config
+D:\workspace\netProject\Demo_2.3.5\Demo_2.3.5\bin\Debug\Demo_2.3.5.exe
+D:\workspace\netProject\Demo_2.3.5\Demo_2.3.5\bin\Debug\Demo_2.3.5.pdb
+D:\workspace\netProject\Demo_2.3.5\Demo_2.3.5\obj\Debug\Demo_2.3.5.csproj.AssemblyReference.cache
+D:\workspace\netProject\Demo_2.3.5\Demo_2.3.5\obj\Debug\Demo_2.3.5.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\Demo_2.3.5\Demo_2.3.5\obj\Debug\Demo_2.3.5.exe
+D:\workspace\netProject\Demo_2.3.5\Demo_2.3.5\obj\Debug\Demo_2.3.5.pdb

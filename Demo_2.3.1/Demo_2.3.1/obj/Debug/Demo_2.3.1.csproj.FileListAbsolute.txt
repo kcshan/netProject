@@ -1,7 +1,8 @@
 D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\bin\Debug\Demo_2.3.1.exe.config
 D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\bin\Debug\Demo_2.3.1.exe
 D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\bin\Debug\Demo_2.3.1.pdb
-D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\obj\Debug\Demo_2.3.1.csprojAssemblyReference.cache
 D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\obj\Debug\Demo_2.3.1.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\obj\Debug\Demo_2.3.1.exe
 D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\obj\Debug\Demo_2.3.1.pdb
+D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\obj\Debug\Demo_2.3.1.csproj.AssemblyReference.cache
+D:\workspace\netProject\Demo_2.3.1\Demo_2.3.1\obj\Debug\Demo_2.3.1.csproj.SuggestedBindingRedirects.cache
