@@ -46,11 +46,21 @@ namespace Deme_2._4._1
             {
                 Console.WriteLine(item.StudentName + "\t" + item.StudentId);
             }
-
+            Console.WriteLine("*****************************************");
             // 使用集合初始化器初始化泛型集合
             List<Student> list = new List<Student>() { objStu1, objStu2, objStu3, objStu4 };
             List<string> nameList = new List<string>() { "小王", "小张", "小赵", "小李"};
 
+
+            foreach (Student item in list)
+            {
+                Console.WriteLine(item.StudentName + "\t" + item.StudentId);
+            }
+            Console.WriteLine("*****************************************");
+            foreach (string item in nameList)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadLine();
         }
     }
