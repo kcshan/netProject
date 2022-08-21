@@ -1,0 +1,10 @@
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\bin\Debug\Demo_2.5.2.exe.config
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\bin\Debug\Demo_2.5.2.exe
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\bin\Debug\Demo_2.5.2.pdb
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\obj\Debug\Demo_2.5.2.csproj.AssemblyReference.cache
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\obj\Debug\Demo_2._5._2.FrmMain.resources
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\obj\Debug\Demo_2._5._2.Properties.Resources.resources
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\obj\Debug\Demo_2.5.2.csproj.GenerateResource.cache
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\obj\Debug\Demo_2.5.2.csproj.CoreCompileInputs.cache
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\obj\Debug\Demo_2.5.2.exe
+D:\workspace\netProject\Demo_2.5.2\Demo_2.5.2\obj\Debug\Demo_2.5.2.pdb
