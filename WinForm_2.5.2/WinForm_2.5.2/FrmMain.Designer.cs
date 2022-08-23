@@ -74,6 +74,7 @@
             this.btnTestEvent.TabIndex = 3;
             this.btnTestEvent.Text = "测试事件的响应";
             this.btnTestEvent.UseVisualStyleBackColor = true;
+            this.btnTestEvent.Click += new System.EventHandler(this.btnTestEvent_Click);
             // 
             // btnAndy
             // 
@@ -83,6 +84,7 @@
             this.btnAndy.TabIndex = 4;
             this.btnAndy.Text = "Andy老师";
             this.btnAndy.UseVisualStyleBackColor = true;
+            this.btnAndy.Click += new System.EventHandler(this.btnAndy_Click);
             // 
             // btnCarry
             // 
@@ -92,6 +94,7 @@
             this.btnCarry.TabIndex = 5;
             this.btnCarry.Text = "Carry老师";
             this.btnCarry.UseVisualStyleBackColor = true;
+            this.btnCarry.Click += new System.EventHandler(this.btnCarry_Click);
             // 
             // btnCoco
             // 
@@ -101,6 +104,7 @@
             this.btnCoco.TabIndex = 6;
             this.btnCoco.Text = "Coco老师";
             this.btnCoco.UseVisualStyleBackColor = true;
+            this.btnCoco.Click += new System.EventHandler(this.btnCoco_Click);
             // 
             // FrmMain
             // 

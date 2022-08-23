@@ -48,5 +48,24 @@ namespace WinForm_2._5._2
             MessageBox.Show(txt + "您好！");
         }
 
+        private void btnTestEvent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAndy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCarry_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCoco_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

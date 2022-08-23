@@ -6,5 +6,5 @@ D:\workspace\netProject\WinForm_2.5.3\WinForm_2.5.3\obj\Debug\WinForm_2.5.3.cspr
 D:\workspace\netProject\WinForm_2.5.3\WinForm_2.5.3\obj\Debug\WinForm_2.5.3.csproj.CoreCompileInputs.cache
 D:\workspace\netProject\WinForm_2.5.3\WinForm_2.5.3\obj\Debug\WinForm_2.5.3.exe
 D:\workspace\netProject\WinForm_2.5.3\WinForm_2.5.3\obj\Debug\WinForm_2.5.3.pdb
-D:\workspace\netProject\WinForm_2.5.3\WinForm_2.5.3\obj\Debug\WinForm_2.5.3.csprojAssemblyReference.cache
 D:\workspace\netProject\WinForm_2.5.3\WinForm_2.5.3\obj\Debug\WinForm_2._5._3.FrmMain.resources
+D:\workspace\netProject\WinForm_2.5.3\WinForm_2.5.3\obj\Debug\WinForm_2.5.3.csproj.AssemblyReference.cache
